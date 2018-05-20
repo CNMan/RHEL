@@ -1,0 +1,24 @@
+[root@localhost ~]# yum group info "Cinnamon Desktop"   
+Loaded plugins: langpacks, product-id, search-disabled-repos, subscription-manager
+
+Environment Group: Cinnamon Desktop
+ Environment-Id: cinnamon-desktop-environment
+ Description: Cinnamon provides a desktop with a traditional layout, advanced features, easy to use, powerful and flexible.
+ Mandatory Groups:
+   cinnamon-desktop
+   core
+   dial-up
+   fonts
+   guest-desktop-agents
+   hardware-support
+   input-methods
+   multimedia
+   networkmanager-submodules
+   printing
+   standard
+   x11
+ Optional Groups:
+   3d-printing
+   cloud-management
+   office-suite
+[root@localhost ~]#

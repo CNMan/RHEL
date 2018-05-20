@@ -1,0 +1,5 @@
+[vmware-tools]
+name = VMware Tools
+baseurl = https://packages.vmware.com/packages/rhel7/x86_64/
+enabled = 1
+gpgcheck = 1

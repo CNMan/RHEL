@@ -1,0 +1,97 @@
+[root@localhost ~]# yum group info "Development tools"    
+Loaded plugins: langpacks, product-id, search-disabled-repos, subscription-manager
+
+Group: Development tools
+ Group-Id: development
+ Description: A basic development environment.
+ Mandatory Packages:
+   autoconf
+   automake
+   binutils
+   bison
+   flex
+   gcc
+   gcc-c
+   gettext
+   libtool
+   make
+   patch
+   pkgconfig
+   redhat-rpm-config
+   rpm-build
+   rpm-sign
+ Default Packages:
+   byacc
+   cscope
+   ctags
+   diffstat
+   doxygen
+   elfutils
+   gcc-gfortran
+   git
+   indent
+   intltool
+   patchutils
+   rcs
+   subversion
+   swig
+   systemtap
+ Optional Packages:
+   ElectricFence
+   ant
+   babel
+   bzr
+   ccache
+   chrpath
+   clips
+   clips-devel
+   clips-doc
+   clips-emacs
+   clips-xclips
+   clipsmm-devel
+   clipsmm-doc
+   cmake
+   cmucl
+   colordiff
+   compat-gcc-44
+   compat-gcc-44-c
+   cvs
+   cvsps
+   darcs
+   dejagnu
+   email2trac
+   expect
+   ftnchek
+   gcc-gnat
+   gcc-objc
+   gcc-objc
+   ghc
+   git
+   haskell-platform
+   imake
+   javapackages-tools
+   ksc
+   libstdc-docs
+   lua
+   mercurial
+   mock
+   mod_dav_svn
+   nasm
+   nqc
+   nqc-doc
+   ocaml
+   perltidy
+   python-docs
+   qgit
+   rpmdevtools
+   rpmlint
+   sbcl
+   scorep
+   systemtap-sdt-devel
+   systemtap-server
+   trac
+   trac-git-plugin
+   trac-mercurial-plugin
+   trac-webadmin
+   translate-toolkit
+[root@localhost ~]#

@@ -1,0 +1,15 @@
+Usage:
+ whereis [options] file
+
+Options:
+ -b         search only for binaries
+ -B <dirs>  define binaries lookup path
+ -m         search only for manuals
+ -M <dirs>  define man lookup path
+ -s         search only for sources
+ -S <dirs>  define sources lookup path
+ -f         terminate <dirs> argument list
+ -u         search for unusual entries
+ -l         output effective lookup paths
+
+For more details see whereis(1).

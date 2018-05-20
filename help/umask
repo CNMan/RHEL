@@ -1,0 +1,1 @@
+umask: usage: umask [-p] [-S] [mode]

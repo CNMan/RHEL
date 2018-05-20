@@ -1,0 +1,58 @@
+VMware Virtual Disk Manager - build 8497320.
+Usage: vmware-vdiskmanager OPTIONS <disk-name> | <mount-point>
+Offline disk manipulation utility
+  Operations, only one may be specified at a time:
+     -c                   : create disk.  Additional creation options must
+                            be specified.  Only local virtual disks can be
+                            created.
+     -d                   : defragment the specified virtual disk. Only
+                            local virtual disks may be defragmented.
+     -k                   : shrink the specified virtual disk. Only local
+                            virtual disks may be shrunk.
+     -n <source-disk>     : rename the specified virtual disk; need to
+                            specify destination disk-name. Only local virtual
+                            disks may be renamed.
+     -p                   : prepare the mounted virtual disk specified by
+                            the mount point for shrinking.
+     -r <source-disk>     : convert the specified disk; need to specify
+                            destination disk-type.  For local destination disks
+                            the disk type must be specified.
+     -x <new-capacity>    : expand the disk to the specified capacity. Only
+                            local virtual disks may be expanded.
+     -R                   : check a sparse virtual disk for consistency and attempt
+                            to repair any errors.
+     -e                   : check for disk chain consistency.
+     -D                   : make disk deletable.  This should only be used on disks
+                            that have been copied from another product.
+
+  Other Options:
+     -q                   : do not log messages
+
+  Additional options for create and convert:
+     -a <adapter>         : (for use with -c only) adapter type
+                            (ide, buslogic, lsilogic). Pass lsilogic for other adapter types.
+     -s <size>            : capacity of the virtual disk
+     -t <disk-type>       : disk type id
+
+  Disk types:
+      0                   : single growable virtual disk
+      1                   : growable virtual disk split in 2GB files
+      2                   : preallocated virtual disk
+      3                   : preallocated virtual disk split in 2GB files
+      4                   : preallocated ESX-type virtual disk
+      5                   : compressed disk optimized for streaming
+      6                   : thin provisioned virtual disk - ESX 3.x and above
+
+     The capacity can be specified in sectors, KB, MB or GB.
+     The acceptable ranges:
+                           ide/scsi adapter : [1MB, 8192.0GB]
+                           buslogic adapter : [1MB, 2040.0GB]
+        ex 1: vmware-vdiskmanager -c -s 850MB -a ide -t 0 myIdeDisk.vmdk
+        ex 2: vmware-vdiskmanager -d myDisk.vmdk
+        ex 3: vmware-vdiskmanager -r sourceDisk.vmdk -t 0 destinationDisk.vmdk
+        ex 4: vmware-vdiskmanager -x 36GB myDisk.vmdk
+        ex 5: vmware-vdiskmanager -n sourceName.vmdk destinationName.vmdk
+        ex 6: vmware-vdiskmanager -k myDisk.vmdk
+        ex 7: vmware-vdiskmanager -p <mount-point>
+              (A virtual disk first needs to be mounted at <mount-point>)
+

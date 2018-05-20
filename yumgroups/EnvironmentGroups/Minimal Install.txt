@@ -1,0 +1,11 @@
+[root@localhost ~]# yum group info "Minimal Install"
+Loaded plugins: langpacks, product-id, search-disabled-repos, subscription-manager
+
+Environment Group: Minimal Install
+ Environment-Id: minimal
+ Description: Basic functionality.
+ Mandatory Groups:
+   core
+ Optional Groups:
+   debugging
+[root@localhost ~]#

@@ -1,0 +1,58 @@
+Scanning the drive for archives:
+1 file, 523702272 bytes (500 MiB)
+
+Listing archive: supp-server-7.6-rhel-7-x86_64-dvd.iso
+
+--
+Path = supp-server-7.6-rhel-7-x86_64-dvd.iso
+Type = Iso
+Physical Size = 523702272
+Created = 2018-10-02 16:35:52
+Modified = 2018-10-02 16:35:52
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+2018-10-02 16:33:45 .....           76           76  .discinfo
+2018-10-02 16:33:45 .....          785          785  .treeinfo
+2018-10-02 15:35:20 .....         8266         8266  EULA
+2018-10-02 15:35:20 .....        18092        18092  GPL
+2018-10-02 16:35:51 D....                            Packages
+2018-10-02 16:35:51 .....         4688         4688  Packages/TRANS.TBL
+2018-10-02 01:04:44 .....       652208       652208  Packages/dptfxtract-1-2.el7.x86_64.rpm
+2018-08-21 20:24:30 .....     78029344     78029344  Packages/java-1.7.1-ibm-1.7.1.4.30-1jpp.1.el7.i686.rpm
+2018-08-21 20:24:56 .....     85474324     85474324  Packages/java-1.7.1-ibm-1.7.1.4.30-1jpp.1.el7.x86_64.rpm
+2018-08-21 20:25:11 .....     11442372     11442372  Packages/java-1.7.1-ibm-demo-1.7.1.4.30-1jpp.1.el7.x86_64.rpm
+2018-08-21 20:25:13 .....      7844412      7844412  Packages/java-1.7.1-ibm-devel-1.7.1.4.30-1jpp.1.el7.i686.rpm
+2018-08-21 20:25:26 .....      7846980      7846980  Packages/java-1.7.1-ibm-devel-1.7.1.4.30-1jpp.1.el7.x86_64.rpm
+2018-08-21 20:25:40 .....        31412        31412  Packages/java-1.7.1-ibm-jdbc-1.7.1.4.30-1jpp.1.el7.x86_64.rpm
+2018-08-21 20:25:46 .....      1387900      1387900  Packages/java-1.7.1-ibm-plugin-1.7.1.4.30-1jpp.1.el7.x86_64.rpm
+2018-08-21 20:26:01 .....     10421384     10421384  Packages/java-1.7.1-ibm-src-1.7.1.4.30-1jpp.1.el7.x86_64.rpm
+2018-05-21 19:52:35 .....    104308844    104308844  Packages/java-1.8.0-ibm-1.8.0.5.15-1jpp.5.el7.i686.rpm
+2018-05-21 19:53:15 .....    113574380    113574380  Packages/java-1.8.0-ibm-1.8.0.5.15-1jpp.5.el7.x86_64.rpm
+2018-05-21 19:53:33 .....     12391920     12391920  Packages/java-1.8.0-ibm-demo-1.8.0.5.15-1jpp.5.el7.x86_64.rpm
+2018-05-21 19:53:36 .....      9269460      9269460  Packages/java-1.8.0-ibm-devel-1.8.0.5.15-1jpp.5.el7.i686.rpm
+2018-05-21 19:53:51 .....      9276648      9276648  Packages/java-1.8.0-ibm-devel-1.8.0.5.15-1jpp.5.el7.x86_64.rpm
+2018-05-21 19:54:07 .....        12872        12872  Packages/java-1.8.0-ibm-jdbc-1.8.0.5.15-1jpp.5.el7.x86_64.rpm
+2018-05-21 19:54:16 .....      1363908      1363908  Packages/java-1.8.0-ibm-plugin-1.8.0.5.15-1jpp.5.el7.x86_64.rpm
+2018-05-21 19:54:31 .....     11638904     11638904  Packages/java-1.8.0-ibm-src-1.8.0.5.15-1jpp.5.el7.x86_64.rpm
+2018-08-27 20:36:05 .....     58067224     58067224  Packages/virtio-win-1.9.6-1.el7.noarch.rpm
+2018-10-02 15:35:20 .....         3375         3375  RPM-GPG-KEY-redhat-beta
+2018-10-02 15:35:20 .....         3211         3211  RPM-GPG-KEY-redhat-release
+2018-10-02 16:35:51 .....         1796         1796  TRANS.TBL
+2018-10-02 16:33:17 .....         1455         1455  extra_files.json
+2018-10-02 16:33:23 .....          134          134  media.repo
+2018-10-02 16:35:51 D....                            repodata
+2018-10-02 16:33:21 .....         7292         7292  repodata/054733f26778f1a878ed2b2b77bce715ed2c6d713207e9678237a913ab73bdfe-other.xml.gz
+2018-10-02 16:33:21 .....        45560        45560  repodata/0d8c3bf48c7e87df3db9180431ca4f1cd184e93151ec32b149e4b99b8eeb0145-comps-Server.x86_64.xml
+2018-10-02 16:33:21 .....        35368        35368  repodata/11da9df39c8ac4743739922da03e03d1e9188bddb48687e90d61b6f88fc42cab-filelists.xml.gz
+2018-10-02 16:33:21 .....         8165         8165  repodata/55a0e17eda92a9a5b6ee6e0ed8eebe751bab9d88f5a05200d2da669e829ec0c7-primary.xml.gz
+2018-10-02 16:33:21 .....         9609         9609  repodata/77b11d9cb0f3147b54a7b01fe3ad5d5a67c9b6c96cf6d0054c9bd8dfc3ae7f29-comps-Server.x86_64.xml.gz
+2018-10-02 16:33:21 .....        10730        10730  repodata/8eb94688d3f994c50d6b9b6d4df99ac926728a59e7a54a1f9310bb957497bb84-other.sqlite.bz2
+2018-10-02 16:35:51 .....         3093         3093  repodata/TRANS.TBL
+2018-10-02 16:33:21 .....         1618         1618  repodata/ba86625b825e4bea5f6ab2b3e83c2cb076087507815be7e35da6d8bf697829dd-productid.gz
+2018-10-02 16:33:21 .....        25555        25555  repodata/d9b2a997cc629f52dbedd3f0246d909b4477b5117c3f3cc084df1e1cb3244c15-primary.sqlite.bz2
+2018-10-02 16:33:21 .....        38263        38263  repodata/e4c296b0dd13c4b619c82d73cdd1dc7a9cb7a4be99af8b7d0a51f8e6465eda39-filelists.sqlite.bz2
+2018-10-02 15:35:20 .....         2159         2159  repodata/productid
+2018-10-02 16:33:21 .....         4329         4329  repodata/repomd.xml
+------------------- ----- ------------ ------------  ------------------------
+2018-10-02 16:35:51          523268115    523268115  40 files, 2 folders

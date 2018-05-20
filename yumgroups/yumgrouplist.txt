@@ -1,0 +1,126 @@
+[root@localhost ~]# yum group list hidden
+Loaded plugins: langpacks, product-id, search-disabled-repos, subscription-manager
+Available Environment Groups:
+   Minimal Install
+   Infrastructure Server
+   File and Print Server
+   Cinnamon Desktop
+   MATE Desktop
+   Basic Web Server
+   Virtualization Host
+   Server with GUI
+Available Groups:
+   Additional Development
+   Anaconda Tools
+   Backup Client
+   Backup Server
+   Base
+   Basic legacy X Window System compatibility
+   Buildsystem building group
+   CIFS file server
+   Cinnamon
+   Common NetworkManager submodules
+   Compatibility libraries
+   Conflicts (Server)
+   Console internet tools
+   Core
+   DNS Name Server
+   Debugging Tools
+   Desktop
+   Desktop Debugging and Performance Tools
+   Desktop Platform
+   Desktop Platform Development
+   Development tools
+   Dial-up Networking Support
+   Directory Client
+   Directory Server
+   E-mail server
+   Eclipse
+   Educational Software
+   Electronic Lab
+   Emacs
+   FCoE Storage Client
+   FTP server
+   Fedora Packager
+   File and Storage Server
+   Fonts
+   GNOME
+   GNOME Applications
+   General Purpose Desktop
+   Graphical Administration Tools
+   Graphics Creation Tools
+   Guest Agents
+   Guest Desktop Agents
+   Hardware monitoring utilities
+   Haskell
+   Hyper-v platform specific packages
+   Identity Management Server
+   Infiniband Support
+   Input Methods
+   Internet Applications
+   Internet Browser
+   Java Platform
+   KDE Desktop
+   KVM platform specific packages
+   Large Systems Performance
+   Legacy UNIX compatibility
+   Legacy X Window System compatibility
+   Load Balancer
+   MATE
+   Mainframe Access
+   MariaDB Database Client
+   MariaDB Database Server
+   Messaging Client Support
+   Messaging Server Support
+   Milkymist
+   Multimedia
+   MySQL Database client
+   MySQL Database server
+   NFS file server
+   Network Infrastructure Server
+   Network Storage Server
+   Network file system client
+   Networking Tools
+   Office Suite and Productivity
+   PHP Support
+   Performance Tools
+   Perl Support
+   Perl for Web
+   Platform Development
+   PostgreSQL Database client
+   PostgreSQL Database server
+   Print Server
+   Printing client
+   Python
+   Red Hat Enterprise Linux Server product core
+   Remote Desktop Clients
+   Remote Management for Linux
+   Ruby Support
+   SNMP Support
+   Scientific support
+   Security Tools
+   Server Platform
+   Server Platform Development
+   Server Policy
+   Smart card support
+   Storage Availability Tools
+   System Management
+   System administration tools
+   TeX support
+   Technical Writing
+   TurboGears application framework
+   VMware platform specific packages
+   Virtualization
+   Virtualization Client
+   Virtualization Hypervisor
+   Virtualization Platform
+   Virtualization Tools
+   Web Server
+   Web Servlet Engine
+   Web-Based Enterprise Management
+   Workstation Policy
+   X Window System
+   Xfce
+   iSCSI Storage Client
+Done
+[root@localhost ~]#

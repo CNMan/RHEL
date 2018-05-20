@@ -1,0 +1,23 @@
+[root@localhost ~]# yum group info "MATE Desktop"   
+Loaded plugins: langpacks, product-id, search-disabled-repos, subscription-manager
+
+Environment Group: MATE Desktop
+ Environment-Id: mate-desktop-environment
+ Description: MATE Desktop is based on GNOME 2 and provides a powerful graphical user interface for users who seek a simple easy to use traditional desktop interface.
+ Mandatory Groups:
+   admin-tools
+   core
+   dial-up
+   fonts
+   guest-desktop-agents
+   hardware-support
+   input-methods
+   mate-desktop
+   multimedia
+   printing
+   standard
+   x11
+ Optional Groups:
+   3d-printing
+   office-suite
+[root@localhost ~]#

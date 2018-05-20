@@ -1,0 +1,31 @@
+[root@localhost ~]# yum group info "Input Methods"
+Loaded plugins: langpacks, product-id, search-disabled-repos, subscription-manager
+
+Group: Input Methods
+ Group-Id: input-methods
+ Description: Software for the input of international text.
+ Default Packages:
+   ibus-chewing
+   ibus-hangul
+   ibus-kkc
+   ibus-libpinyin
+   ibus-m17n
+   ibus-rawcode
+   ibus-sayura
+   ibus-table
+   ibus-table-chinese
+   m17n-contrib
+   m17n-db
+ Optional Packages:
+   ibus-typing-booster
+   iok
+ Conditional Packages:
+   gtk2-immodule-xim
+   gtk3-immodule-xim
+   ibus-gtk2
+   ibus-gtk3
+   ibus-qt
+   imsettings-cinnamon
+   imsettings-gsettings
+   imsettings-qt
+[root@localhost ~]#

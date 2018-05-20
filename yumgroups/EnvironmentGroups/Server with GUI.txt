@@ -1,0 +1,49 @@
+[root@localhost ~]# yum group info "Server with GUI"
+Loaded plugins: langpacks, product-id, search-disabled-repos, subscription-manager
+
+Environment Group: Server with GUI
+ Environment-Id: graphical-server-environment
+ Description: Server for operating network infrastructure services, with a GUI.
+ Mandatory Groups:
+   base
+   core
+   desktop-debugging
+   dial-up
+   fonts
+   gnome-desktop
+   guest-agents
+   guest-desktop-agents
+   hardware-monitoring
+   input-methods
+   internet-browser
+   multimedia
+   print-client
+   x11
+ Optional Groups:
+   backup-server
+   directory-server
+   dns-server
+   file-server
+   ftp-server
+   ha
+   hardware-monitoring
+   identity-management-server
+   infiniband
+   java-platform
+   kde-desktop
+   large-systems
+   load-balancer
+   mail-server
+   mainframe-access
+   mariadb
+   network-file-system-client
+   performance
+   postgresql
+   print-server
+   remote-desktop-clients
+   remote-system-management
+   resilient-storage
+   virtualization-client
+   virtualization-hypervisor
+   virtualization-tools
+[root@localhost ~]#

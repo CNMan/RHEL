@@ -1,0 +1,45 @@
+ vnStat 1.15 by Teemu Toivola <tst at iki dot fi>
+
+   Query:
+         -q, --query           query database
+         -h, --hours           show hours
+         -d, --days            show days
+         -m, --months          show months
+         -w, --weeks           show weeks
+         -t, --top10           show top 10 days
+         -s, --short           use short output
+         -ru, --rateunit       swap configured rate unit
+         --oneline             show simple parseable format
+         --exportdb            dump database in text format
+         --importdb            import previously exported database
+         --json                show database in json format
+         --xml                 show database in xml format
+   Modify:
+         --create              create database
+         --delete              delete database
+         -u, --update          update database
+         -r, --reset           reset interface counters
+         --sync                sync interface counters
+         --enable              enable interface
+         --disable             disable interface
+         --nick                set a nickname for interface
+         --cleartop            clear the top 10
+         --rebuildtotal        rebuild total transfers from months
+   Misc:
+         -i,  --iface          select interface (default: eth0)
+         -?,  --help           short help
+         -D,  --debug          show some additional debug information
+         -v,  --version        show version
+         -tr, --traffic        calculate traffic
+         -l,  --live           show transfer rate in real time
+         --style               select output style (0-4)
+         --iflist              show list of available interfaces
+         --dbdir               select database directory
+         --locale              set locale
+         --config              select config file
+         --savemerged          save merged database to current directory
+         --showconfig          dump config file with current settings
+         --testkernel          check if the kernel is broken
+         --longhelp            display this help
+
+See also "man vnstat".
