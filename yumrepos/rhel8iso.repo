@@ -1,0 +1,23 @@
+[InstallMedia-BaseOS]
+name=Red Hat Enterprise Linux 8 - BaseOS
+baseurl=file:///mnt/rhel8iso/BaseOS
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+priority=1
+
+[InstallMedia-AppStream]
+name=Red Hat Enterprise Linux 8 - AppStream
+baseurl=file:///mnt/rhel8iso/AppStream
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+priority=1
+
+[InstallMedia-Supplementary]
+name=Red Hat Enterprise Linux 8 - Supplementary
+baseurl=file:///mnt/rhel8suppiso
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+priority=1

@@ -33,5 +33,6 @@ the VERSION_CONTROL environment variable.  Here are the values:
   existing, nil   numbered if numbered backups exist, simple otherwise
   simple, never   always make simple backups
 
-GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
-For complete documentation, run: info coreutils 'mv invocation'
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/mv>
+or available locally via: info '(coreutils) mv invocation'

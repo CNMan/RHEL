@@ -1,0 +1,13 @@
+Environment Group: KDE Plasma Workspaces
+ Description: The KDE Plasma Workspaces, a highly-configurable graphical user interface which includes a panel, desktop, system icons and desktop widgets, and many powerful KDE applications.
+no group '3d-printing' from environment 'kde-desktop-environment'
+no group 'cloud-management' from environment 'kde-desktop-environment'
+no group 'firefox' from environment 'kde-desktop-environment'
+no group 'kde-telepathy' from environment 'kde-desktop-environment'
+ Mandatory Groups:
+   KDE (K Desktop Environment)
+ Optional Groups:
+   KDE Applications
+   KDE Educational applications
+   KDE Multimedia support
+   KDE Office

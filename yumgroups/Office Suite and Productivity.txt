@@ -1,8 +1,4 @@
-[root@localhost ~]# yum group info "Office Suite and Productivity" 
-Loaded plugins: langpacks, product-id, search-disabled-repos, subscription-manager
-
 Group: Office Suite and Productivity
- Group-Id: office-suite
  Description: A full-purpose office suite, and other productivity tools.
  Default Packages:
    libreoffice-calc
@@ -12,17 +8,8 @@ Group: Office Suite and Productivity
    libreoffice-impress
    libreoffice-math
    libreoffice-writer
-   unoconv
  Optional Packages:
-   calcurse
-   gnucash
-   kmymoney2
    libreoffice-base
    libreoffice-ogltrans
    libreoffice-pyuno
    libreoffice-wiki-publisher
-   revelation
-   vym
- Conditional Packages:
-   gnome-documents
-[root@localhost ~]#

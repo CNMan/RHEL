@@ -1,0 +1,23 @@
+Environment Group: Workstation
+ Description: Workstation is a user-friendly desktop system for laptops and PCs.
+ Mandatory Groups:
+   Common NetworkManager submodules
+   Core
+   Fonts
+   GNOME Desktop Environment
+   Guest Desktop Agents
+   Hardware Support
+   Internet Browser
+   Multimedia
+   Printing Client
+   Standard
+   Workstation product core
+   base-x
+ Optional Groups:
+   Backup Client
+   GNOME Applications
+   Headless Management
+   Internet Applications
+   Office Suite and Productivity
+   Remote Desktop Clients
+   Smart Card Support

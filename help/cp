@@ -61,6 +61,7 @@ Use --sparse=never to inhibit creation of sparse files.
 When --reflink[=always] is specified, perform a lightweight copy, where the
 data blocks are copied only when modified.  If this is not possible the copy
 fails, or if --reflink=auto is specified, fall back to a standard copy.
+Use --reflink=never to ensure a standard copy is performed.
 
 The backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.
 The version control method may be selected via the --backup option or through
@@ -75,5 +76,6 @@ As a special case, cp makes a backup of SOURCE when the force and backup
 options are given and SOURCE and DEST are the same name for an existing,
 regular file.
 
-GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
-For complete documentation, run: info coreutils 'cp invocation'
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/cp>
+or available locally via: info '(coreutils) cp invocation'

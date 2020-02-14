@@ -1,17 +1,18 @@
 Usage: tail [OPTION]... [FILE]...
 Print the last 10 lines of each FILE to standard output.
 With more than one FILE, precede each with a header giving the file name.
+
 With no FILE, or when FILE is -, read standard input.
 
 Mandatory arguments to long options are mandatory for short options too.
-  -c, --bytes=K            output the last K bytes; or use -c +K to output
-                             bytes starting with the Kth of each file
+  -c, --bytes=[+]NUM       output the last NUM bytes; or use -c +NUM to
+                             output starting with byte NUM of each file
   -f, --follow[={name|descriptor}]
                            output appended data as the file grows;
                              an absent option argument means 'descriptor'
   -F                       same as --follow=name --retry
-  -n, --lines=K            output the last K lines, instead of the last 10;
-                             or use -n +K to output starting with the Kth
+  -n, --lines=[+]NUM       output the last NUM lines, instead of the last 10;
+                             or use -n +NUM to output starting with line NUM
       --max-unchanged-stats=N
                            with --follow=name, reopen a FILE which has not
                              changed size after N (default 5) iterations
@@ -26,12 +27,11 @@ Mandatory arguments to long options are mandatory for short options too.
                              with inotify and --pid=P, check process P at
                              least once every N seconds
   -v, --verbose            always output headers giving file names
+  -z, --zero-terminated    line delimiter is NUL, not newline
       --help     display this help and exit
       --version  output version information and exit
 
-If the first character of K (the number of bytes or lines) is a '+',
-print beginning with the Kth item from the start of each file, otherwise,
-print the last K items in the file.  K may have a multiplier suffix:
+NUM may have a multiplier suffix:
 b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,
 GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.
 
@@ -42,5 +42,6 @@ track the actual name of the file, not the file descriptor (e.g., log
 rotation).  Use --follow=name in that case.  That causes tail to track the
 named file in a way that accommodates renaming, removal and creation.
 
-GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
-For complete documentation, run: info coreutils 'tail invocation'
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/tail>
+or available locally via: info '(coreutils) tail invocation'

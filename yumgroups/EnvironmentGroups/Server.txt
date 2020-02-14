@@ -1,0 +1,26 @@
+Environment Group: Server
+ Description: An integrated, easy-to-manage server.
+no group 'dns-server' from environment 'server-product-environment'
+ Mandatory Groups:
+   Container Management
+   Core
+   Hardware Support
+   Headless Management
+   Server product core
+   Standard
+ Optional Groups:
+   Basic Web Server
+   Debugging Tools
+   FTP Server
+   File and Storage Server
+   GNOME Desktop Environment
+   Guest Agents
+   Hardware Monitoring Utilities
+   Infiniband Support
+   Mail Server
+   Network File System Client
+   Network Servers
+   Performance Tools
+   Remote Management for Linux
+   Virtualization Hypervisor
+   Windows File Server

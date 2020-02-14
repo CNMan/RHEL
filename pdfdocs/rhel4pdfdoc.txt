@@ -1,0 +1,13 @@
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/pdf/4.8_release_notes/48-release-notes.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/pdf/4.9_release_notes/49-release-notes.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/pdf/cluster_administration/cluster-administration.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/pdf/cluster_logical_volume_manager/cluster-logical-volume-manager.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/pdf/cluster_suite_overview/cluster-suite-overview.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/pdf/dm_multipath/dm-multipath.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/pdf/global_file_system/global-file-system.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/pdf/global_network_block_device/global-network-block-device.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/pdf/introduction_to_system_administration/introduction-to-system-administration.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/pdf/reference_guide/reference-guide.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/pdf/security_guide/security-guide.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/pdf/system_administration_guide/system-administration-guide.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/pdf/virtual_server_administration/virtual-server-administration.pdf

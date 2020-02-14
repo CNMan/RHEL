@@ -1,4 +1,4 @@
-VMware Virtual Disk Manager - build 8497320.
+VMware Virtual Disk Manager - build 14665864.
 Usage: vmware-vdiskmanager OPTIONS <disk-name> | <mount-point>
 Offline disk manipulation utility
   Operations, only one may be specified at a time:
@@ -24,6 +24,7 @@ Offline disk manipulation utility
      -e                   : check for disk chain consistency.
      -D                   : make disk deletable.  This should only be used on disks
                             that have been copied from another product.
+     -U                   : delete/unlink a single disk link.
 
   Other Options:
      -q                   : do not log messages
@@ -36,9 +37,9 @@ Offline disk manipulation utility
 
   Disk types:
       0                   : single growable virtual disk
-      1                   : growable virtual disk split in 2GB files
+      1                   : growable virtual disk split into multiple files
       2                   : preallocated virtual disk
-      3                   : preallocated virtual disk split in 2GB files
+      3                   : preallocated virtual disk split into multiple files
       4                   : preallocated ESX-type virtual disk
       5                   : compressed disk optimized for streaming
       6                   : thin provisioned virtual disk - ESX 3.x and above

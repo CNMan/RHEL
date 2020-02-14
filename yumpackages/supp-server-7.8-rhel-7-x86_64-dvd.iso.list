@@ -1,0 +1,54 @@
+Scanning the drive for archives:
+1 file, 329338880 bytes (315 MiB)
+
+Listing archive: supp-server-7.8-rhel-7-x86_64-dvd.iso
+
+--
+Path = supp-server-7.8-rhel-7-x86_64-dvd.iso
+Type = Iso
+Physical Size = 329338880
+Created = 2020-02-26 20:04:30
+Modified = 2020-02-26 20:04:30
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+2020-02-26 20:02:52 .....           76           76  .discinfo
+2020-02-26 20:02:52 .....          785          785  .treeinfo
+2020-02-26 20:00:48 .....         8266         8266  EULA
+2020-02-26 20:01:02 .....        18092        18092  GPL
+2020-02-26 20:04:30 D....                            Packages
+2020-02-26 20:04:30 .....         3642         3642  Packages\TRANS.TBL
+2018-10-02 01:04:44 .....       652208       652208  Packages\dptfxtract-1-2.el7.x86_64.rpm
+2020-02-06 01:15:19 .....     85510948     85510948  Packages\java-1.7.1-ibm-1.7.1.4.60-1jpp.1.el7.x86_64.rpm
+2020-02-06 01:15:26 .....     11450336     11450336  Packages\java-1.7.1-ibm-demo-1.7.1.4.60-1jpp.1.el7.x86_64.rpm
+2020-02-06 01:15:34 .....      7850572      7850572  Packages\java-1.7.1-ibm-devel-1.7.1.4.60-1jpp.1.el7.x86_64.rpm
+2020-02-06 01:15:40 .....        33464        33464  Packages\java-1.7.1-ibm-jdbc-1.7.1.4.60-1jpp.1.el7.x86_64.rpm
+2020-02-06 01:15:42 .....      1389764      1389764  Packages\java-1.7.1-ibm-plugin-1.7.1.4.60-1jpp.1.el7.x86_64.rpm
+2020-02-06 01:15:49 .....     10426580     10426580  Packages\java-1.7.1-ibm-src-1.7.1.4.60-1jpp.1.el7.x86_64.rpm
+2020-02-04 22:46:40 .....    116344684    116344684  Packages\java-1.8.0-ibm-1.8.0.6.5-1jpp.1.el7.x86_64.rpm
+2020-02-04 22:46:48 .....     11819908     11819908  Packages\java-1.8.0-ibm-demo-1.8.0.6.5-1jpp.1.el7.x86_64.rpm
+2020-02-04 22:46:55 .....      9312760      9312760  Packages\java-1.8.0-ibm-devel-1.8.0.6.5-1jpp.1.el7.x86_64.rpm
+2020-02-04 22:47:04 .....        15132        15132  Packages\java-1.8.0-ibm-jdbc-1.8.0.6.5-1jpp.1.el7.x86_64.rpm
+2020-02-04 22:47:08 .....      1368136      1368136  Packages\java-1.8.0-ibm-plugin-1.8.0.6.5-1jpp.1.el7.x86_64.rpm
+2020-02-04 22:47:16 .....     11735352     11735352  Packages\java-1.8.0-ibm-src-1.8.0.6.5-1jpp.1.el7.x86_64.rpm
+2019-06-27 03:04:49 .....     60815636     60815636  Packages\virtio-win-1.9.8-6.el7.noarch.rpm
+2020-02-26 20:00:21 .....         3375         3375  RPM-GPG-KEY-redhat-beta
+2020-02-26 20:00:35 .....         3211         3211  RPM-GPG-KEY-redhat-release
+2020-02-26 20:04:30 .....         1796         1796  TRANS.TBL
+2020-02-26 20:01:06 .....         1455         1455  extra_files.json
+2020-02-26 20:02:35 .....          134          134  media.repo
+2020-02-26 20:04:30 D....                            repodata
+2020-02-26 20:02:30 .....        37339        37339  repodata\0c761ffb5dd397d6b8307d5f84e81cf5051e56199b1cfe0a4042e5079a0a4f24-comps-Server.x86_64.xml
+2020-02-26 20:02:30 .....         9216         9216  repodata\15083c9268f29ff1b736bc222999381e990d458332935e4281028e18d38d2b3f-comps-Server.x86_64.xml.gz
+2020-02-26 20:02:30 .....         7936         7936  repodata\29688ef06fc214cdf926b3da9e42be0616878406cb8e552bd73cc2b8625a7bb7-other.sqlite.bz2
+2020-02-26 20:02:30 .....         5362         5362  repodata\2a8548882a907486c02de721fb898c8a65d5476cc5b125fdb1cb830028f2cdea-primary.xml.gz
+2020-02-26 20:02:30 .....         1618         1618  repodata\450393003b0ddc736d813bfc5cddeaf437e43909f1076b1152a5d9f4e52520bc-productid.gz
+2020-02-26 20:02:30 .....         4842         4842  repodata\66a5cd4b7ce8900d9d463c320c62f2baa878560d72740969a1531b307970c9ec-other.xml.gz
+2020-02-26 20:02:30 .....        17220        17220  repodata\8fb77c320a1a88b60dfcebef9faa548e6ee25107ba6d59eb224fb548b51f6a8e-primary.sqlite.bz2
+2020-02-26 20:04:30 .....         3093         3093  repodata\TRANS.TBL
+2020-02-26 20:02:30 .....        29253        29253  repodata\d8bc09b83ede2f2a51c46e7391c87ad142a36f3fc5a84b7bcd0236b9cc2da4df-filelists.sqlite.bz2
+2020-02-26 20:02:30 .....        23361        23361  repodata\f88d1ede8c1064dcae40772914875f09d607a0b9d834001a2687fd5cac2d3d11-filelists.xml.gz
+2020-02-26 20:02:24 .....         2159         2159  repodata\productid
+2020-02-26 20:02:30 .....         4328         4328  repodata\repomd.xml
+------------------- ----- ------------ ------------  ------------------------
+2020-02-26 20:04:30          328912039    328912039  36 files, 2 folders

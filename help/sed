@@ -19,11 +19,14 @@ Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
                  specify the desired line-wrap length for the `l' command
   --posix
                  disable all GNU extensions.
-  -r, --regexp-extended
-                 use extended regular expressions in the script.
+  -E, -r, --regexp-extended
+                 use extended regular expressions in the script
+                 (for portability use POSIX -E).
   -s, --separate
-                 consider files as separate rather than as a single continuous
-                 long stream.
+                 consider files as separate rather than as a single,
+                 continuous long stream.
+      --sandbox
+                 operate in sandbox mode (disable e/r/w commands).
   -u, --unbuffered
                  load minimal amounts of data from the input files and flush
                  the output buffers more often
@@ -39,7 +42,6 @@ non-option argument is taken as the sed script to interpret.  All
 remaining arguments are names of input files; if no input files are
 specified, then the standard input is read.
 
-GNU sed home page: <http://www.gnu.org/software/sed/>.
-General help using GNU software: <http://www.gnu.org/gethelp/>.
+GNU sed home page: <https://www.gnu.org/software/sed/>.
+General help using GNU software: <https://www.gnu.org/gethelp/>.
 E-mail bug reports to: <bug-sed@gnu.org>.
-Be sure to include the word ``sed'' somewhere in the ``Subject:'' field.

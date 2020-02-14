@@ -2,7 +2,8 @@ Usage: dd [OPERAND]...
   or:  dd OPTION
 Copy a file, converting and formatting according to the operands.
 
-  bs=BYTES        read and write up to BYTES bytes at a time
+  bs=BYTES        read and write up to BYTES bytes at a time (default: 512);
+                  overrides ibs and obs
   cbs=BYTES       convert BYTES bytes at a time
   conv=CONVS      convert the file as per the comma separated symbol list
   count=N         copy only N input blocks
@@ -20,7 +21,7 @@ Copy a file, converting and formatting according to the operands.
                   'progress' shows periodic transfer statistics
 
 N and BYTES may be followed by the following multiplicative suffixes:
-c =1, w =2, b =512, kB =1000, K =1024, MB =1000*1000, M =1024*1024, xM =M
+c =1, w =2, b =512, kB =1000, K =1024, MB =1000*1000, M =1024*1024, xM =M,
 GB =1000*1000*1000, G =1024*1024*1024, and so on for T, P, E, Z, Y.
 
 Each CONV symbol may be:
@@ -53,7 +54,7 @@ Each FLAG symbol may be:
   fullblock  accumulate full blocks of input (iflag only)
   nonblock  use non-blocking I/O
   noatime   do not update access time
-  nocache   discard cached data
+  nocache   Request to drop cache.  See also oflag=sync
   noctty    do not assign controlling terminal from file
   nofollow  do not follow symlinks
   count_bytes  treat 'count=N' as a byte count (iflag only)
@@ -63,16 +64,11 @@ Each FLAG symbol may be:
 Sending a USR1 signal to a running 'dd' process makes it
 print I/O statistics to standard error and then resume copying.
 
-  $ dd if=/dev/zero of=/dev/null& pid=$!
-  $ kill -USR1 $pid; sleep 1; kill $pid
-  18335302+0 records in
-  18335302+0 records out
-  9387674624 bytes (9.4 GB) copied, 34.6279 seconds, 271 MB/s
-
 Options are:
 
       --help     display this help and exit
       --version  output version information and exit
 
-GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
-For complete documentation, run: info coreutils 'dd invocation'
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/dd>
+or available locally via: info '(coreutils) dd invocation'

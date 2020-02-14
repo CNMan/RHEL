@@ -1,41 +1,34 @@
-[root@localhost ~]# yum group info "Fonts"
-Loaded plugins: langpacks, product-id, search-disabled-repos, subscription-manager
-
 Group: Fonts
- Group-Id: fonts
- Description: Fonts for rendering text in a variety of languages and scripts.
+ Description: Fonts packages for rendering text on the desktop.
  Default Packages:
-   cjkuni-uming-fonts
+   abattis-cantarell-fonts
    dejavu-sans-fonts
    dejavu-sans-mono-fonts
    dejavu-serif-fonts
    gnu-free-mono-fonts
    gnu-free-sans-fonts
    gnu-free-serif-fonts
-   google-crosextra-caladea-fonts
-   google-crosextra-carlito-fonts
+   google-noto-sans-cjk-ttc-fonts
+   google-noto-sans-lisu-fonts
+   google-noto-sans-mandaic-fonts
+   google-noto-sans-meetei-mayek-fonts
+   google-noto-sans-sinhala-fonts
+   google-noto-sans-tagalog-fonts
+   google-noto-sans-tai-tham-fonts
+   google-noto-sans-tai-viet-fonts
+   google-noto-serif-cjk-ttc-fonts
    jomolhari-fonts
+   julietaula-montserrat-fonts
    khmeros-base-fonts
-   liberation-mono-fonts
-   liberation-sans-fonts
-   liberation-serif-fonts
-   lklug-fonts
    lohit-assamese-fonts
    lohit-bengali-fonts
    lohit-devanagari-fonts
    lohit-gujarati-fonts
+   lohit-gurmukhi-fonts
    lohit-kannada-fonts
-   lohit-malayalam-fonts
-   lohit-marathi-fonts
-   lohit-nepali-fonts
-   lohit-oriya-fonts
-   lohit-punjabi-fonts
+   lohit-odia-fonts
    lohit-tamil-fonts
    lohit-telugu-fonts
-   madan-fonts
-   nhn-nanum-gothic-fonts
-   open-sans-fonts
-   overpass-fonts
    paktype-naskh-basic-fonts
    paratype-pt-sans-fonts
    sil-abyssinica-fonts
@@ -44,67 +37,85 @@ Group: Fonts
    smc-meera-fonts
    stix-fonts
    thai-scalable-waree-fonts
-   ucs-miscfixed-fonts
-   vlgothic-fonts
-   wqy-microhei-fonts
-   wqy-zenhei-fonts
  Optional Packages:
-   aajohan-comfortaa-fonts
-   bitmap-fixed-fonts
-   bitmap-lucida-typewriter-fonts
+   bpg-algeti-fonts
    bpg-chveulebrivi-fonts
    bpg-courier-fonts
+   bpg-courier-s-fonts
+   bpg-elite-fonts
+   bpg-excelsior-fonts
    bpg-glaho-fonts
-   cjkuni-ukai-fonts
-   comic-neue-fonts
-   culmus-aharoni-clm-fonts
-   culmus-caladings-clm-fonts
-   culmus-david-clm-fonts
-   culmus-drugulin-clm-fonts
-   culmus-ellinia-clm-fonts
-   culmus-frank-ruehl-clm-fonts
-   culmus-hadasim-clm-fonts
-   culmus-keteryg-fonts
-   culmus-miriam-clm-fonts
-   culmus-miriam-mono-clm-fonts
-   culmus-nachlieli-clm-fonts
-   culmus-simple-clm-fonts
-   culmus-stamashkenaz-clm-fonts
-   culmus-stamsefarad-clm-fonts
-   culmus-yehuda-clm-fonts
-   freefont
-   ghostscript-chinese
+   bpg-ingiri-fonts
+   bpg-nino-medium-cond-fonts
+   bpg-nino-medium-fonts
+   bpg-sans-fonts
+   bpg-sans-medium-fonts
+   bpg-sans-modern-fonts
+   bpg-sans-regular-fonts
+   bpg-serif-fonts
+   bpg-serif-modern-fonts
+   fontawesome-fonts
+   google-droid-kufi-fonts
+   google-droid-sans-fonts
+   google-droid-sans-mono-fonts
+   google-droid-serif-fonts
    google-noto-sans-armenian-fonts
+   google-noto-sans-avestan-fonts
+   google-noto-sans-bengali-fonts
+   google-noto-sans-bengali-ui-fonts
+   google-noto-sans-brahmi-fonts
+   google-noto-sans-carian-fonts
+   google-noto-sans-cherokee-fonts
+   google-noto-sans-coptic-fonts
+   google-noto-sans-deseret-fonts
    google-noto-sans-devanagari-fonts
    google-noto-sans-devanagari-ui-fonts
+   google-noto-sans-egyptian-hieroglyphs-fonts
    google-noto-sans-ethiopic-fonts
    google-noto-sans-fonts
    google-noto-sans-georgian-fonts
+   google-noto-sans-glagolitic-fonts
+   google-noto-sans-gujarati-fonts
+   google-noto-sans-gujarati-ui-fonts
    google-noto-sans-hebrew-fonts
+   google-noto-sans-imperial-aramaic-fonts
+   google-noto-sans-kaithi-fonts
+   google-noto-sans-kannada-fonts
+   google-noto-sans-kannada-ui-fonts
+   google-noto-sans-kayah-li-fonts
+   google-noto-sans-kharoshthi-fonts
    google-noto-sans-khmer-fonts
    google-noto-sans-khmer-ui-fonts
    google-noto-sans-lao-fonts
    google-noto-sans-lao-ui-fonts
+   google-noto-sans-lycian-fonts
+   google-noto-sans-lydian-fonts
+   google-noto-sans-malayalam-fonts
+   google-noto-sans-malayalam-ui-fonts
+   google-noto-sans-nko-fonts
+   google-noto-sans-old-south-arabian-fonts
+   google-noto-sans-old-turkic-fonts
+   google-noto-sans-osmanya-fonts
+   google-noto-sans-phoenician-fonts
+   google-noto-sans-shavian-fonts
+   google-noto-sans-symbols-fonts
    google-noto-sans-tamil-fonts
    google-noto-sans-tamil-ui-fonts
+   google-noto-sans-telugu-fonts
+   google-noto-sans-telugu-ui-fonts
+   google-noto-sans-thaana-fonts
    google-noto-sans-thai-fonts
    google-noto-sans-thai-ui-fonts
+   google-noto-sans-ugaritic-fonts
    google-noto-sans-ui-fonts
+   google-noto-sans-vai-fonts
    google-noto-serif-armenian-fonts
    google-noto-serif-fonts
    google-noto-serif-georgian-fonts
+   google-noto-serif-khmer-fonts
    google-noto-serif-lao-fonts
    google-noto-serif-thai-fonts
    gubbi-fonts
-   horai-ume-gothic-fonts
-   horai-ume-mincho-fonts
-   horai-ume-pgothic-fonts
-   horai-ume-pmincho-fonts
-   horai-ume-uigothic-fonts
-   ipa-gothic-fonts
-   ipa-mincho-fonts
-   ipa-pgothic-fonts
-   ipa-pmincho-fonts
    kacst-art-fonts
    kacst-book-fonts
    kacst-decorative-fonts
@@ -127,27 +138,35 @@ Group: Fonts
    khmeros-muol-fonts
    khmeros-siemreap-fonts
    kurdit-unikurd-web-fonts
-   liberation-narrow-fonts
+   larabie-decorative-fonts
+   larabie-straight-fonts
+   larabie-uncommon-fonts
+   lato-fonts
+   lohit-malayalam-fonts
+   lohit-marathi-fonts
+   lohit-nepali-fonts
+   madan-fonts
    nafees-web-naskh-fonts
    navilu-fonts
-   nhn-nanum-brush-fonts
-   nhn-nanum-myeongjo-fonts
-   nhn-nanum-pen-fonts
+   open-sans-fonts
+   overpass-fonts
    paktype-naqsh-fonts
    paktype-tehreer-fonts
-   pothana2000-fonts
+   paratype-pt-sans-caption-fonts
    saab-fonts
    samyak-devanagari-fonts
    samyak-gujarati-fonts
    samyak-malayalam-fonts
-   samyak-oriya-fonts
+   samyak-odia-fonts
    samyak-tamil-fonts
+   sil-scheherazade-fonts
    smc-anjalioldlipi-fonts
    smc-dyuthi-fonts
    smc-kalyani-fonts
    smc-rachana-fonts
    smc-raghumalayalam-fonts
    smc-suruma-fonts
+   stix-math-fonts
    thai-scalable-garuda-fonts
    thai-scalable-kinnari-fonts
    thai-scalable-loma-fonts
@@ -160,6 +179,20 @@ Group: Fonts
    thai-scalable-tlwgtypo-fonts
    thai-scalable-umpush-fonts
    tibetan-machine-uni-fonts
-   vemana2000-fonts
-   vlgothic-p-fonts
-[root@localhost ~]#
+   wqy-microhei-fonts
+   xorg-x11-fonts-100dpi
+   xorg-x11-fonts-75dpi
+   xorg-x11-fonts-ISO8859-1-100dpi
+   xorg-x11-fonts-ISO8859-1-75dpi
+   xorg-x11-fonts-ISO8859-14-100dpi
+   xorg-x11-fonts-ISO8859-14-75dpi
+   xorg-x11-fonts-ISO8859-15-100dpi
+   xorg-x11-fonts-ISO8859-15-75dpi
+   xorg-x11-fonts-ISO8859-2-100dpi
+   xorg-x11-fonts-ISO8859-2-75dpi
+   xorg-x11-fonts-ISO8859-9-100dpi
+   xorg-x11-fonts-ISO8859-9-75dpi
+   xorg-x11-fonts-Type1
+   xorg-x11-fonts-cyrillic
+   xorg-x11-fonts-ethiopic
+   xorg-x11-fonts-misc

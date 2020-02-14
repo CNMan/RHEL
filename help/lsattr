@@ -1,1 +1,1 @@
-Usage: lsattr [-RVadlv] [files...]
+Usage: lsattr [-RVadlpv] [files...]

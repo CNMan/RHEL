@@ -1,5 +1,15 @@
 # RHEL
 
+## [生命周期](https://access.redhat.com/support/policy/updates/errata)
+|Version|General availability|Full support ends|Maintenance Support 1 ends|Maintenance Support or Maintenance Support 2 ends|Extended life cycle support (ELS) add-on ends|Extended life phase ends|Last minor release|
+|------|------|------|------|------|------|------|------|
+|8|20190507|20240531|Not Applicable|20290531|TBD|TBD|8.10|
+|7|20140610|20190806|20200806|20240630|TBD|Ongoing|7.9|
+|6|20101110|20160510|20170510|20201130|20240630|Ongoing|6.10|
+|5|20070315|20130108|20140131|20170331|20201130|Ongoing|5.11|
+|4|20050214|20090331|20110216|20120229|20170331|Ongoing|4.9|
+|3|20031023|20060720|20070630|20101031|20140130|20140130||
+
 ## 官方文档
 RHEL7:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/?version=7
 
@@ -19,16 +29,14 @@ subscription-manager attach --pool=PoolIDs
 subscription-manager list #效果等同于Red Hat Subscription Manager中的My Installed Products页面
 subscription-manager list --consumed #效果等同于Red Hat Subscription Manager中的My Subscriptions页面
 subscription-manager release --list #列出可用版本
-subscription-manager release --set=7.7 #锁定特定版本
+subscription-manager release --set=8.2 #锁定特定版本
 subscription-manager release --show #显示锁定的特定版本
 subscription-manager release --unset #取消锁定特定版本
 subscription-manager repos --disable="*"
-subscription-manager repos --enable="rhel-7-server-rpms" #Red Hat Enterprise Linux 7 Server (RPMs)
-subscription-manager repos --enable="rhel-7-server-supplementary-rpms" #Red Hat Enterprise Linux 7 Server - Supplementary (RPMs)
-subscription-manager repos --enable="rhel-7-server-optional-rpms" #Red Hat Enterprise Linux 7 Server - Optional (RPMs)
-subscription-manager repos --enable="rhel-7-server-extras-rpms" #Red Hat Enterprise Linux 7 Server - Extras (RPMs)
-subscription-manager repos --enable="rhel-server-rhscl-7-rpms" #Red Hat Software Collections RPMs for Red Hat Enterprise Linux 7 Server
-subscription-manager repos --enable="rhel-7-server-devtools-rpms" #Red Hat Developer Tools RPMs for Red Hat Enterprise Linux 7 Server
+subscription-manager repos --enable="rhel-8-for-x86_64-baseos-rpms" #Red Hat Enterprise Linux 8 for x86_64 - BaseOS (RPMs)
+subscription-manager repos --enable="rhel-8-for-x86_64-appstream-rpms" #Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs)
+subscription-manager repos --enable="rhel-8-for-x86_64-supplementary-rpms" #Red Hat Enterprise Linux 8 for x86_64 - Supplementary (RPMs)
+subscription-manager repos --enable="codeready-builder-for-rhel-8-x86_64-rpms" #Red Hat CodeReady Linux Builder for RHEL 8 x86_64 (RPMs)
 ```
 
 ## 清除订阅
@@ -53,15 +61,15 @@ timedatectl set-ntp yes
 
 ## 安装EPEL源及NTFS驱动
 ```
-yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 yum install ntfs-3g
 ```
 
 ## 安装RPM Fusion源及VLC Media Player
 ```
-yum install https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
-yum install https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-7.noarch.rpm
-yum install vlc npapi-vlc
+yum install https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm
+yum install https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
+yum install vlc
 ```
 解决中文字幕乱码：http://forum.ubuntu.org.cn/viewtopic.php?t=201887
 
@@ -80,22 +88,24 @@ yum install flash-player-ppapi #Adobe Flash Player PPAPI
 ```
 
 ## 安装SecureCRT和SecureFX
+注册试用并下载SecureCRT + SecureFX 8.7 Bundle：https://www.vandyke.com/download/index.html
 ```
-yum install scrt-sfx-8.5.4-1942.rhel7-64.x86_64.rpm
+sha1sum scrt-sfx-8.7.3-2279.rhel7-64.x86_64.rpm #确认是a1c39725faa55579537435e2e3fc9adbaf063a07
+yum install scrt-sfx-8.7.3-2279.rhel7-64.x86_64.rpm
 mkdir -p /home/username/.vandyke/SecureCRT/Config/
 cp SecureCRT.lic /home/username/.vandyke/SecureCRT/Config/
 cp SecureFX.lic /home/username/.vandyke/SecureCRT/Config/
 ```
 
 ## 安装VMware Workstation
-参考[Install Workstation Pro on a Linux Host](https://docs.vmware.com/en/VMware-Workstation-Pro/14.0/com.vmware.ws.using.doc/GUID-1F5B1F14-A586-4A56-83FA-2E7D8333D5CA.html)
+参考[Install Workstation Pro on a Linux Host](https://docs.vmware.com/en/VMware-Workstation-Pro/16.0/com.vmware.ws.using.doc/GUID-1F5B1F14-A586-4A56-83FA-2E7D8333D5CA.html)
 ```
-yum group install "Development tools"
-yum install kernel-devel pcsc-lite-libs
+yum group install "Development Tools"
+yum install elfutils-libelf-devel
 curl -IsL https://www.vmware.com/go/getworkstation-linux | grep Location #获取最新的VMware Workstation for Linux下载链接
-wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-15.5.0-14665864.x86_64.bundle
-sha1sum VMware-Workstation-Full-15.5.0-14665864.x86_64.bundle #确认是4418d4b3f88aca15c2c4d7b2d26c76641910ae17
-sh VMware-Workstation-Full-15.5.0-14665864.x86_64.bundle --console --ignore-errors --set-setting vmware-workstation serialNumber GU7HH-24W15-M88AP-MYMXC-ZZATA
+wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle
+sha1sum VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle #确认是2c1c0b66b00117961e1d9dd3dc0ff4633435b259
+sh VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle --console --ignore-errors --set-setting vmware-workstation serialNumber ZF3R0-FHED2-M80TY-8QYGC-NPKYF
 ```
 
 ## 配置无线连接
@@ -122,14 +132,14 @@ service network restart
 ```
 yum clean all
 rm -rf /var/cache/yum/
+rm -rf /var/cache/dnf/
 ```
 
 ## 安装Cisco AnyConnect Secure Mobility Client
 ```
-yum install pangox-compat pangox-compat-devel
-md5sum anyconnect-linux64-4.8.01090-predeploy-k9.tar.gz #确认是aeaeff30b489195f469f106cbcea537f
-tar zxvf anyconnect-linux64-4.8.01090-predeploy-k9.tar.gz
-cd anyconnect-linux64-4.8.01090/vpn/
+md5sum anyconnect-linux64-4.9.03047-predeploy-k9.tar.gz #确认是a0a17de6ae47bda280139430b7e8889c
+tar zxvf anyconnect-linux64-4.9.03047-predeploy-k9.tar.gz
+cd anyconnect-linux64-4.9.03047/vpn/
 ./vpn_install.sh
 ```
 
@@ -178,6 +188,7 @@ nano .bashrc
 ```
 /home/username/.mozilla/firefox/xxxxxxx.default/logins.json
 /home/username/.mozilla/firefox/xxxxxxx.default/key3.db
+/home/username/.mozilla/firefox/xxxxxxx.default/key4.db
 ```
 
 ## 安装命令行BT下载软件Transmission
@@ -280,30 +291,51 @@ $ ./besttrace 8.8.8.8
 ## [WPS](http://community.wps.cn/download/) For Linux
 
 ```
-wget https://wdl1.cache.wps.cn/wps/download/ep/Linux2019/8392/wps-office-11.1.0.8392-1.x86_64.rpm
-sha1sum wps-office-11.1.0.8392-1.x86_64.rpm #860e8ddb8c177cb243ca57ab50138b7bb56232b9
-yum install wps-office-11.1.0.8392-1.x86_64.rpm
+wget https://wdl1.cache.wps.cn/wps/download/ep/Linux2019/9604/wps-office-11.1.0.9604-1.x86_64.rpm
+sha1sum wps-office-11.1.0.9604-1.x86_64.rpm #e60010bae2fefebb3ea6fa1f6ab9c282c719c6ca
+yum install wps-office-11.1.0.9604-1.x86_64.rpm
 ```
 
 ## LCDF Typetools
 ```
-RHEL 7 没有这个工具的rpm包了
+RHEL 7/8 没有这个工具的rpm包了
 wget https://ftp5.gwdg.de/pub/opensuse/repositories/home:/mrdocs/RedHat_RHEL-6/x86_64/lcdf-typetools-2.105-2.1.x86_64.rpm
 yum install lcdf-typetools-2.105-2.1.x86_64.rpm
 ```
 
 ## DVD 离线源
-参考：[Need to set up yum repository for locally-mounted DVD on Red Hat Enterprise Linux 7](https://access.redhat.com/solutions/1355683)
+参考：[Need to set up yum repository for locally-mounted DVD on Red Hat Enterprise Linux 8](https://access.redhat.com/solutions/3776721)
 ```
-mkdir /mnt/rhel7iso
-mount -o loop rhel-server-7.7-x86_64-dvd.iso /mnt/rhel7iso/
-cp /mnt/rhel7iso/media.repo /etc/yum.repos.d/rhel7dvd.repo
-chmod 644 /etc/yum.repos.d/rhel7dvd.repo
-nano /etc/yum.repos.d/rhel7dvd.repo
-修改gpgcheck=0为gpgcheck=1；另加入三行：
+mkdir /mnt/rhel8iso
+mkdir /mnt/rhel8suppiso
+mount -o loop rhel-8.2-x86_64-dvd.iso /mnt/rhel8iso/
+mount -o loop supp-supplementary-8.2-rhel-8-x86_64-dvd.iso /mnt/rhel8suppiso/
+touch /etc/yum.repos.d/rhel8iso.repo
+chmod 644 /etc/yum.repos.d/rhel8iso.repo
+nano /etc/yum.repos.d/rhel8iso.repo
+	[InstallMedia-BaseOS]
+	name=Red Hat Enterprise Linux 8 - BaseOS
+	baseurl=file:///mnt/rhel8iso/BaseOS
 	enabled=1
-	baseurl=file:///mnt/rhel7iso/
+	gpgcheck=1
 	gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+	priority=1
+
+	[InstallMedia-AppStream]
+	name=Red Hat Enterprise Linux 8 - AppStream
+	baseurl=file:///mnt/rhel8iso/AppStream
+	enabled=1
+	gpgcheck=1
+	gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+	priority=1
+
+	[InstallMedia-Supplementary]
+	name=Red Hat Enterprise Linux 8 - Supplementary
+	baseurl=file:///mnt/rhel8suppiso
+	enabled=1
+	gpgcheck=1
+	gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+	priority=1
 yum clean all
 subscription-manager clean
 yum --noplugins list
@@ -313,5 +345,40 @@ yum --noplugins update
 自动挂载
 ```
 nano /etc/fstab
-	rhel-server-7.7-x86_64-dvd.iso    /mnt/rhel7iso   udf,iso9660     user,auto,loop  0 0
+	rhel-8.2-x86_64-dvd.iso	/mnt/rhel8iso	udf,iso9660	user,auto,loop	0 0
+	supp-supplementary-8.2-rhel-8-x86_64-dvd.iso	/mnt/rhel8suppiso	udf,iso9660	user,auto,loop	0 0
+```
+
+## 设置SSH key files permission
+```
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/id_rsa
+chmod 600 ~/.ssh/id_rsa.pub
+chmod 600 ~/.ssh/authorized_keys
+```
+
+## 安装中文输入法，重启，再在语言设置里添加生效
+```
+yum install ibus-libpinyin	#拼音输入法
+yum install ibus-table-chinese-wubi-haifeng	#海峰五笔
+yum install ibus-table-chinese-wubi-jidian	#极点五笔
+```
+
+## 安装并更改主题
+```
+yum install gnome-tweaks
+wget https://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/g/gtk2-engines-2.20.2-7.el7.x86_64.rpm
+wget https://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/g/gtk-murrine-engine-0.98.2-10.el7.x86_64.rpm
+wget https://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/s/sassc-3.4.5-2.el7.x86_64.rpm
+yum install gtk-murrine-engine-0.98.2-10.el7.x86_64.rpm gtk2-engines-2.20.2-7.el7.x86_64.rpm sassc-3.4.5-2.el7.x86_64.rpm inkscape optipng glib2-devel
+```
+
+以下命令用普通用户运行即可
+```
+git clone https://github.com/vinceliuice/Mojave-gtk-theme.git
+git clone https://github.com/vinceliuice/McMojave-circle.git
+cd Mojave-gtk-theme/
+./install.sh
+cd ../McMojave-circle/
+./install.sh
 ```

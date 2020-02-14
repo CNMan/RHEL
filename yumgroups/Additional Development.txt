@@ -1,18 +1,15 @@
-[root@localhost ~]# yum group info "Additional Development"
-Loaded plugins: langpacks, product-id, search-disabled-repos, subscription-manager
-
 Group: Additional Development
- Group-Id: additional-devel
- Description: Additional development headers and libraries for developing applications
+ Description: Additional development headers and libraries for building open-source applications.
  Mandatory Packages:
-   PyQt4-devel
    SDL-devel
    alsa-lib-devel
+   atlas-devel
    audit-libs-devel
    binutils-devel
    boost-devel
    bzip2-devel
    c-ares-devel
+   compat-libgfortran-48
    cups-devel
    cyrus-sasl-devel
    dbus-glib-devel
@@ -21,29 +18,19 @@ Group: Additional Development
    elfutils-libelf-devel
    evolution-data-server-devel
    expat-devel
-   freeglut-devel
-   fuse-devel
+   fuse3-devel
+   gd-devel
    gmp-devel
    gnome-desktop3-devel
    gnutls-devel
+   gpm-devel
    gstreamer1-devel
    gstreamer1-plugins-base-devel
    gvfs-devel
    hmaccalc
-   httpd-devel
    hunspell-devel
    iptables-devel
-   java-1.6.0-openjdk-devel
-   java-1.7.0-openjdk-devel
    java-1.8.0-openjdk-devel
-   junit
-   kde-workspace-devel
-   kdegraphics-devel
-   kdelibs-devel
-   kdenetwork-devel
-   kdepim-devel
-   kdepimlibs-devel
-   kdesdk-devel
    libXau-devel
    libXaw-devel
    libXinerama-devel
@@ -52,7 +39,6 @@ Group: Additional Development
    libXrandr-devel
    libacl-devel
    libaio-devel
-   libatomic-static
    libattr-devel
    libblkid-devel
    libcanberra-devel
@@ -60,66 +46,68 @@ Group: Additional Development
    libcap-ng-devel
    libcurl-devel
    libdrm-devel
+   libffi-devel
    libgcrypt-devel
-   libgnome-keyring-devel
-   libgudev1-devel
    libhugetlbfs-devel
-   libitm-devel
-   libnl-devel
+   libnl3-devel
    libnotify-devel
    libpfm-devel
+   libpmem-devel
+   libpmemblk-devel
+   libpmemlog-devel
+   libpmemobj++-devel
+   libpmemobj++-doc
+   libpmemobj-devel
+   libpmempool-devel
+   libpq-devel
+   librpmem-devel
    librsvg2-devel
+   librsvg2-tools
    libselinux-devel
    libsoup-devel
+   libssh-devel
    libtiff-devel
    libusbx-devel
    libuuid-devel
    libva-devel
+   libvmem-devel
+   libvmmalloc-devel
    libxslt-devel
+   lksctp-tools-devel
+   lz4
+   lz4-devel
+   lzo
+   lzo-devel
    mariadb-devel
    motif-devel
    mpfr-devel
    net-snmp-devel
+   newt-devel
    numactl-devel
-   openlmi-providers-devel
+   openscap-devel
    papi-devel
+   pciutils-devel
    pcre-devel
-   perl-App-cpanminus
-   perl-ExtUtils-MakeMaker
-   perl-Test-Pod
-   perl-Test-Pod-Coverage
-   perl-devel
-   perl-homedir
    polkit-devel
    popt-devel
-   postgresql-devel
    protobuf-c
    pulseaudio-libs-devel
-   pygobject3-devel
-   python-devel
-   python-setuptools
-   qt-mysql
-   qt-odbc
-   qt-postgresql
-   qt3-MySQL
-   qt3-ODBC
-   qt3-PostgreSQL
    rdma-core-devel
    readline-devel
    sane-backends-devel
+   scl-utils
+   scl-utils-build
+   slang-devel
    sqlite-devel
    startup-notification-devel
    systemd-devel
    tbb-devel
    tcl-devel
-   tcp_wrappers-devel
    tk-devel
-   unique3-devel
    unixODBC-devel
+   xfsprogs-devel
    xorg-x11-proto-devel
    xz-devel
  Optional Packages:
    flatpak
-   lz4
-   subversion-gnome
-[root@localhost ~]#
+   flatpak-builder

@@ -1,8 +1,15 @@
+RHEL 8.x 已使用思源宋體和思源黑體為默認中文字體，基本無需額外配置。
+
+## 字體目錄
+```
+/usr/share/fonts
+```
+
 ## 配置字体
 ```
-wget https://github.com/CNMan/RHEL/raw/master/fontconfig/99-language-selector-zh.conf
-mv 99-language-selector-zh.conf /usr/share/fontconfig/conf.avail/
-ln -s /usr/share/fontconfig/conf.avail/99-language-selector-zh.conf /etc/fonts/conf.d/
+wget https://github.com/CNMan/RHEL/raw/master/fontconfig/98-noto-cjk.conf
+mv 98-noto-cjk.conf /usr/share/fontconfig/conf.avail/
+ln -s /usr/share/fontconfig/conf.avail/98-noto-cjk.conf /etc/fonts/conf.d/
 fc-cache -fv
 ```
 
@@ -48,7 +55,7 @@ has led to the following conventions in usage:
 ```
 wget 'https://codeload.github.com/CNMan/WindowsFonts/zip/master' -O WindowsFonts.zip
 sha1sum:
-d5b59edb053ba89c665926e38b8a47d056783505  WindowsFonts.zip
+e0f14c6d61bfe66ec36a586c78cb66534d8a9ca8  WindowsFonts.zip
 ```
 
 ## 花園明朝
@@ -89,10 +96,4 @@ d7f878878a0eb0e75ff1c0e8dad8e3401e4f29f9  SourceHanSansHWSC.zip
 a8288083891d407211603d16f48a67b087feb80c  SourceHanSansSC.zip
 976ad131a971b7971511390e8ab4bc0a0d2884a0  SourceHanSerifSC_EL-M.zip
 a4a6a26b43dd72b7206d5132fdbc1b7b1604ed22  SourceHanSerifSC_SB-H.zip
-```
-
-## 其他字体
-```
-https://releases.pagure.org/liberation-fonts/liberation-fonts-ttf-2.00.1.tar.gz #RHEL7 自带的是1.07.2
-https://assets.ubuntu.com/v1/fad7939b-ubuntu-font-family-0.83.zip
 ```

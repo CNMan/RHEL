@@ -1,4 +1,4 @@
-Usage: rm [OPTION]... FILE...
+Usage: rm [OPTION]... [FILE]...
 Remove (unlink) the FILE(s).
 
   -f, --force           ignore nonexistent files and arguments, never prompt
@@ -12,7 +12,9 @@ Remove (unlink) the FILE(s).
                           directory that is on a file system different from
                           that of the corresponding command line argument
       --no-preserve-root  do not treat '/' specially
-      --preserve-root   do not remove '/' (default)
+      --preserve-root[=all]  do not remove '/' (default);
+                              with 'all', reject any command line argument
+                              on a separate device from its parent
   -r, -R, --recursive   remove directories and their contents recursively
   -d, --dir             remove empty directories
   -v, --verbose         explain what is being done
@@ -32,5 +34,6 @@ Note that if you use rm to remove a file, it might be possible to recover
 some of its contents, given sufficient expertise and/or time.  For greater
 assurance that the contents are truly unrecoverable, consider using shred.
 
-GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
-For complete documentation, run: info coreutils 'rm invocation'
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/rm>
+or available locally via: info '(coreutils) rm invocation'

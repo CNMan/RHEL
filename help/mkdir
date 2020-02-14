@@ -12,5 +12,6 @@ Mandatory arguments to long options are mandatory for short options too.
       --help     display this help and exit
       --version  output version information and exit
 
-GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
-For complete documentation, run: info coreutils 'mkdir invocation'
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/mkdir>
+or available locally via: info '(coreutils) mkdir invocation'

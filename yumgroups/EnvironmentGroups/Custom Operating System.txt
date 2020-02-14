@@ -1,0 +1,7 @@
+Environment Group: Custom Operating System
+ Description: Basic building block for a custom RHEL system.
+ Mandatory Groups:
+   Core
+ Optional Groups:
+   Guest Agents
+   Standard

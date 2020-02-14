@@ -1,0 +1,43 @@
+Scanning the drive for archives:
+1 file, 199503872 bytes (191 MiB)
+
+Listing archive: supp-supplementary-8.0-rhel-8-x86_64-dvd.iso
+
+--
+Path = supp-supplementary-8.0-rhel-8-x86_64-dvd.iso
+Type = Iso
+Physical Size = 199503872
+Created = 2019-03-14 03:46:38
+Modified = 2019-03-14 03:46:38
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+2019-03-14 03:44:58 .....           78           78  .discinfo
+2019-03-14 03:44:58 .....          840          840  .treeinfo
+2019-03-14 03:46:38 D....                            Packages
+2019-03-14 03:46:38 .....         2563         2563  Packages\TRANS.TBL
+2019-03-01 07:48:23 .....       293868       293868  Packages\dptfxtract-1-2.el8.x86_64.rpm
+2018-12-15 05:30:34 .....       389800       389800  Packages\java-1.8.0-ibm-1.8.0.5.25-1.el8.x86_64.rpm
+2018-12-15 05:30:34 .....     12561132     12561132  Packages\java-1.8.0-ibm-demo-1.8.0.5.25-1.el8.x86_64.rpm
+2018-12-15 05:30:35 .....      9227652      9227652  Packages\java-1.8.0-ibm-devel-1.8.0.5.25-1.el8.x86_64.rpm
+2018-12-15 05:30:33 .....    113175384    113175384  Packages\java-1.8.0-ibm-headless-1.8.0.5.25-1.el8.x86_64.rpm
+2018-12-15 05:30:34 .....        10520        10520  Packages\java-1.8.0-ibm-jdbc-1.8.0.5.25-1.el8.x86_64.rpm
+2018-12-15 05:30:34 .....       884216       884216  Packages\java-1.8.0-ibm-plugin-1.8.0.5.25-1.el8.x86_64.rpm
+2018-12-15 05:30:35 .....     11641296     11641296  Packages\java-1.8.0-ibm-src-1.8.0.5.25-1.el8.x86_64.rpm
+2018-12-15 05:30:34 .....       545144       545144  Packages\java-1.8.0-ibm-webstart-1.8.0.5.25-1.el8.x86_64.rpm
+2019-02-27 04:50:21 .....     50229900     50229900  Packages\virtio-win-1.9.7-3.el8.noarch.rpm
+2019-03-14 03:46:38 .....          664          664  TRANS.TBL
+2019-03-14 03:44:54 .....          136          136  media.repo
+2019-03-14 03:46:38 D....                            repodata
+2019-03-14 03:44:53 .....        18080        18080  repodata\2b100f0f99d79bf7fed0cccc822df6e9575573d7fab888afdeddef83570dba8c-filelists.xml.gz
+2019-03-14 03:44:53 .....         2063         2063  repodata\3ac3290accef902f88b8aa575a27521619e7f53bf0b8f884a04a795142e7f84a-other.xml.gz
+2019-03-14 03:44:53 .....         8665         8665  repodata\58b2b4a3f62b3109a5927fcb0e6f10a4b0b5e054772570752e5197d791d05f82-comps-Supplementary.x86_64.xml.gz
+2019-03-14 03:44:53 .....        12841        12841  repodata\8e29a7f50e60979619cdd3619d797113a0b4415ce1d4782f800dc00af00d76ae-primary.sqlite.bz2
+2019-03-14 03:46:38 .....         2597         2597  repodata\TRANS.TBL
+2019-03-14 03:44:53 .....        28247        28247  repodata\a56b380dd42db3e161c60b592913e83960ecc1cf67d643073a7d046c1227eaf3-filelists.sqlite.bz2
+2019-03-14 03:44:53 .....         4057         4057  repodata\b179cc4cd9a7a166df2dcd6fc3fbdd40836f862281ad0427ffb6b5da39de1a46-other.sqlite.bz2
+2019-03-14 03:44:53 .....         4386         4386  repodata\e2ad9fd24253bb76289b18ddc6934a9346a7e28aab203871ff219274ba451af3-primary.xml.gz
+2019-03-14 03:44:53 .....        40263        40263  repodata\ed8cdbc038de63d36b25aa2f11558182430f7fb2da79b4431db07d8127bf397d-comps-Supplementary.x86_64.xml
+2019-03-14 03:44:53 .....         3885         3885  repodata\repomd.xml
+------------------- ----- ------------ ------------  ------------------------
+2019-03-14 03:46:38          199088277    199088277  25 files, 2 folders

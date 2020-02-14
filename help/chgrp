@@ -34,5 +34,6 @@ Examples:
   chgrp staff /u      Change the group of /u to "staff".
   chgrp -hR staff /u  Change the group of /u and subfiles to "staff".
 
-GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
-For complete documentation, run: info coreutils 'chgrp invocation'
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/chgrp>
+or available locally via: info '(coreutils) chgrp invocation'
