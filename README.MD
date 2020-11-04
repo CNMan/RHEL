@@ -29,7 +29,7 @@ subscription-manager attach --pool=PoolIDs
 subscription-manager list #效果等同于Red Hat Subscription Manager中的My Installed Products页面
 subscription-manager list --consumed #效果等同于Red Hat Subscription Manager中的My Subscriptions页面
 subscription-manager release --list #列出可用版本
-subscription-manager release --set=8.2 #锁定特定版本
+subscription-manager release --set=8.3 #锁定特定版本
 subscription-manager release --show #显示锁定的特定版本
 subscription-manager release --unset #取消锁定特定版本
 subscription-manager repos --disable="*"
@@ -103,9 +103,9 @@ cp SecureFX.lic /home/username/.vandyke/SecureCRT/Config/
 yum group install "Development Tools"
 yum install elfutils-libelf-devel
 curl -IsL https://www.vmware.com/go/getworkstation-linux | grep Location #获取最新的VMware Workstation for Linux下载链接
-wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle
-sha1sum VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle #确认是2c1c0b66b00117961e1d9dd3dc0ff4633435b259
-sh VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle --console --ignore-errors --set-setting vmware-workstation serialNumber ZF3R0-FHED2-M80TY-8QYGC-NPKYF
+wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.1.1-17801498.x86_64.bundle
+sha1sum VMware-Workstation-Full-16.1.1-17801498.x86_64.bundle #确认是6668dd278311736f8e5d90f0a646f82ced9e574c
+sh VMware-Workstation-Full-16.1.1-17801498.x86_64.bundle --console --ignore-errors --set-setting vmware-workstation serialNumber ZF3R0-FHED2-M80TY-8QYGC-NPKYF
 ```
 
 ## 配置无线连接
@@ -135,11 +135,11 @@ rm -rf /var/cache/yum/
 rm -rf /var/cache/dnf/
 ```
 
-## 安装Cisco AnyConnect Secure Mobility Client
+## 安装[Cisco AnyConnect Secure Mobility Client](https://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client-v4-x/model.html)
 ```
-md5sum anyconnect-linux64-4.9.03047-predeploy-k9.tar.gz #确认是a0a17de6ae47bda280139430b7e8889c
-tar zxvf anyconnect-linux64-4.9.03047-predeploy-k9.tar.gz
-cd anyconnect-linux64-4.9.03047/vpn/
+md5sum anyconnect-linux64-4.10.00093-predeploy-k9.tar.gz #确认是97bc80d4c6c5fa2987f6bb4808810088
+tar zxvf anyconnect-linux64-4.10.00093-predeploy-k9.tar.gz
+cd anyconnect-linux64-4.10.00093/vpn/
 ./vpn_install.sh
 ```
 
@@ -308,8 +308,8 @@ yum install lcdf-typetools-2.105-2.1.x86_64.rpm
 ```
 mkdir /mnt/rhel8iso
 mkdir /mnt/rhel8suppiso
-mount -o loop rhel-8.2-x86_64-dvd.iso /mnt/rhel8iso/
-mount -o loop supp-supplementary-8.2-rhel-8-x86_64-dvd.iso /mnt/rhel8suppiso/
+mount -o loop rhel-8.3-x86_64-dvd.iso /mnt/rhel8iso/
+mount -o loop supp-supplementary-8.3-rhel-8-x86_64-dvd.iso /mnt/rhel8suppiso/
 touch /etc/yum.repos.d/rhel8iso.repo
 chmod 644 /etc/yum.repos.d/rhel8iso.repo
 nano /etc/yum.repos.d/rhel8iso.repo
@@ -345,8 +345,8 @@ yum --noplugins update
 自动挂载
 ```
 nano /etc/fstab
-	rhel-8.2-x86_64-dvd.iso	/mnt/rhel8iso	udf,iso9660	user,auto,loop	0 0
-	supp-supplementary-8.2-rhel-8-x86_64-dvd.iso	/mnt/rhel8suppiso	udf,iso9660	user,auto,loop	0 0
+	rhel-8.3-x86_64-dvd.iso	/mnt/rhel8iso	udf,iso9660	user,auto,loop	0 0
+	supp-supplementary-8.3-rhel-8-x86_64-dvd.iso	/mnt/rhel8suppiso	udf,iso9660	user,auto,loop	0 0
 ```
 
 ## 设置SSH key files permission
