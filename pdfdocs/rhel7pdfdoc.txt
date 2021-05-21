@@ -38,6 +38,7 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/sys
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/system-level_authentication_guide/system-level-authentication-guide.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/systemtap_beginners_guide/systemtap-beginners-guide.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/systemtap_tapset_reference/systemtap-tapset-reference.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/upgrading_from_rhel_6_to_rhel_7/upgrading-from-rhel-6-to-rhel-7.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/using_containerized_identity_management_services/using-containerized-identity-management-services.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/virtualization_deployment_and_administration_guide/virtualization-deployment-and-administration-guide.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/virtualization_getting_started_guide/virtualization-getting-started-guide.pdf

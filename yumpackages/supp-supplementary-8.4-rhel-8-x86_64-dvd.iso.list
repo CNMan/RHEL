@@ -1,0 +1,47 @@
+Scanning the drive for archives:
+1 file, 152223744 bytes (146 MiB)
+
+Listing archive: supp-supplementary-8.4-rhel-8-x86_64-dvd.iso
+
+--
+Path = supp-supplementary-8.4-rhel-8-x86_64-dvd.iso
+Type = Iso
+Physical Size = 152223744
+Created = 2021-04-10 05:27:10
+Modified = 2021-04-10 05:27:10
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+2021-04-10 05:25:44 .....           78           78  .discinfo
+2021-04-10 05:25:44 .....          834          834  .treeinfo
+2021-04-10 05:24:55 .....         8154         8154  EULA
+2021-04-10 05:24:55 .....        18092        18092  GPL
+2021-04-10 05:27:10 D....                            Packages
+2021-04-10 05:27:10 .....         2334         2334  Packages\TRANS.TBL
+2019-03-01 07:48:23 .....       293868       293868  Packages\dptfxtract-1-2.el8.x86_64.rpm
+2021-02-17 21:49:26 .....       399548       399548  Packages\java-1.8.0-ibm-1.8.0.6.25-2.el8_3.x86_64.rpm
+2021-02-17 21:49:35 .....     12756584     12756584  Packages\java-1.8.0-ibm-demo-1.8.0.6.25-2.el8_3.x86_64.rpm
+2021-02-17 21:49:45 .....      9241776      9241776  Packages\java-1.8.0-ibm-devel-1.8.0.6.25-2.el8_3.x86_64.rpm
+2021-02-17 21:49:58 .....    115776148    115776148  Packages\java-1.8.0-ibm-headless-1.8.0.6.25-2.el8_3.x86_64.rpm
+2021-02-17 21:50:08 .....        13184        13184  Packages\java-1.8.0-ibm-jdbc-1.8.0.6.25-2.el8_3.x86_64.rpm
+2021-02-17 21:50:13 .....       883028       883028  Packages\java-1.8.0-ibm-plugin-1.8.0.6.25-2.el8_3.x86_64.rpm
+2021-02-17 21:50:21 .....     11749644     11749644  Packages\java-1.8.0-ibm-src-1.8.0.6.25-2.el8_3.x86_64.rpm
+2021-02-17 21:50:32 .....       554196       554196  Packages\java-1.8.0-ibm-webstart-1.8.0.6.25-2.el8_3.x86_64.rpm
+2021-04-10 05:24:54 .....         1669         1669  RPM-GPG-KEY-redhat-beta
+2021-04-10 05:24:54 .....         5134         5134  RPM-GPG-KEY-redhat-release
+2021-04-10 05:27:10 .....         1796         1796  TRANS.TBL
+2021-04-10 05:24:55 .....         1455         1455  extra_files.json
+2021-04-10 05:25:34 .....          136          136  media.repo
+2021-04-10 05:27:10 D....                            repodata
+2021-04-10 05:25:29 .....        32172        32172  repodata\23a79f1b732363d42c0af658f09fae44cc38d0ab4cff4f92c81ec6e393cc00e3-comps-Supplementary.x86_64.xml
+2021-04-10 05:25:29 .....        21430        21430  repodata\2a5e07725895140234e05c1ce74d0df36cf740efa3059da0caef8a05616e2edb-filelists.sqlite.bz2
+2021-04-10 05:25:29 .....         8146         8146  repodata\4864b8433fb73fe31f746b173424f6e3c8f87127a2ddfdc54797eda9b17d929d-comps-Supplementary.x86_64.xml.gz
+2021-04-10 05:25:29 .....        12543        12543  repodata\583ae4ad3a808b0b20b6a0b2bcaa0fa4ef22dac8d22c9f9870ee27dec6f4698c-primary.sqlite.bz2
+2021-04-10 05:25:29 .....         4128         4128  repodata\64d94d1737049560e36c0fb69237c9e48163fc13e7cdcb52a03e6e55d2e1dc35-primary.xml.gz
+2021-04-10 05:25:29 .....         3508         3508  repodata\834b0f8e1b2df0cc13239e5c608f9b3973d5f4b8f9e12fa110a3a2254a114f80-other.sqlite.bz2
+2021-04-10 05:27:10 .....         2597         2597  repodata\TRANS.TBL
+2021-04-10 05:25:29 .....         1546         1546  repodata\ae239e235c5026e8726452985dca04fff59434b667f56dee405fcfc931ec5559-other.xml.gz
+2021-04-10 05:25:29 .....        12636        12636  repodata\bdac78d173629d543309c754216e1ce83641ccd7c735265e1f2072ebcbdbedb5-filelists.xml.gz
+2021-04-10 05:25:29 .....         3885         3885  repodata\repomd.xml
+------------------- ----- ------------ ------------  ------------------------
+2021-04-10 05:27:10          151810249    151810249  29 files, 2 folders

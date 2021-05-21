@@ -29,7 +29,7 @@ subscription-manager attach --pool=PoolIDs
 subscription-manager list #效果等同于Red Hat Subscription Manager中的My Installed Products页面
 subscription-manager list --consumed #效果等同于Red Hat Subscription Manager中的My Subscriptions页面
 subscription-manager release --list #列出可用版本
-subscription-manager release --set=8.3 #锁定特定版本
+subscription-manager release --set=8.4 #锁定特定版本
 subscription-manager release --show #显示锁定的特定版本
 subscription-manager release --unset #取消锁定特定版本
 subscription-manager repos --disable="*"
@@ -88,10 +88,10 @@ yum install flash-player-ppapi #Adobe Flash Player PPAPI
 ```
 
 ## 安装SecureCRT和SecureFX
-注册试用并下载SecureCRT + SecureFX 8.7 Bundle：https://www.vandyke.com/download/index.html
+注册试用并下载SecureCRT + SecureFX 9.1 Bundle：https://www.vandyke.com/download/index.html
 ```
-sha1sum scrt-sfx-8.7.3-2279.rhel7-64.x86_64.rpm #确认是a1c39725faa55579537435e2e3fc9adbaf063a07
-yum install scrt-sfx-8.7.3-2279.rhel7-64.x86_64.rpm
+sha1sum scrt-sfx-9.1.0-2579.rhel8-64.x86_64.rpm #确认是c4585febad7eff49cb80ff3d4f9951128e043f0a
+yum install scrt-sfx-9.1.0-2579.rhel8-64.x86_64.rpm
 mkdir -p /home/username/.vandyke/SecureCRT/Config/
 cp SecureCRT.lic /home/username/.vandyke/SecureCRT/Config/
 cp SecureFX.lic /home/username/.vandyke/SecureCRT/Config/
@@ -101,11 +101,11 @@ cp SecureFX.lic /home/username/.vandyke/SecureCRT/Config/
 参考[Install Workstation Pro on a Linux Host](https://docs.vmware.com/en/VMware-Workstation-Pro/16.0/com.vmware.ws.using.doc/GUID-1F5B1F14-A586-4A56-83FA-2E7D8333D5CA.html)
 ```
 yum group install "Development Tools"
-yum install elfutils-libelf-devel
-curl -IsL https://www.vmware.com/go/getworkstation-linux | grep Location #获取最新的VMware Workstation for Linux下载链接
-wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.1.1-17801498.x86_64.bundle
-sha1sum VMware-Workstation-Full-16.1.1-17801498.x86_64.bundle #确认是6668dd278311736f8e5d90f0a646f82ced9e574c
-sh VMware-Workstation-Full-16.1.1-17801498.x86_64.bundle --console --ignore-errors --set-setting vmware-workstation serialNumber ZF3R0-FHED2-M80TY-8QYGC-NPKYF
+yum install elfutils-libelf-devel pcsc-lite-libs
+访问 https://www.vmware.com/go/getworkstation-linux 获取最新的VMware Workstation for Linux下载链接
+wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.1.2-17966106.x86_64.bundle
+sha1sum VMware-Workstation-Full-16.1.2-17966106.x86_64.bundle #确认是ed4ce94737e84d62fcd69ed4c86c38e9e6532d8e
+sh VMware-Workstation-Full-16.1.2-17966106.x86_64.bundle --console --ignore-errors --set-setting vmware-workstation serialNumber ZF3R0-FHED2-M80TY-8QYGC-NPKYF
 ```
 
 ## 配置无线连接
@@ -137,9 +137,9 @@ rm -rf /var/cache/dnf/
 
 ## 安装[Cisco AnyConnect Secure Mobility Client](https://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client-v4-x/model.html)
 ```
-md5sum anyconnect-linux64-4.10.00093-predeploy-k9.tar.gz #确认是97bc80d4c6c5fa2987f6bb4808810088
-tar zxvf anyconnect-linux64-4.10.00093-predeploy-k9.tar.gz
-cd anyconnect-linux64-4.10.00093/vpn/
+md5sum anyconnect-linux64-4.10.03104-predeploy-k9.tar.gz #确认是2ee280a255c26ba65de1c31c6003c15c
+tar zxvf anyconnect-linux64-4.10.03104-predeploy-k9.tar.gz
+cd anyconnect-linux64-4.10.03104/vpn/
 ./vpn_install.sh
 ```
 
@@ -308,8 +308,8 @@ yum install lcdf-typetools-2.105-2.1.x86_64.rpm
 ```
 mkdir /mnt/rhel8iso
 mkdir /mnt/rhel8suppiso
-mount -o loop rhel-8.3-x86_64-dvd.iso /mnt/rhel8iso/
-mount -o loop supp-supplementary-8.3-rhel-8-x86_64-dvd.iso /mnt/rhel8suppiso/
+mount -o loop rhel-8.4-x86_64-dvd.iso /mnt/rhel8iso/
+mount -o loop supp-supplementary-8.4-rhel-8-x86_64-dvd.iso /mnt/rhel8suppiso/
 touch /etc/yum.repos.d/rhel8iso.repo
 chmod 644 /etc/yum.repos.d/rhel8iso.repo
 nano /etc/yum.repos.d/rhel8iso.repo
@@ -345,8 +345,8 @@ yum --noplugins update
 自动挂载
 ```
 nano /etc/fstab
-	rhel-8.3-x86_64-dvd.iso	/mnt/rhel8iso	udf,iso9660	user,auto,loop	0 0
-	supp-supplementary-8.3-rhel-8-x86_64-dvd.iso	/mnt/rhel8suppiso	udf,iso9660	user,auto,loop	0 0
+	rhel-8.4-x86_64-dvd.iso	/mnt/rhel8iso	udf,iso9660	user,auto,loop	0 0
+	supp-supplementary-8.4-rhel-8-x86_64-dvd.iso	/mnt/rhel8suppiso	udf,iso9660	user,auto,loop	0 0
 ```
 
 ## 设置SSH key files permission
