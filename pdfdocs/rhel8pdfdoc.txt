@@ -2,6 +2,7 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.0
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.1_release_notes/81-release-notes.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.2_release_notes/82-release-notes.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.3_release_notes/83-release-notes.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.4_release_notes/84-release-notes.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/administration_and_configuration_tasks_using_system_roles_in_rhel/administration-and-configuration-tasks-using-system-roles-in-rhel.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/building_running_and_managing_containers/building-running-and-managing-containers.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/composing_a_customized_rhel_system_image/composing-a-customized-rhel-system-image.pdf
@@ -19,6 +20,7 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/con
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/configuring_infiniband_and_rdma_networks/configuring-infiniband-and-rdma-networks.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/configuring_rhel_8_for_sap_hana_2_installation/configuring-rhel-8-for-sap-hana-2-installation.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/considerations_in_adopting_rhel_8/considerations-in-adopting-rhel-8.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/converting_from_an_rpm-based_linux_distribution_to_rhel/converting-from-an-rpm-based-linux-distribution-to-rhel.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/customizing_anaconda/customizing-anaconda.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/deduplicating_and_compressing_logical_volumes_on_rhel/deduplicating-and-compressing-logical-volumes-on-rhel.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/deduplicating_and_compressing_storage/deduplicating-and-compressing-storage.pdf
@@ -50,5 +52,6 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/sec
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/tuning_performance_in_identity_management/tuning-performance-in-identity-management.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/upgrading_from_rhel_6_to_rhel_8/upgrading-from-rhel-6-to-rhel-8.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/upgrading_from_rhel_7_to_rhel_8/upgrading-from-rhel-7-to-rhel-8.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/uploading_a_customized_rhel_system_image_to_cloud_environments/uploading-a-customized-rhel-system-image-to-cloud-environments.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/using_selinux/using-selinux.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/using_the_desktop_environment_in_rhel_8/using-the-desktop-environment-in-rhel-8.pdf
