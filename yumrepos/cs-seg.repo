@@ -1,0 +1,7 @@
+[cs-seg]
+name=cs-seg
+baseurl=https://products.clearswift.net/rhel7/seg/
+enabled=1
+gpgkey=https://products.clearswift.net/it-pub.key
+gpgcheck=1
+skip_if_unavailable=1

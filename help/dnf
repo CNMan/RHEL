@@ -1,4 +1,4 @@
-Not root, Subscription Management repositories not updated
+Updating Subscription Management repositories.
 usage: dnf [options] COMMAND
 
 List of Main Commands:
@@ -8,7 +8,7 @@ autoremove                remove all unneeded packages that were originally inst
 check                     check for problems in the packagedb
 check-update              check for available package upgrades
 clean                     remove cached data
-deplist                   List package's dependencies and what packages provide them
+deplist                   [deprecated, use repoquery --deplist] List package's dependencies and what packages provide them
 distro-sync               synchronize installed packages to the latest available versions
 downgrade                 Downgrade a package
 group                     display, or use, the groups information
@@ -28,7 +28,7 @@ repoquery                 search for packages matching keyword
 repository-packages       run commands on top of all packages in given repository
 search                    search package details for the given string
 shell                     run an interactive DNF shell
-swap                      run an interactive dnf mod for remove and install one spec
+swap                      run an interactive DNF mod for remove and install one spec
 updateinfo                display advisories about packages
 upgrade                   upgrade a package or packages on your system
 upgrade-minimal           upgrade, but only 'newest' package match which fixes a problem that affects your system
@@ -43,6 +43,8 @@ debug-dump                dump information about installed rpm packages to file
 debug-restore             restore packages recorded in debug-dump file
 debuginfo-install         install debuginfo packages
 download                  Download package to current directory
+groups-manager            create and edit groups metadata file
+kpatch                    Toggles automatic installation of kpatch-patch packages
 needs-restarting          determine updated binaries that need restarting
 playground                Interact with Playground repository.
 repoclosure               Display a list of unresolved dependencies for repositories
@@ -52,7 +54,7 @@ repomanage                Manage a directory of rpm packages
 reposync                  download all packages from remote repo
 uploadprofile             Upload combined profile to Satellite server (list of installed rpms, enabled repositories and modules
 
-Optional arguments:
+General DNF options:
   -c [config file], --config [config file]
                         config file location
   -q, --quiet           quiet operation
@@ -93,24 +95,25 @@ Optional arguments:
                         debugging output level for rpm
   -y, --assumeyes       automatically answer yes for all questions
   --assumeno            automatically answer no for all questions
-  --enablerepo [repo]
-  --disablerepo [repo]
+  --enablerepo [repo]   Enable additional repositories. List option. Supports
+                        globs, can be specified multiple times.
+  --disablerepo [repo]  Disable repositories. List option. Supports globs, can
+                        be specified multiple times.
   --repo [repo], --repoid [repo]
                         enable just specific repositories by an id or a glob,
                         can be specified multiple times
-  --enable, --set-enabled
-                        enable repos with config-manager command
+  --enable              enable repos with config-manager command
                         (automatically saves)
-  --disable, --set-disabled
-                        disable repos with config-manager command
+  --disable             disable repos with config-manager command
                         (automatically saves)
   -x [package], --exclude [package], --excludepkgs [package]
                         exclude packages by name or glob
   --disableexcludes [repo], --disableexcludepkgs [repo]
                         disable excludepkgs
   --repofrompath [repo,path]
-                        label and path to additional repository, can be
-                        specified multiple times.
+                        label and path to an additional repository to use
+                        (same path as in a baseurl), can be specified multiple
+                        times.
   --noautoremove        disable removal of dependencies that are no longer
                         used
   --nogpgcheck          disable gpg signature checking (if RPM policy allows)

@@ -1,0 +1,12 @@
+[CbOpenSource]
+name=CbOpenSource
+baseurl=https://opensource.carbonblack.com/release/x86_64
+gpgcheck=0
+enabled=1
+sslverify=1
+[CbOpenSource2]
+name=CbOpenSource2
+baseurl=https://opensource.carbonblack.com/release/$releasever/x86_64
+gpgcheck=0
+enabled=1
+sslverify=1

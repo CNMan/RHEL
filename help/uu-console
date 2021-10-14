@@ -1,0 +1,18 @@
+Update Utility 4.1.0.474 console version
+(C) 2020 AO Kaspersky Lab
+Usage: UpdateUtility-Console [<key>[=<value] [<key>...]]
+Description: This program must be run in Unix-way (under user)
+
+  -u,     --update                Perform update
+  -c, -o, --configuration         Set configuration file name. By default using updater.ini
+  -t,     --trace                 
+  -d,     --dump                  Set dump enabled
+  -s,     --silent                Set silent mode (no messages)
+  -r,     --report                Enable report
+          --accepteula            Accept EULA
+          --acceptprivacypolicy   Accept Privacy Policy
+          --acceptksn             Accept KSN
+          --declineksn            Decline KSN
+          --proxy_login           Proxy login
+          --proxy_password        Proxy password
+  -h,     --help                  Print this help.

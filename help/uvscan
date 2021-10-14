@@ -1,0 +1,83 @@
+Usage: uvscan [object1] [object2...] [option1] [option2...]
+
+   --?                        : Display this help screen.
+   --AFC=<cache size>         : Set the Size(in MB) of the Internal Cache Used When Decompressing Archive Files.
+   --ALLOLE                   : Treat all files as compound/OLE regardless of extension.
+   --ANALYZE                  : Turn on heuristic analysis for programs and macros.
+   --APPEND                   : Append to report file rather than overwriting.
+   --APPENDBAD                : Append to bad file rather than overwriting.
+   --ASCII                    : Display filenames as ASCII text.
+   --ATIME-PRESERVE           : Preserve the last-accessed time and date for files that are scanned.
+   --BADLIST=<filename>       : Filename and path for bad list log file.
+   --BOOT                     : Scan boot sector and master boot record Only.
+   --CHECKLIST=<filename>     : Scan list of files contained in <filename>.
+   --CLEAN                    : Attempt to clean infected files.
+   --CLEANDOCALL              : Remove all macros from infected MS Office files.
+   --CONFIG=<filename>        : Load options from <filename>.
+   --CONTACTFILE=<filename>   : Display contents of <filename> when a virus is found.
+   --DAM                      : Remove all macros from infected MS Office files.
+   --DAT=<dir>                : Directory specifying location of DAT files.
+   --DATA-DIRECTORY=<dir>     : Directory specifying location of DAT files.
+   --DEL                      : Delete infected files except archive files.
+   --DRIVER=<dir>             : Directory specifying location of DAT files.
+   --EXCLUDE=<filename>       : Do not scan files/directories listed in <filename>.
+   --EXIT-ON-ERROR            : Exit on error.
+   --EXTENSIONS               : Scan defaults & user extension list.
+   --EXTLIST                  : List file-extensions scanned by default.
+   --EXTRA=<filename>         : Specify the full path and file name of any extra.dat file.
+   --FAM                      : Find all macros - not just infected macros. Used with /DAM will remove all macros.
+   --FILE=<filename>          : Scan list of files contained in <filename>.
+   --FLOPPYA                  : Scan the boot sector of the disk in drive A.
+   --FLOPPYB                  : Scan the boot sector of the disk in drive B.
+   --FREQUENCY=<hours>        : Do not scan <hours> after the previous scan.
+   --HELP                     : Displays this help
+   --HIDEMD5                  : Do not display md5 checksum of infected files.
+   --HTML=<filename>          : Create and specify a HTML report file.
+   --IGNORE-COMPRESSED        : Do not scan self extracting executables by default.
+   --IGNORE-LINKS             : Do not resolve any symbolic links and do not scan the link targets.
+   --LOAD=<filename>          : Load options from <filename>.
+   --LOUD                     : Include all scanned files in the /REPORT file.
+   --MACRO-HEURISTICS         : Turn on macro heuristics.
+   --MAILBOX                  : Scan inside plain text mailboxes.
+   --MANALYZE                 : Turn on macro heuristics.
+   --MAXFILESIZE=<size>       : Examine Only those files smaller than the specified size(in MB).
+   --MEMSIZE=<size>           : File size(in KB) to load into memory for scanning limited by a maximum file size defaulting to 1MB.
+   --MIME                     : Scan inside MIME, UUE, XXE and BinHex files.
+   --MOVE=<dir>               : Move infected file into directory <dir>, preserving path.
+   --NOBOOT                   : Do not scan boot sectors.
+   --NOCOMP                   : Do not scan self extracting executables by default.
+   --NOD                      : Don't switch into /ALL mode when repairing.
+   --NODECRYPT                : Don't scan password-protected MS Office documents.
+   --NODOC                    : Do not scan MS Office files.
+   --NOEXPIRE                 : Disable data files expiration date notice.
+   --NOJOKES                  : Do not alert on joke files.
+   --NORENAME                 : Do not rename infected files that cannot be cleaned.
+   --NOSCRIPT                 : Do not scan files that contain HTML, JavaScript, Visual Basic, or Script Component Type Libraries.
+   --ONE-FILE-SYSTEM          : Scan an entire directory tree without scanning mounted file systems.
+   --PANALYZE                 : Turn on program heuristics.
+   --PAUSE                    : Pause at end of each screen page.
+   --PLAD                     : Preserve the last-accessed time and date for files that are scanned.
+   --PROGRAM                  : Scan for potentially unwanted applications.
+   --RECURSIVE                : Examine any subdirectories in addition to the specified target directory.
+   --REPORT=<filename>        : Report names of viruses found into <filename>.
+   --RPTALL                   : Include all scanned files in the /REPORT file.
+   --RPTCOR                   : Include corrupted files in /REPORT file.
+   --RPTERR                   : Include errors in /REPORT file.
+   --RPTOBJECTS               : Reports number of objects at all levels scanned in summary.
+   --SECURE                   : Equivalent to Analyse, doall, unzip.
+   --SELECTED                 : Look for infections in any file that has execute permissions.
+   --SHOWCOMP                 : Report any files that are packaged.
+   --SHOWENCRYPTED            : Display encrypted documents.
+   --SILENT                   : Disable all screen output.
+   --SUB                      : Examine any subdirectories in addition to the specified target directory.
+   --SUMMARY                  : Produce a summary of the scan.
+   --THREADS=<nn>             : Set scan thread count.
+   --TIMEOUT=<seconds>        : Set the maximum time to spend scanning any one file.
+   --UNZIP                    : Scan inside archive files, such as those saved in ZIP, LHA, PKarc, ARJ, TAR, CHM, and RAR.
+   --VERBOSE                  : Display a progress summary during the scan.
+   --VERSION                  : Display the scanner's version number.
+   --VIRLIST                  : Display virus list.
+   --VIRUS-LIST               : Display virus list.
+   --XMLPATH=<filename>       : Filename and path for XML log file.
+
+   * Mandatory

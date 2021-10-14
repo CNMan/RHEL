@@ -1,4 +1,4 @@
-VMware Virtual Disk Manager - build 14665864.
+VMware Virtual Disk Manager - build 18811642.
 Usage: vmware-vdiskmanager OPTIONS <disk-name> | <mount-point>
 Offline disk manipulation utility
   Operations, only one may be specified at a time:
@@ -34,6 +34,8 @@ Offline disk manipulation utility
                             (ide, buslogic, lsilogic). Pass lsilogic for other adapter types.
      -s <size>            : capacity of the virtual disk
      -t <disk-type>       : disk type id
+     -z <level>           : compression level for -t 5. Valid range: [0,9]
+                            Default: 1
 
   Disk types:
       0                   : single growable virtual disk

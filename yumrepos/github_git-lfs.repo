@@ -7,8 +7,6 @@ enabled=1
 gpgkey=https://packagecloud.io/github/git-lfs/gpgkey
 sslverify=1
 sslcacert=/etc/pki/tls/certs/ca-bundle.crt
-metadata_expire=300
-
 [github_git-lfs-source]
 name=github_git-lfs-source
 baseurl=https://packagecloud.io/github/git-lfs/el/8/SRPMS
@@ -18,4 +16,3 @@ enabled=0
 gpgkey=https://packagecloud.io/github/git-lfs/gpgkey
 sslverify=1
 sslcacert=/etc/pki/tls/certs/ca-bundle.crt
-metadata_expire=300

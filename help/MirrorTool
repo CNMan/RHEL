@@ -1,0 +1,76 @@
+Mirror Tool v1.0.2226.0, Copyright (c) ESET, spol. s r.o. 1992-2021. All rights reserved.
+Allowed options:
+  --mirrorType arg                      [required for module update]
+                                        Type of mirror. Possible values (case 
+                                        insensitive): regular, pre-release, 
+                                        delayed.
+  --intermediateUpdateDirectory arg     [required for module update]
+                                        Files will be downloaded to this 
+                                        directory to create mirror in output 
+                                        directory.
+  --offlineLicenseFilename arg          [required for module update]
+                                        Offline license file.
+  --updateServer arg                    [optional]
+                                        Update server. (e.g.: 
+                                        http://update.eset.com/eset_upd/ep6/) 
+                                        Mirror will be created in output 
+                                        directory, only specified path in 
+                                        server will be mirrored.
+  --outputDirectory arg                 [required for module update]
+                                        Directory where mirror will be created.
+  --proxyHost arg                       [optional]
+                                        Http proxy address (fqdn or IP).
+  --proxyPort arg                       [optional]
+                                        Http proxy port.
+  --proxyUsername arg                   [optional]
+                                        Http proxy username.
+  --proxyPassword arg                   [optional]
+                                        Http proxy password.
+  --networkDriveUsername arg            [optional]
+                                        Username used, when output directory is
+                                        accessed using smb(e.g:\\hostname).
+  --networkDrivePassword arg            [optional]
+                                        Password used, when output directory is
+                                        accessed using smb(e.g:\\hostname).
+  --excludedProducts arg                [optional]
+                                        Disable creating mirror for specified 
+                                        products. Use --listUpdatableProducts 
+                                        to see possible values.
+  --listUpdatableProducts               Show list of all products which modules
+                                        are downloaded by default.
+  --repositoryServer arg                [required for repository update]
+                                        Repository server for repository 
+                                        creation.
+  --intermediateRepositoryDirectory arg [required for repository update]
+                                        Files will be downloaded to this 
+                                        directory to create offline mirror in 
+                                        output directory.
+  --outputRepositoryDirectory arg       [required for repository update]
+                                        Directory where offline repository will
+                                        be created.
+  --trustDownloadedFilesInRepositoryTemp 
+                                        [optional]
+                                        If set, hashes on already downloaded 
+                                        files are not checked.
+  --mirrorOnlyLevelUpdates              [optional]
+                                        If set, only level upgrades will be 
+                                        downloaded (nano/continuous updates 
+                                        will not be downloaded)
+  --mirrorFileFormat arg                [optional]
+                                        Specifies which type of update files 
+                                        will be downloaded. Possible values 
+                                        (case insensitive): dll, dat.
+  --compatibilityVersion arg            [optional]
+                                        Version of compatible products.
+  --filterFilePath arg                  [optional]
+                                        Path to filter file in json format. 
+                                        Parameter compatibilityVersion has to 
+                                        be higher than 7.1.0.0 to run program.
+  --dryRun arg                          [optional]
+                                        Specifies dry run of program with path 
+                                        to csv file where will be saved list of
+                                        products to be downloaded with current 
+                                        filter configuration.
+  --help                                [optional]
+                                        Display this help and exit
+

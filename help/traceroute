@@ -1,5 +1,5 @@
 Usage:
-  traceroute [ -46dFITnreAUDV ] [ -f first_ttl ] [ -g gate,... ] [ -i device ] [ -m max_ttl ] [ -N squeries ] [ -p port ] [ -t tos ] [ -l flow_label ] [ -w waittime ] [ -q nqueries ] [ -s src_addr ] [ -z sendwait ] [ --fwmark=num ] host [ packetlen ]
+  traceroute [ -46dFITnreAUDV ] [ -f first_ttl ] [ -g gate,... ] [ -i device ] [ -m max_ttl ] [ -N squeries ] [ -p port ] [ -t tos ] [ -l flow_label ] [ -w MAX,HERE,NEAR ] [ -q nqueries ] [ -s src_addr ] [ -z sendwait ] [ --fwmark=num ] host [ packetlen ]
 Options:
   -4                          Use IPv4
   -6                          Use IPv6
@@ -32,10 +32,12 @@ Options:
                               traffic class) value for outgoing packets
   -l flow_label  --flowlabel=flow_label
                               Use specified flow_label for IPv6 packets
-  -w waittime  --wait=waittime
-                              Set the number of seconds to wait for response to
-                              a probe (default is 5.0). Non-integer (float
-                              point) values allowed too
+  -w MAX,HERE,NEAR  --wait=MAX,HERE,NEAR
+                              Wait for a probe no more than HERE (default 3)
+                              times longer than a response from the same hop,
+                              or no more than NEAR (default 10) times than some
+                              next hop, or MAX (default 5.0) seconds (float
+                              point values allowed too)
   -q nqueries  --queries=nqueries
                               Set the number of probes per each hop. Default is
                               3

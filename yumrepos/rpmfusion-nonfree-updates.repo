@@ -1,24 +1,22 @@
 [rpmfusion-nonfree-updates]
 name=RPM Fusion for EL 8 - Nonfree - Updates
-baseurl=https://download1.rpmfusion.org/nonfree/el/updates/8/$basearch/
-#mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-el-updates-released-8&arch=$basearch
+#baseurl=http://download1.rpmfusion.org/nonfree/el/updates/8/$basearch/
+mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-el-updates-released-8&arch=$basearch
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-nonfree-el-8
-
 [rpmfusion-nonfree-updates-debuginfo]
 name=RPM Fusion for EL 8 - Nonfree - Updates Debug
-baseurl=https://download1.rpmfusion.org/nonfree/el/updates/8/$basearch/debug/
-#mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-el-updates-released-debug-8&arch=$basearch
+#baseurl=http://download1.rpmfusion.org/nonfree/el/updates/8/$basearch/debug/
+mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-el-updates-released-debug-8&arch=$basearch
 enabled=0
 type=rpm-md
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-nonfree-el-8
-
 [rpmfusion-nonfree-updates-source]
 name=RPM Fusion for EL 8 - Nonfree - Updates Source
-baseurl=https://download1.rpmfusion.org/nonfree/el/updates/8/SRPMS/
-#mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-el-updates-released-source-8&arch=$basearch
+#baseurl=http://download1.rpmfusion.org/nonfree/el/updates/8/SRPMS/
+mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-el-updates-released-source-8&arch=$basearch
 enabled=0
 type=rpm-md
 gpgcheck=1
