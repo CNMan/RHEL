@@ -3,6 +3,7 @@
 ## [生命周期](https://access.redhat.com/support/policy/updates/errata)
 |Version|General availability|Full support ends|Maintenance Support 1 ends|Maintenance Support or Maintenance Support 2 ends|Extended life cycle support (ELS) add-on ends|Extended life phase ends|Last minor release|
 |------|------|------|------|------|------|------|------|
+|9|20220518|20270531|Not Applicable|20320531|20340531|Ongoing|9.10|
 |8|20190507|20240531|Not Applicable|20290531|20310531|Ongoing|8.10|
 |7|20140610|20190806|20200806|20240630|20260630|Ongoing|7.9|
 |6|20101110|20160510|20170510|20201130|20240630|Ongoing|6.10|
@@ -15,7 +16,7 @@ RHEL7:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7
 
 RHEL8:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8
 
-RHEL9:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9-beta
+RHEL9:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9
 
 ## 官方论坛
 https://access.redhat.com/discussions
@@ -31,7 +32,7 @@ subscription-manager attach --pool=PoolIDs
 subscription-manager list #效果等同于Red Hat Subscription Manager中的My Installed Products页面
 subscription-manager list --consumed #效果等同于Red Hat Subscription Manager中的My Subscriptions页面
 subscription-manager release --list #列出可用版本
-subscription-manager release --set=8.5 #锁定特定版本
+subscription-manager release --set=8.6 #锁定特定版本
 subscription-manager release --show #显示锁定的特定版本
 subscription-manager release --unset #取消锁定特定版本
 subscription-manager repos --disable="*"
@@ -92,8 +93,8 @@ yum install flash-player-ppapi #Adobe Flash Player PPAPI
 ## 安装SecureCRT和SecureFX
 注册试用并下载SecureCRT + SecureFX 9.2 Bundle：https://www.vandyke.com/download/index.html
 ```
-sha1sum scrt-sfx-9.2.0-2755.rhel8-64.x86_64.rpm #确认是0c7575a5d514bdb5edbac55ab1af579e7a3ea404
-yum install scrt-sfx-9.2.0-2755.rhel8-64.x86_64.rpm
+sha1sum scrt-sfx-9.3.0-2905.rhel8-64.x86_64.rpm #确认是F237E634AF1BFE8FE8B25FB4B53997EAB9DFCEBA
+yum install scrt-sfx-9.3.0-2905.rhel8-64.x86_64.rpm
 mkdir -p /home/username/.vandyke/SecureCRT/Config/
 cp SecureCRT.lic /home/username/.vandyke/SecureCRT/Config/
 cp SecureFX.lic /home/username/.vandyke/SecureCRT/Config/
@@ -106,9 +107,9 @@ yum group install "Development Tools"
 yum install elfutils-libelf-devel pcsc-lite-libs
 ln -s /usr/lib64/libnsl.so.2 /usr/lib64/libnsl.so.1
 访问 https://www.vmware.com/go/getworkstation-linux 获取最新的VMware Workstation for Linux下载链接
-wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.2.3-19376536.x86_64.bundle
-sha1sum VMware-Workstation-Full-16.2.3-19376536.x86_64.bundle #确认是057c2cd0227b6b6bbdc5cf00e7c2f110f04c6e01
-sh VMware-Workstation-Full-16.2.3-19376536.x86_64.bundle --console --ignore-errors --set-setting vmware-workstation serialNumber ZF3R0-FHED2-M80TY-8QYGC-NPKYF
+wget https://download3.vmware.com/software/WKST-1624-LX/VMware-Workstation-Full-16.2.4-20089737.x86_64.bundle
+sha1sum VMware-Workstation-Full-16.2.4-20089737.x86_64.bundle #确认是bbae9bd37cb9811c1d9d98073327f9f8d28403ae
+sh VMware-Workstation-Full-16.2.4-20089737.x86_64.bundle --console --ignore-errors --set-setting vmware-workstation serialNumber ZF3R0-FHED2-M80TY-8QYGC-NPKYF
 ```
 
 ## 配置无线连接
@@ -140,9 +141,9 @@ rm -rf /var/cache/dnf/
 
 ## 安装[Cisco AnyConnect Secure Mobility Client](https://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client-v4-x/model.html)
 ```
-md5sum anyconnect-linux64-4.10.05095-predeploy-k9.tar.gz #确认是73ab1df17eb1cb1b2a85966c42a46849
-tar zxvf anyconnect-linux64-4.10.05095-predeploy-k9.tar.gz
-cd anyconnect-linux64-4.10.05095/vpn/
+md5sum anyconnect-linux64-4.10.06079-predeploy-k9.tar.gz #确认是2ae2b5a1fe45ddded49c599bfa561bb7
+tar zxvf anyconnect-linux64-4.10.06079-predeploy-k9.tar.gz
+cd anyconnect-linux64-4.10.06079/vpn/
 ./vpn_install.sh
 ```
 
@@ -311,8 +312,8 @@ yum install lcdf-typetools-2.105-2.1.x86_64.rpm
 ```
 mkdir /mnt/rhel8iso
 mkdir /mnt/rhel8suppiso
-mount -o loop rhel-8.5-x86_64-dvd.iso /mnt/rhel8iso/
-mount -o loop supp-supplementary-8.5-rhel-8-x86_64-dvd.iso /mnt/rhel8suppiso/
+mount -o loop rhel-8.6-x86_64-dvd.iso /mnt/rhel8iso/
+mount -o loop supp-supplementary-8.6-rhel-8-x86_64-dvd.iso /mnt/rhel8suppiso/
 touch /etc/yum.repos.d/rhel8iso.repo
 chmod 644 /etc/yum.repos.d/rhel8iso.repo
 nano /etc/yum.repos.d/rhel8iso.repo
@@ -348,16 +349,21 @@ yum --noplugins update
 自动挂载
 ```
 nano /etc/fstab
-	rhel-8.5-x86_64-dvd.iso	/mnt/rhel8iso	udf,iso9660	user,auto,loop	0 0
-	supp-supplementary-8.5-rhel-8-x86_64-dvd.iso	/mnt/rhel8suppiso	udf,iso9660	user,auto,loop	0 0
+	rhel-8.6-x86_64-dvd.iso	/mnt/rhel8iso	udf,iso9660	user,auto,loop	0 0
+	supp-supplementary-8.6-rhel-8-x86_64-dvd.iso	/mnt/rhel8suppiso	udf,iso9660	user,auto,loop	0 0
 ```
 
 ## 设置SSH key files permission
 ```
 chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/config
+chmod 600 ~/.ssh/id_ecdsa
+chmod 600 ~/.ssh/id_ecdsa.pub
+chmod 600 ~/.ssh/id_ed25519
+chmod 600 ~/.ssh/id_ed25519.pub
 chmod 600 ~/.ssh/id_rsa
 chmod 600 ~/.ssh/id_rsa.pub
-chmod 600 ~/.ssh/authorized_keys
 ```
 
 ## 安装中文输入法，重启，再在语言设置里添加生效
@@ -369,8 +375,7 @@ yum install ibus-table-chinese-wubi-jidian	#极点五笔
 
 ## 安装并更改主题
 ```
-yum install gnome-tweaks sassc inkscape optipng glib2-devel gtk2-engines
-yum install https://pkgs.dyn.su/el8/base/x86_64/gtk-murrine-engine-0.98.2-18.el8.x86_64.rpm
+yum install gnome-tweaks sassc inkscape optipng glib2-devel gtk2-engines gtk-murrine-engine
 ```
 
 以下命令用普通用户运行即可

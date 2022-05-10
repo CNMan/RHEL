@@ -1,0 +1,55 @@
+RHash v1.3.8
+
+Usage: rhash [OPTION...] [FILE | -]...
+       rhash --printf=<format string> [FILE | -]...
+
+Options:
+  -V, --version Print program version and exit.
+  -h, --help    Print this help screen.
+  -C, --crc32   Calculate CRC32 hash sum.
+      --crc32c  Calculate CRC32C hash sum.
+      --md4     Calculate MD4 hash sum.
+  -M, --md5     Calculate MD5 hash sum.
+  -H, --sha1    Calculate SHA1 hash sum.
+      --sha224, --sha256, --sha384, --sha512 Calculate SHA2 hash sum.
+      --sha3-224, --sha3-256, --sha3-384, --sha3-512 Calculate SHA3 hash sum.
+  -T, --tth     Calculate TTH hash sum.
+      --btih    Calculate BitTorrent InfoHash hash sum.
+  -A, --aich    Calculate AICH hash sum.
+  -E, --ed2k    Calculate eDonkey hash sum.
+  -L, --ed2k-link  Calculate and print eDonkey link.
+      --tiger   Calculate Tiger hash sum.
+  -G, --gost12-256 Calculate GOST R 34.11-2012, 256 bit hash sum.
+      --gost12-512 Calculate GOST R 34.11-2012, 512 bit hash sum.
+      --gost94  Calculate GOST R 34.11-94 hash sum.
+      --gost94-cryptopro Calculate GOST R 34.11-94 CryptoPro hash sum.
+      --ripemd160  Calculate RIPEMD-160 hash sum.
+      --has160  Calculate HAS-160 hash sum.
+      --edonr256, --edonr512  Calculate EDON-R 256/512 hash sum.
+      --snefru128, --snefru256  Calculate SNEFRU-128/256 hash sum.
+  -a, --all     Calculate all supported hashes.
+  -c, --check   Check hash files specified by command line.
+  -u, --update  Update hash files specified by command line.
+  -e, --embed-crc  Rename files by inserting crc32 sum into name.
+  -k, --check-embedded  Verify files by crc32 sum embedded in their names.
+      --list-hashes  List the names of supported hashes, one per line.
+  -B, --benchmark  Benchmark selected algorithm.
+  -v, --verbose Be verbose.
+  -r, --recursive  Process directories recursively.
+      --file-list=<file> Process a list of files.
+  -m, --message=<text> Process the text message.
+      --skip-ok Don't print OK messages for successfully verified files.
+  -i, --ignore-case  Ignore case of filenames when updating hash files.
+      --percents   Show percents, while calculating or checking hashes.
+      --speed   Output per-file and total processing speed.
+      --maxdepth=<n> Descend at most <n> levels of directories.
+  -o, --output=<file> File to output calculation or checking results.
+  -l, --log=<file>    File to log errors and verbose information.
+      --sfv     Print hash sums, using SFV format (default).
+      --bsd     Print hash sums, using BSD-like format.
+      --simple  Print hash sums, using simple format.
+  -g, --magnet  Print hash sums  as magnet links.
+      --torrent Create torrent files.
+      --template=<file> Load a printf-like template from the <file>
+  -p, --printf=<format string>  Format and print hash sums.
+                See the RHash manual for details.
