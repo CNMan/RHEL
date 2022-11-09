@@ -3,3 +3,4 @@ name=google-earth-pro
 baseurl=http://dl.google.com/linux/earth/rpm/stable/x86_64
 enabled=1
 gpgcheck=1
+gpgkey=https://dl.google.com/linux/linux_signing_key.pub

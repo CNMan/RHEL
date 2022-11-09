@@ -1,0 +1,31 @@
+Scanning the drive for archives:
+1 file, 39030784 bytes (38 MiB)
+
+Listing archive: rhel-server-supplementary-5.11-x86_64-disc2.iso
+
+--
+Path = rhel-server-supplementary-5.11-x86_64-disc2.iso
+Type = Iso
+Physical Size = 39030784
+Created = 2014-08-14 03:37:51.00
+Modified = 2014-08-14 03:37:51.00
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+2014-08-14 03:28:37 .....          137          137  .discinfo
+2008-09-02 17:30:57 .....         8445         8445  EULA
+2006-11-30 22:53:36 .....        18416        18416  GPL
+2014-08-12 11:07:17 .....         1706         1706  RPM-GPG-KEY-redhat-beta
+2014-08-12 11:07:17 .....         1164         1164  RPM-GPG-KEY-redhat-release
+2014-08-14 03:28:37 D....                            Supplementary
+2014-08-14 03:37:51 .....         1859         1859  Supplementary/TRANS.TBL
+2014-08-07 18:09:26 .....       972192       972192  Supplementary/java-1.5.0-ibm-plugin-1.5.0.16.7-1jpp.1.el5_10.i386.rpm
+2014-08-07 18:09:26 .....      8217261      8217261  Supplementary/java-1.5.0-ibm-src-1.5.0.16.7-1jpp.1.el5_10.i386.rpm
+2014-08-07 18:09:31 .....      8217082      8217082  Supplementary/java-1.5.0-ibm-src-1.5.0.16.7-1jpp.1.el5_10.x86_64.rpm
+2014-08-07 08:29:02 .....     10568778     10568778  Supplementary/java-1.6.0-ibm-demo-1.6.0.16.1-1jpp.1.el5_10.i386.rpm
+2014-08-07 08:29:10 .....     10580105     10580105  Supplementary/java-1.6.0-ibm-demo-1.6.0.16.1-1jpp.1.el5_10.x86_64.rpm
+2014-08-08 08:15:46 .....        26450        26450  Supplementary/java-1.7.0-ibm-jdbc-1.7.0.7.1-1jpp.1.el5_10.i386.rpm
+2014-08-08 08:15:53 .....        27154        27154  Supplementary/java-1.7.0-ibm-jdbc-1.7.0.7.1-1jpp.1.el5_10.x86_64.rpm
+2014-08-14 03:37:51 .....         1350         1350  TRANS.TBL
+------------------- ----- ------------ ------------  ------------------------
+2014-08-14 03:37:51           38642099     38642099  14 files, 1 folders

@@ -1,10 +1,14 @@
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/9.0_release_notes/Red_Hat_Enterprise_Linux-9-9.0_Release_Notes-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/9.1_release_notes/Red_Hat_Enterprise_Linux-9-9.1_Release_Notes-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/9.2_release_notes/Red_Hat_Enterprise_Linux-9-9.2_Release_Notes-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/accessing_identity_management_services/Red_Hat_Enterprise_Linux-9-Accessing_Identity_Management_services-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/administering_the_system_using_the_gnome_desktop_environment/Red_Hat_Enterprise_Linux-9-Administering_the_system_using_the_GNOME_desktop_environment-en-US.pdf
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/administration_and_configuration_tasks_using_system_roles_in_rhel/Red_Hat_Enterprise_Linux-9-Administration_and_configuration_tasks_using_System_Roles_in_RHEL-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/automating_system_administration_by_using_rhel_system_roles/Red_Hat_Enterprise_Linux-9-Automating_system_administration_by_using_RHEL_System_Roles-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/boot_options_for_rhel_installer/Red_Hat_Enterprise_Linux-9-Boot_options_for_RHEL_Installer-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/building_running_and_managing_containers/Red_Hat_Enterprise_Linux-9-Building_running_and_managing_containers-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/composing_a_customized_rhel_system_image/Red_Hat_Enterprise_Linux-9-Composing_a_customized_RHEL_system_image-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/composing_installing_and_managing_rhel_for_edge_images/Red_Hat_Enterprise_Linux-9-Composing_installing_and_managing_RHEL_for_Edge_images-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/configuring_a_red_hat_high_availability_cluster_on_red_hat_openstack_platform/Red_Hat_Enterprise_Linux-9-Configuring_a_Red_Hat_High_Availability_cluster_on_Red_Hat_OpenStack_Platform-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/configuring_and_managing_cloud-init_for_rhel_9/Red_Hat_Enterprise_Linux-9-Configuring_and_managing_cloud-init_for_RHEL_9-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/configuring_and_managing_high_availability_clusters/Red_Hat_Enterprise_Linux-9-Configuring_and_managing_high_availability_clusters-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/configuring_and_managing_logical_volumes/Red_Hat_Enterprise_Linux-9-Configuring_and_managing_logical_volumes-en-US.pdf
@@ -21,8 +25,12 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/con
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/configuring_infiniband_and_rdma_networks/Red_Hat_Enterprise_Linux-9-Configuring_InfiniBand_and_RDMA_networks-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/considerations_in_adopting_rhel_9/Red_Hat_Enterprise_Linux-9-Considerations_in_adopting_RHEL_9-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/customizing_anaconda/Red_Hat_Enterprise_Linux-9-Customizing_Anaconda-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/customizing_the_gnome_desktop_environment/Red_Hat_Enterprise_Linux-9-Customizing_the_GNOME_desktop_environment-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/deduplicating_and_compressing_logical_volumes_on_rhel/Red_Hat_Enterprise_Linux-9-Deduplicating_and_compressing_logical_volumes_on_RHEL-en-US.pdf
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/deploying_red_hat_enterprise_linux_9_on_public_cloud_platforms/Red_Hat_Enterprise_Linux-9-Deploying_Red_Hat_Enterprise_Linux_9_on_public_cloud_platforms-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/deploying_mail_servers/Red_Hat_Enterprise_Linux-9-Deploying_mail_servers-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/deploying_rhel_9_on_amazon_web_services/Red_Hat_Enterprise_Linux-9-Deploying_RHEL_9_on_Amazon_Web_Services-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/deploying_rhel_9_on_google_cloud_platform/Red_Hat_Enterprise_Linux-9-Deploying_RHEL_9_on_Google_Cloud_Platform-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/deploying_rhel_9_on_microsoft_azure/Red_Hat_Enterprise_Linux-9-Deploying_RHEL_9_on_Microsoft_Azure-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/deploying_web_servers_and_reverse_proxies/Red_Hat_Enterprise_Linux-9-Deploying_web_servers_and_reverse_proxies-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/developing_c_and_cpp_applications_in_rhel_9/Red_Hat_Enterprise_Linux-9-Developing_C_and_CPP_applications_in_RHEL_9-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/getting_started_with_the_gnome_desktop_environment/Red_Hat_Enterprise_Linux-9-Getting_started_with_the_GNOME_desktop_environment-en-US.pdf
@@ -36,6 +44,8 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/man
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/managing_file_systems/Red_Hat_Enterprise_Linux-9-Managing_file_systems-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/managing_idm_users_groups_hosts_and_access_control_rules/Red_Hat_Enterprise_Linux-9-Managing_IdM_users_groups_hosts_and_access_control_rules-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/managing_monitoring_and_updating_the_kernel/Red_Hat_Enterprise_Linux-9-Managing_monitoring_and_updating_the_kernel-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/managing_networking_infrastructure_services/Red_Hat_Enterprise_Linux-9-Managing_networking_infrastructure_services-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/managing_replication_in_identity_management/Red_Hat_Enterprise_Linux-9-Managing_replication_in_Identity_Management-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/managing_smart_card_authentication/Red_Hat_Enterprise_Linux-9-Managing_smart_card_authentication-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/managing_software_with_the_dnf_tool/Red_Hat_Enterprise_Linux-9-Managing_software_with_the_DNF_tool-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/managing_storage_devices/Red_Hat_Enterprise_Linux-9-Managing_storage_devices-en-US.pdf
@@ -44,8 +54,8 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/mig
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/monitoring_and_managing_system_status_and_performance/Red_Hat_Enterprise_Linux-9-Monitoring_and_managing_system_status_and_performance-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/package_manifest/Red_Hat_Enterprise_Linux-9-Package_manifest-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/packaging_and_distributing_software/Red_Hat_Enterprise_Linux-9-Packaging_and_distributing_software-en-US.pdf
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/performing_a_standard_rhel_installation/Red_Hat_Enterprise_Linux-9-Performing_a_standard_RHEL_installation-en-US.pdf
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/performing_an_advanced_rhel_installation/Red_Hat_Enterprise_Linux-9-Performing_an_advanced_RHEL_installation-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/performing_a_standard_rhel_9_installation/Red_Hat_Enterprise_Linux-9-Performing_a_standard_RHEL_9_installation-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/performing_an_advanced_rhel_9_installation/Red_Hat_Enterprise_Linux-9-Performing_an_advanced_RHEL_9_installation-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/performing_disaster_recovery_with_identity_management/Red_Hat_Enterprise_Linux-9-Performing_disaster_recovery_with_Identity_Management-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/planning_identity_management/Red_Hat_Enterprise_Linux-9-Planning_Identity_Management-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/preparing_for_disaster_recovery_with_identity_management/Red_Hat_Enterprise_Linux-9-Preparing_for_disaster_recovery_with_Identity_Management-en-US.pdf
@@ -54,6 +64,7 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/sec
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/tuning_performance_in_identity_management/Red_Hat_Enterprise_Linux-9-Tuning_performance_in_Identity_Management-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/upgrading_from_rhel_8_to_rhel_9/Red_Hat_Enterprise_Linux-9-Upgrading_from_RHEL_8_to_RHEL_9-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/using_ansible_to_install_and_manage_identity_management/Red_Hat_Enterprise_Linux-9-Using_Ansible_to_install_and_manage_Identity_Management-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/using_external_red_hat_utilities_with_identity_management/Red_Hat_Enterprise_Linux-9-Using_external_Red_Hat_utilities_with_Identity_Management-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/using_idm_healthcheck_to_monitor_your_idm_environment/Red_Hat_Enterprise_Linux-9-Using_IdM_Healthcheck_to_monitor_your_IdM_environment-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/using_selinux/Red_Hat_Enterprise_Linux-9-Using_SELinux-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/working_with_dns_in_identity_management/Red_Hat_Enterprise_Linux-9-Working_with_DNS_in_Identity_Management-en-US.pdf

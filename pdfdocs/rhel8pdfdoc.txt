@@ -1,10 +1,12 @@
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.0_release_notes/Red_Hat_Enterprise_Linux-8-8.0_release_notes-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.0_release_notes/Red_Hat_Enterprise_Linux-8-8.0_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.1_release_notes/Red_Hat_Enterprise_Linux-8-8.1_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.2_release_notes/Red_Hat_Enterprise_Linux-8-8.2_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.3_release_notes/Red_Hat_Enterprise_Linux-8-8.3_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.4_release_notes/Red_Hat_Enterprise_Linux-8-8.4_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.5_release_notes/Red_Hat_Enterprise_Linux-8-8.5_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.6_release_notes/Red_Hat_Enterprise_Linux-8-8.6_Release_Notes-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.7_release_notes/Red_Hat_Enterprise_Linux-8-8.7_Release_Notes-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/accessing_identity_management_services/Red_Hat_Enterprise_Linux-8-Accessing_Identity_Management_services-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/administration_and_configuration_tasks_using_system_roles_in_rhel/Red_Hat_Enterprise_Linux-8-Administration_and_configuration_tasks_using_System_Roles_in_RHEL-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/building_running_and_managing_containers/Red_Hat_Enterprise_Linux-8-Building_running_and_managing_containers-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/composing_a_customized_rhel_system_image/Red_Hat_Enterprise_Linux-8-Composing_a_customized_RHEL_system_image-en-US.pdf
@@ -23,6 +25,7 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/con
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/configuring_rhel_8_for_sap_hana_2_installation/Red_Hat_Enterprise_Linux-8-Configuring_RHEL_8_for_SAP_HANA_2_installation-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/considerations_in_adopting_rhel_8/Red_Hat_Enterprise_Linux-8-Considerations_in_adopting_RHEL_8-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/converting_from_an_rpm-based_linux_distribution_to_rhel/Red_Hat_Enterprise_Linux-8-Converting_from_an_RPM-based_Linux_distribution_to_RHEL-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/creating_customized_rhel_images_using_the_image_builder_service/Red_Hat_Enterprise_Linux-8-Creating_customized_RHEL_images_using_the_Image_Builder_service-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/customizing_anaconda/Red_Hat_Enterprise_Linux-8-Customizing_Anaconda-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/deduplicating_and_compressing_logical_volumes_on_rhel/Red_Hat_Enterprise_Linux-8-Deduplicating_and_compressing_logical_volumes_on_RHEL-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/deduplicating_and_compressing_storage/Red_Hat_Enterprise_Linux-8-Deduplicating_and_compressing_storage-en-US.pdf
@@ -39,6 +42,7 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/man
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/managing_file_systems/Red_Hat_Enterprise_Linux-8-Managing_file_systems-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/managing_idm_users_groups_hosts_and_access_control_rules/Red_Hat_Enterprise_Linux-8-Managing_IdM_users_groups_hosts_and_access_control_rules-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/managing_monitoring_and_updating_the_kernel/Red_Hat_Enterprise_Linux-8-Managing_monitoring_and_updating_the_kernel-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/managing_networking_infrastructure_services/Red_Hat_Enterprise_Linux-8-Managing_networking_infrastructure_services-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/managing_smart_card_authentication/Red_Hat_Enterprise_Linux-8-Managing_smart_card_authentication-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/managing_storage_devices/Red_Hat_Enterprise_Linux-8-Managing_storage_devices-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/managing_systems_using_the_rhel_8_web_console/Red_Hat_Enterprise_Linux-8-Managing_systems_using_the_RHEL_8_web_console-en-US.pdf
@@ -46,8 +50,8 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/mig
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/monitoring_and_managing_system_status_and_performance/Red_Hat_Enterprise_Linux-8-Monitoring_and_managing_system_status_and_performance-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/package_manifest/Red_Hat_Enterprise_Linux-8-Package_manifest-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/packaging_and_distributing_software/Red_Hat_Enterprise_Linux-8-Packaging_and_distributing_software-en-US.pdf
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/performing_a_standard_rhel_installation/Red_Hat_Enterprise_Linux-8-Performing_a_standard_RHEL_installation-en-US.pdf
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/performing_an_advanced_rhel_installation/Red_Hat_Enterprise_Linux-8-Performing_an_advanced_RHEL_installation-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/performing_a_standard_rhel_8_installation/Red_Hat_Enterprise_Linux-8-Performing_a_standard_RHEL_8_installation-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/performing_an_advanced_rhel_8_installation/Red_Hat_Enterprise_Linux-8-Performing_an_advanced_RHEL_8_installation-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/performing_disaster_recovery_with_identity_management/Red_Hat_Enterprise_Linux-8-Performing_disaster_recovery_with_Identity_Management-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/planning_identity_management/Red_Hat_Enterprise_Linux-8-Planning_Identity_Management-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/preparing_for_disaster_recovery_with_identity_management/Red_Hat_Enterprise_Linux-8-Preparing_for_disaster_recovery_with_Identity_Management-en-US.pdf
@@ -57,7 +61,6 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/sec
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/tuning_performance_in_identity_management/Red_Hat_Enterprise_Linux-8-Tuning_performance_in_Identity_Management-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/upgrading_from_rhel_6_to_rhel_8/Red_Hat_Enterprise_Linux-8-Upgrading_from_RHEL_6_to_RHEL_8-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/upgrading_from_rhel_7_to_rhel_8/Red_Hat_Enterprise_Linux-8-Upgrading_from_RHEL_7_to_RHEL_8-en-US.pdf
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/uploading_a_customized_rhel_system_image_to_cloud_environments/Red_Hat_Enterprise_Linux-8-Uploading_a_customized_RHEL_system_image_to_cloud_environments-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/using_ansible_to_install_and_manage_identity_management/Red_Hat_Enterprise_Linux-8-Using_Ansible_to_install_and_manage_Identity_Management-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/using_idm_healthcheck_to_monitor_your_idm_environment/Red_Hat_Enterprise_Linux-8-Using_IdM_Healthcheck_to_monitor_your_IdM_environment-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/using_selinux/Red_Hat_Enterprise_Linux-8-Using_SELinux-en-US.pdf

@@ -32,7 +32,7 @@ subscription-manager attach --pool=PoolIDs
 subscription-manager list #效果等同于Red Hat Subscription Manager中的My Installed Products页面
 subscription-manager list --consumed #效果等同于Red Hat Subscription Manager中的My Subscriptions页面
 subscription-manager release --list #列出可用版本
-subscription-manager release --set=8.6 #锁定特定版本
+subscription-manager release --set=8.7 #锁定特定版本
 subscription-manager release --show #显示锁定的特定版本
 subscription-manager release --unset #取消锁定特定版本
 subscription-manager repos --disable="*"
@@ -91,25 +91,25 @@ yum install flash-player-ppapi #Adobe Flash Player PPAPI
 ```
 
 ## 安装SecureCRT和SecureFX
-注册试用并下载SecureCRT + SecureFX 9.2 Bundle：https://www.vandyke.com/download/index.html
+注册试用并下载SecureCRT + SecureFX 9.3 Bundle：https://www.vandyke.com/download/index.html
 ```
-sha1sum scrt-sfx-9.3.0-2905.rhel8-64.x86_64.rpm #确认是F237E634AF1BFE8FE8B25FB4B53997EAB9DFCEBA
-yum install scrt-sfx-9.3.0-2905.rhel8-64.x86_64.rpm
+sha1sum scrt-sfx-9.3.2-2978.rhel8-64.x86_64.rpm #确认是147E230325DB436FC8576ED866A48D8C02204125
+yum install scrt-sfx-9.3.2-2978.rhel8-64.x86_64.rpm
 mkdir -p /home/username/.vandyke/SecureCRT/Config/
 cp SecureCRT.lic /home/username/.vandyke/SecureCRT/Config/
 cp SecureFX.lic /home/username/.vandyke/SecureCRT/Config/
 ```
 
 ## 安装VMware Workstation
-参考[Install Workstation Pro on a Linux Host](https://docs.vmware.com/en/VMware-Workstation-Pro/16.0/com.vmware.ws.using.doc/GUID-1F5B1F14-A586-4A56-83FA-2E7D8333D5CA.html)
+参考[Install Workstation Pro on a Linux Host](https://docs.vmware.com/en/VMware-Workstation-Pro/17/com.vmware.ws.using.doc/GUID-1F5B1F14-A586-4A56-83FA-2E7D8333D5CA.html)
 ```
 yum group install "Development Tools"
 yum install elfutils-libelf-devel pcsc-lite-libs
 ln -s /usr/lib64/libnsl.so.2 /usr/lib64/libnsl.so.1
 访问 https://www.vmware.com/go/getworkstation-linux 获取最新的VMware Workstation for Linux下载链接
-wget https://download3.vmware.com/software/WKST-1624-LX/VMware-Workstation-Full-16.2.4-20089737.x86_64.bundle
-sha1sum VMware-Workstation-Full-16.2.4-20089737.x86_64.bundle #确认是bbae9bd37cb9811c1d9d98073327f9f8d28403ae
-sh VMware-Workstation-Full-16.2.4-20089737.x86_64.bundle --console --ignore-errors --set-setting vmware-workstation serialNumber ZF3R0-FHED2-M80TY-8QYGC-NPKYF
+wget https://download3.vmware.com/software/WKST-1702-LX/VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle
+sha1sum VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle #确认是3c75575db021720b9746e7a0fc58513151001826
+sh VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle --console --ignore-errors --set-setting vmware-workstation serialNumber MC60H-DWHD5-H80U9-6V85M-8280D
 ```
 
 ## 配置无线连接
@@ -139,11 +139,11 @@ rm -rf /var/cache/yum/
 rm -rf /var/cache/dnf/
 ```
 
-## 安装[Cisco AnyConnect Secure Mobility Client](https://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client-v4-x/model.html)
+## 安装[Cisco Secure Client(including AnyConnect)](https://software.cisco.com/download/home/286330811/type/282364313)
 ```
-md5sum anyconnect-linux64-4.10.06079-predeploy-k9.tar.gz #确认是2ae2b5a1fe45ddded49c599bfa561bb7
-tar zxvf anyconnect-linux64-4.10.06079-predeploy-k9.tar.gz
-cd anyconnect-linux64-4.10.06079/vpn/
+md5sum cisco-secure-client-linux64-5.0.02075-predeploy-k9.tar.gz #确认是d336b4f0b3ee46e11439bda51b502729
+tar zxvf cisco-secure-client-linux64-5.0.02075-predeploy-k9.tar.gz
+cd cisco-secure-client-linux64-5.0.02075/vpn/
 ./vpn_install.sh
 ```
 
@@ -190,9 +190,9 @@ nano .bashrc
 
 ## 备份firefox密码
 ```
-/home/username/.mozilla/firefox/xxxxxxx.default/logins.json
-/home/username/.mozilla/firefox/xxxxxxx.default/key3.db
-/home/username/.mozilla/firefox/xxxxxxx.default/key4.db
+/home/username/.mozilla/firefox/xxxxxxx.default-default/logins.json
+/home/username/.mozilla/firefox/xxxxxxx.default-default/key3.db
+/home/username/.mozilla/firefox/xxxxxxx.default-default/key4.db
 ```
 
 ## 安装命令行BT下载软件Transmission
@@ -295,9 +295,9 @@ $ ./besttrace 8.8.8.8
 ## [WPS Office for Linux](https://www.wps.com/office/linux/)
 
 ```
-wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/10920/wps-office-11.1.0.10920.XA-1.x86_64.rpm
-sha1sum wps-office-11.1.0.10920.XA-1.x86_64.rpm #b6f1447e00aacce434de352fc5bc7d458d9e0db7
-yum install wps-office-11.1.0.10920.XA-1.x86_64.rpm
+wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11664/wps-office-11.1.0.11664.XA-1.x86_64.rpm
+sha1sum wps-office-11.1.0.11664.XA-1.x86_64.rpm #a1809ae5c40b5fbd0fe888bf40d24154d535bb06
+yum install wps-office-11.1.0.11664.XA-1.x86_64.rpm
 ```
 
 ## LCDF Typetools
@@ -312,8 +312,8 @@ yum install lcdf-typetools-2.105-2.1.x86_64.rpm
 ```
 mkdir /mnt/rhel8iso
 mkdir /mnt/rhel8suppiso
-mount -o loop rhel-8.6-x86_64-dvd.iso /mnt/rhel8iso/
-mount -o loop supp-supplementary-8.6-rhel-8-x86_64-dvd.iso /mnt/rhel8suppiso/
+mount -o loop rhel-8.7-x86_64-dvd.iso /mnt/rhel8iso/
+mount -o loop supp-supplementary-8.7-rhel-8-x86_64-dvd.iso /mnt/rhel8suppiso/
 touch /etc/yum.repos.d/rhel8iso.repo
 chmod 644 /etc/yum.repos.d/rhel8iso.repo
 nano /etc/yum.repos.d/rhel8iso.repo
@@ -349,8 +349,8 @@ yum --noplugins update
 自动挂载
 ```
 nano /etc/fstab
-	rhel-8.6-x86_64-dvd.iso	/mnt/rhel8iso	udf,iso9660	user,auto,loop	0 0
-	supp-supplementary-8.6-rhel-8-x86_64-dvd.iso	/mnt/rhel8suppiso	udf,iso9660	user,auto,loop	0 0
+	rhel-8.7-x86_64-dvd.iso	/mnt/rhel8iso	udf,iso9660	user,auto,loop	0 0
+	supp-supplementary-8.7-rhel-8-x86_64-dvd.iso	/mnt/rhel8suppiso	udf,iso9660	user,auto,loop	0 0
 ```
 
 ## 设置SSH key files permission

@@ -1,0 +1,71 @@
+Scanning the drive for archives:
+1 file, 406767616 bytes (388 MiB)
+
+Listing archive: supp-server-6.10-rhel-6-x86_64-dvd.iso
+
+--
+Path = supp-server-6.10-rhel-6-x86_64-dvd.iso
+Type = Iso
+Physical Size = 406767616
+Created = 2018-05-25 06:15:04.00
+Modified = 2018-05-25 06:15:04.00
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+2018-05-25 06:15:00 .....           77           77  .discinfo
+2018-05-25 06:15:00 .....          940          940  .treeinfo
+2017-08-25 12:59:42 .....         8266         8266  EULA
+2017-08-25 12:59:42 .....        18416        18416  GPL
+2018-05-25 06:15:03 D....                            Packages
+2018-05-25 06:15:03 .....         4700         4700  Packages/TRANS.TBL
+2018-05-11 13:08:27 .....     91714916     91714916  Packages/chromium-browser-66.0.3359.170-1.el6_9.x86_64.rpm
+2018-05-08 16:25:45 .....      4694244      4694244  Packages/flash-plugin-29.0.0.171-1.el6_9.i686.rpm
+2018-03-12 10:07:48 .....     87552184     87552184  Packages/java-1.7.1-ibm-1.7.1.4.20-1jpp.3.el6_9.x86_64.rpm
+2018-03-12 10:07:49 .....     14317924     14317924  Packages/java-1.7.1-ibm-demo-1.7.1.4.20-1jpp.3.el6_9.x86_64.rpm
+2018-03-12 10:07:49 .....      7865276      7865276  Packages/java-1.7.1-ibm-devel-1.7.1.4.20-1jpp.3.el6_9.x86_64.rpm
+2018-03-12 10:07:47 .....        31128        31128  Packages/java-1.7.1-ibm-jdbc-1.7.1.4.20-1jpp.3.el6_9.x86_64.rpm
+2018-03-12 10:07:47 .....      1396600      1396600  Packages/java-1.7.1-ibm-plugin-1.7.1.4.20-1jpp.3.el6_9.x86_64.rpm
+2018-03-12 10:07:47 .....     10436408     10436408  Packages/java-1.7.1-ibm-src-1.7.1.4.20-1jpp.3.el6_9.x86_64.rpm
+2018-02-23 08:37:28 .....    116012524    116012524  Packages/java-1.8.0-ibm-1.8.0.5.10-1jpp.1.el6_9.x86_64.rpm
+2018-02-23 08:37:28 .....     14494208     14494208  Packages/java-1.8.0-ibm-demo-1.8.0.5.10-1jpp.1.el6_9.x86_64.rpm
+2018-02-23 08:37:29 .....      9293932      9293932  Packages/java-1.8.0-ibm-devel-1.8.0.5.10-1jpp.1.el6_9.x86_64.rpm
+2018-02-23 08:37:27 .....         8716         8716  Packages/java-1.8.0-ibm-jdbc-1.8.0.5.10-1jpp.1.el6_9.x86_64.rpm
+2018-02-23 08:37:29 .....      1368388      1368388  Packages/java-1.8.0-ibm-plugin-1.8.0.5.10-1jpp.1.el6_9.x86_64.rpm
+2018-02-23 08:37:29 .....     11643072     11643072  Packages/java-1.8.0-ibm-src-1.8.0.5.10-1jpp.1.el6_9.x86_64.rpm
+2010-09-02 20:44:35 .....       315908       315908  Packages/kmod-kspiceusb-rhel60-4.9-14.el6.x86_64.rpm
+2010-08-25 13:21:25 .....       195216       195216  Packages/spice-usb-share-4.9-9.el6.x86_64.rpm
+2011-10-26 08:59:07 .....        55660        55660  Packages/system-switch-java-1.1.5-5.el6.noarch.rpm
+2016-11-16 06:30:38 .....     34389448     34389448  Packages/virtio-win-1.8.0-1.el6.noarch.rpm
+2017-08-25 12:59:42 .....         3375         3375  RPM-GPG-KEY-redhat-beta
+2017-08-25 12:59:42 .....         3211         3211  RPM-GPG-KEY-redhat-release
+2018-05-25 06:15:03 D....                            Server
+2018-05-25 06:15:03 D....                            Server/repodata
+2018-05-25 06:14:48 .....        36383        36383  Server/repodata/0c90bca0233d2dfc3f43599753b00ea7585120858acc211a8c0734e295ac6e63-comps-Server.x86_64.xml
+2018-05-25 06:14:48 .....        58163        58163  Server/repodata/114bb35c48440dd514c7434370ab79fbefc0d2aa67a97711b6b1da2ba77cd5e9-filelists.sqlite.bz2
+2018-05-25 06:14:48 .....        68368        68368  Server/repodata/4f9bc53dc9510a74004cb35a09c054380833bbd8c99f19d7d3dd6ee618b61011-filelists.xml.gz
+2018-05-25 06:14:48 .....         9758         9758  Server/repodata/58a510c618676fb770bb59bebb5c8f1065112b7bc54df6dc4b985a37c4a79a12-other.xml.gz
+2018-05-25 06:14:48 .....         8743         8743  Server/repodata/6d07c151b4d1caa8a185d37f2addd4e856f8ec1004636798e683fb1e7fd58a6c-primary.xml.gz
+2018-05-25 06:14:48 .....        25240        25240  Server/repodata/73fa3a5e6fac64f09f625c0247031c47a2762cbe8cff968bb1c888a7615c0118-primary.sqlite.bz2
+2018-05-25 06:14:48 .....        13217        13217  Server/repodata/7d4095863158e7e4c7d05ee0139fb62399ad1d3ccb570fd172ced9378a6a3cf4-other.sqlite.bz2
+2018-05-25 06:15:03 .....         3093         3093  Server/repodata/TRANS.TBL
+2018-05-25 06:14:49 .....         1621         1621  Server/repodata/be97b1c204f690d373516cd5cc7e0edb982faa5a8e026382712f7919ce53cfed-productid.gz
+2018-05-25 06:14:48 .....         9707         9707  Server/repodata/e96ea76ffd916be4066be80f10ac9b449869625b5de458823c503de4401dfe7f-comps-Server.x86_64.xml.gz
+2018-05-24 20:56:15 .....         2159         2159  Server/repodata/productid
+2018-05-25 06:14:49 .....         4153         4153  Server/repodata/repomd.xml
+2018-05-25 06:15:03 .....         1568         1568  TRANS.TBL
+2018-05-25 06:14:54 .....          135          135  media.repo
+2018-05-25 06:15:03 D....                            repodata
+2018-05-25 06:14:46 .....        36383        36383  repodata/0c90bca0233d2dfc3f43599753b00ea7585120858acc211a8c0734e295ac6e63-comps-Server.x86_64.xml
+2018-05-25 06:14:47 .....        58163        58163  repodata/114bb35c48440dd514c7434370ab79fbefc0d2aa67a97711b6b1da2ba77cd5e9-filelists.sqlite.bz2
+2018-05-25 06:14:46 .....        68368        68368  repodata/4f9bc53dc9510a74004cb35a09c054380833bbd8c99f19d7d3dd6ee618b61011-filelists.xml.gz
+2018-05-25 06:14:46 .....         9758         9758  repodata/58a510c618676fb770bb59bebb5c8f1065112b7bc54df6dc4b985a37c4a79a12-other.xml.gz
+2018-05-25 06:14:47 .....        25272        25272  repodata/65f1b7a3f273fb71119d422f3889178307b45b7288db531d1d8305b116d96843-primary.sqlite.bz2
+2018-05-25 06:14:47 .....        13217        13217  repodata/7d4095863158e7e4c7d05ee0139fb62399ad1d3ccb570fd172ced9378a6a3cf4-other.sqlite.bz2
+2018-05-25 06:15:03 .....         3093         3093  repodata/TRANS.TBL
+2018-05-25 06:14:46 .....         8739         8739  repodata/af0d9a0f5292b1c104b33d0bc242d8562aa47dfb00a0b454edb59616770083fc-primary.xml.gz
+2018-05-25 06:14:49 .....         1621         1621  repodata/be97b1c204f690d373516cd5cc7e0edb982faa5a8e026382712f7919ce53cfed-productid.gz
+2018-05-25 06:14:46 .....         9707         9707  repodata/e96ea76ffd916be4066be80f10ac9b449869625b5de458823c503de4401dfe7f-comps-Server.x86_64.xml.gz
+2018-05-24 20:56:15 .....         2159         2159  repodata/productid
+2018-05-25 06:14:49 .....         4153         4153  repodata/repomd.xml
+------------------- ----- ------------ ------------  ------------------------
+2018-05-25 06:15:03          406307678    406307678  51 files, 4 folders
