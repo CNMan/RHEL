@@ -6,11 +6,13 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.4
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.5_release_notes/Red_Hat_Enterprise_Linux-8-8.5_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.6_release_notes/Red_Hat_Enterprise_Linux-8-8.6_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.7_release_notes/Red_Hat_Enterprise_Linux-8-8.7_Release_Notes-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.8_release_notes/Red_Hat_Enterprise_Linux-8-8.8_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/accessing_identity_management_services/Red_Hat_Enterprise_Linux-8-Accessing_Identity_Management_services-en-US.pdf
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/administration_and_configuration_tasks_using_system_roles_in_rhel/Red_Hat_Enterprise_Linux-8-Administration_and_configuration_tasks_using_System_Roles_in_RHEL-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/automating_system_administration_by_using_rhel_system_roles/Red_Hat_Enterprise_Linux-8-Automating_system_administration_by_using_RHEL_System_Roles-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/building_running_and_managing_containers/Red_Hat_Enterprise_Linux-8-Building_running_and_managing_containers-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/composing_a_customized_rhel_system_image/Red_Hat_Enterprise_Linux-8-Composing_a_customized_RHEL_system_image-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/composing_installing_and_managing_rhel_for_edge_images/Red_Hat_Enterprise_Linux-8-Composing_installing_and_managing_RHEL_for_Edge_images-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/configuring_a_red_hat_high_availability_cluster_on_red_hat_openstack_platform/Red_Hat_Enterprise_Linux-8-Configuring_a_Red_Hat_High_Availability_cluster_on_Red_Hat_OpenStack_Platform-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/configuring_and_managing_cloud-init_for_rhel_8/Red_Hat_Enterprise_Linux-8-Configuring_and_managing_cloud-init_for_RHEL_8-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/configuring_and_managing_high_availability_clusters/Red_Hat_Enterprise_Linux-8-Configuring_and_managing_high_availability_clusters-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/configuring_and_managing_identity_management/Red_Hat_Enterprise_Linux-8-Configuring_and_managing_Identity_Management-en-US.pdf
@@ -30,7 +32,9 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/cus
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/deduplicating_and_compressing_logical_volumes_on_rhel/Red_Hat_Enterprise_Linux-8-Deduplicating_and_compressing_logical_volumes_on_RHEL-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/deduplicating_and_compressing_storage/Red_Hat_Enterprise_Linux-8-Deduplicating_and_compressing_storage-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/deploying_different_types_of_servers/Red_Hat_Enterprise_Linux-8-Deploying_different_types_of_servers-en-US.pdf
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/deploying_red_hat_enterprise_linux_8_on_public_cloud_platforms/Red_Hat_Enterprise_Linux-8-Deploying_Red_Hat_Enterprise_Linux_8_on_public_cloud_platforms-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/deploying_rhel_8_on_amazon_web_services/Red_Hat_Enterprise_Linux-8-Deploying_RHEL_8_on_Amazon_Web_Services-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/deploying_rhel_8_on_google_cloud_platform/Red_Hat_Enterprise_Linux-8-Deploying_RHEL_8_on_Google_Cloud_Platform-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/deploying_rhel_8_on_microsoft_azure/Red_Hat_Enterprise_Linux-8-Deploying_RHEL_8_on_Microsoft_Azure-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/developing_.net_applications_in_rhel_8/Red_Hat_Enterprise_Linux-8-Developing_.NET_applications_in_RHEL_8-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/developing_c_and_cpp_applications_in_rhel_8/Red_Hat_Enterprise_Linux-8-Developing_C_and_CPP_applications_in_RHEL_8-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/generating_sos_reports_for_technical_support/Red_Hat_Enterprise_Linux-8-Generating_sos_reports_for_technical_support-en-US.pdf

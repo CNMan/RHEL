@@ -32,7 +32,7 @@ subscription-manager attach --pool=PoolIDs
 subscription-manager list #效果等同于Red Hat Subscription Manager中的My Installed Products页面
 subscription-manager list --consumed #效果等同于Red Hat Subscription Manager中的My Subscriptions页面
 subscription-manager release --list #列出可用版本
-subscription-manager release --set=8.7 #锁定特定版本
+subscription-manager release --set=8.8 #锁定特定版本
 subscription-manager release --show #显示锁定的特定版本
 subscription-manager release --unset #取消锁定特定版本
 subscription-manager repos --disable="*"
@@ -93,6 +93,7 @@ yum install flash-player-ppapi #Adobe Flash Player PPAPI
 ## 安装SecureCRT和SecureFX
 注册试用并下载SecureCRT + SecureFX 9.3 Bundle：https://www.vandyke.com/download/index.html
 ```
+yum install pcre2-utf16 xcb-util-image xcb-util-keysyms xcb-util-renderutil xcb-util-wm
 sha1sum scrt-sfx-9.3.2-2978.rhel8-64.x86_64.rpm #确认是147E230325DB436FC8576ED866A48D8C02204125
 yum install scrt-sfx-9.3.2-2978.rhel8-64.x86_64.rpm
 mkdir -p /home/username/.vandyke/SecureCRT/Config/
@@ -141,9 +142,9 @@ rm -rf /var/cache/dnf/
 
 ## 安装[Cisco Secure Client(including AnyConnect)](https://software.cisco.com/download/home/286330811/type/282364313)
 ```
-md5sum cisco-secure-client-linux64-5.0.02075-predeploy-k9.tar.gz #确认是d336b4f0b3ee46e11439bda51b502729
-tar zxvf cisco-secure-client-linux64-5.0.02075-predeploy-k9.tar.gz
-cd cisco-secure-client-linux64-5.0.02075/vpn/
+md5sum cisco-secure-client-linux64-5.0.03072-predeploy-k9.tar.gz #确认是fb623203195acb5c7349a1c6cd3aa2d5
+tar zxvf cisco-secure-client-linux64-5.0.03072-predeploy-k9.tar.gz
+cd cisco-secure-client-linux64-5.0.03072/vpn/
 ./vpn_install.sh
 ```
 
@@ -295,9 +296,9 @@ $ ./besttrace 8.8.8.8
 ## [WPS Office for Linux](https://www.wps.com/office/linux/)
 
 ```
-wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11664/wps-office-11.1.0.11664.XA-1.x86_64.rpm
-sha1sum wps-office-11.1.0.11664.XA-1.x86_64.rpm #a1809ae5c40b5fbd0fe888bf40d24154d535bb06
-yum install wps-office-11.1.0.11664.XA-1.x86_64.rpm
+wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11698/wps-office-11.1.0.11698.XA-1.x86_64.rpm
+sha1sum wps-office-11.1.0.11698.XA-1.x86_64.rpm #0a144a0d02a4c94487ccf140fbe194bc304ba1be
+yum install wps-office-11.1.0.11698.XA-1.x86_64.rpm
 ```
 
 ## LCDF Typetools
@@ -312,8 +313,8 @@ yum install lcdf-typetools-2.105-2.1.x86_64.rpm
 ```
 mkdir /mnt/rhel8iso
 mkdir /mnt/rhel8suppiso
-mount -o loop rhel-8.7-x86_64-dvd.iso /mnt/rhel8iso/
-mount -o loop supp-supplementary-8.7-rhel-8-x86_64-dvd.iso /mnt/rhel8suppiso/
+mount -o loop rhel-8.8-x86_64-dvd.iso /mnt/rhel8iso/
+mount -o loop supp-supplementary-8.8-rhel-8-x86_64-dvd.iso /mnt/rhel8suppiso/
 touch /etc/yum.repos.d/rhel8iso.repo
 chmod 644 /etc/yum.repos.d/rhel8iso.repo
 nano /etc/yum.repos.d/rhel8iso.repo
@@ -349,8 +350,8 @@ yum --noplugins update
 自动挂载
 ```
 nano /etc/fstab
-	rhel-8.7-x86_64-dvd.iso	/mnt/rhel8iso	udf,iso9660	user,auto,loop	0 0
-	supp-supplementary-8.7-rhel-8-x86_64-dvd.iso	/mnt/rhel8suppiso	udf,iso9660	user,auto,loop	0 0
+	rhel-8.8-x86_64-dvd.iso	/mnt/rhel8iso	udf,iso9660	user,auto,loop	0 0
+	supp-supplementary-8.8-rhel-8-x86_64-dvd.iso	/mnt/rhel8suppiso	udf,iso9660	user,auto,loop	0 0
 ```
 
 ## 设置SSH key files permission
