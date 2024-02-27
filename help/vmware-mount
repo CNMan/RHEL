@@ -1,0 +1,28 @@
+VMware DiskMount Utility version 8.0.0, build-21581411
+
+Usage: vmware-mount diskPath [partition num] mountPoint
+       vmware-mount [option] [opt args]
+
+There are two modes for mounting disks.  If no option is
+specified, we mount individual partitions from virtual disks
+independently.  The filesystem on the partition will be
+accessible at the mount point specified.
+
+The -f option mounts a flat representation of a disk on a
+user-specified mount point.  The user must explicitly unmount
+the disk when finished.  A disk may not be in both modes at once.
+
+Options: -p <diskID>      list all partitions on a disk
+         -l <diskID>      list all mounted partitions on a disk
+         -L               list all mounted disks
+         -d <mountPoint>  cleanly unmount this partition
+                          (closes disk if it is the last partition)
+         -f <diskPath> <mountPoint> mount a flat representation of the disk
+                          at "mountPoint/flat."
+         -k <diskID>      unmount all partitions and close disk
+         -K <diskID>      force unmount all partitions and close disk
+         -x               unmount all partitions and close all disks
+         -X               force unmount all partitions and close all disks
+         -r               mount the disk or partition read-only
+         -o               comma-separated list of options to be passed
+                          to the 'mount' when mounting a partition

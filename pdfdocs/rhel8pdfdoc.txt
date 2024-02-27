@@ -7,6 +7,7 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.5
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.6_release_notes/Red_Hat_Enterprise_Linux-8-8.6_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.7_release_notes/Red_Hat_Enterprise_Linux-8-8.7_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.8_release_notes/Red_Hat_Enterprise_Linux-8-8.8_Release_Notes-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.9_release_notes/Red_Hat_Enterprise_Linux-8-8.9_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/accessing_identity_management_services/Red_Hat_Enterprise_Linux-8-Accessing_Identity_Management_services-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/automating_system_administration_by_using_rhel_system_roles/Red_Hat_Enterprise_Linux-8-Automating_system_administration_by_using_RHEL_System_Roles-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/building_running_and_managing_containers/Red_Hat_Enterprise_Linux-8-Building_running_and_managing_containers-en-US.pdf
@@ -24,10 +25,9 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/con
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/configuring_device_mapper_multipath/Red_Hat_Enterprise_Linux-8-Configuring_device_mapper_multipath-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/configuring_gfs2_file_systems/Red_Hat_Enterprise_Linux-8-Configuring_GFS2_file_systems-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/configuring_infiniband_and_rdma_networks/Red_Hat_Enterprise_Linux-8-Configuring_InfiniBand_and_RDMA_networks-en-US.pdf
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/configuring_rhel_8_for_sap_hana_2_installation/Red_Hat_Enterprise_Linux-8-Configuring_RHEL_8_for_SAP_HANA_2_installation-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/considerations_in_adopting_rhel_8/Red_Hat_Enterprise_Linux-8-Considerations_in_adopting_RHEL_8-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/converting_from_an_rpm-based_linux_distribution_to_rhel/Red_Hat_Enterprise_Linux-8-Converting_from_an_RPM-based_Linux_distribution_to_RHEL-en-US.pdf
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/creating_customized_rhel_images_using_the_image_builder_service/Red_Hat_Enterprise_Linux-8-Creating_customized_RHEL_images_using_the_Image_Builder_service-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/creating_customized_images_by_using_insights_image_builder/Red_Hat_Enterprise_Linux-8-Creating_customized_images_by_using_Insights_image_builder-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/customizing_anaconda/Red_Hat_Enterprise_Linux-8-Customizing_Anaconda-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/deduplicating_and_compressing_logical_volumes_on_rhel/Red_Hat_Enterprise_Linux-8-Deduplicating_and_compressing_logical_volumes_on_RHEL-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/deduplicating_and_compressing_storage/Red_Hat_Enterprise_Linux-8-Deduplicating_and_compressing_storage-en-US.pdf
@@ -35,7 +35,6 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/dep
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/deploying_rhel_8_on_amazon_web_services/Red_Hat_Enterprise_Linux-8-Deploying_RHEL_8_on_Amazon_Web_Services-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/deploying_rhel_8_on_google_cloud_platform/Red_Hat_Enterprise_Linux-8-Deploying_RHEL_8_on_Google_Cloud_Platform-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/deploying_rhel_8_on_microsoft_azure/Red_Hat_Enterprise_Linux-8-Deploying_RHEL_8_on_Microsoft_Azure-en-US.pdf
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/developing_.net_applications_in_rhel_8/Red_Hat_Enterprise_Linux-8-Developing_.NET_applications_in_RHEL_8-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/developing_c_and_cpp_applications_in_rhel_8/Red_Hat_Enterprise_Linux-8-Developing_C_and_CPP_applications_in_RHEL_8-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/generating_sos_reports_for_technical_support/Red_Hat_Enterprise_Linux-8-Generating_sos_reports_for_technical_support-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/installing_identity_management/Red_Hat_Enterprise_Linux-8-Installing_Identity_Management-en-US.pdf
@@ -68,6 +67,7 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/upg
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/using_ansible_to_install_and_manage_identity_management/Red_Hat_Enterprise_Linux-8-Using_Ansible_to_install_and_manage_Identity_Management-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/using_idm_healthcheck_to_monitor_your_idm_environment/Red_Hat_Enterprise_Linux-8-Using_IdM_Healthcheck_to_monitor_your_IdM_environment-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/using_selinux/Red_Hat_Enterprise_Linux-8-Using_SELinux-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/using_systemd_unit_files_to_customize_and_optimize_your_system/Red_Hat_Enterprise_Linux-8-Using_systemd_unit_files_to_customize_and_optimize_your_system-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/using_the_desktop_environment_in_rhel_8/Red_Hat_Enterprise_Linux-8-Using_the_desktop_environment_in_RHEL_8-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/working_with_dns_in_identity_management/Red_Hat_Enterprise_Linux-8-Working_with_DNS_in_Identity_Management-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/working_with_vaults_in_identity_management/Red_Hat_Enterprise_Linux-8-Working_with_vaults_in_Identity_Management-en-US.pdf

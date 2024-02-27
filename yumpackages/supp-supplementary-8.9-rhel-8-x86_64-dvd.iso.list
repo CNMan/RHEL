@@ -1,0 +1,44 @@
+Scanning the drive for archives:
+1 file, 150104064 bytes (144 MiB)
+
+Listing archive: supp-supplementary-8.9-rhel-8-x86_64-dvd.iso
+
+--
+Path = supp-supplementary-8.9-rhel-8-x86_64-dvd.iso
+Type = Iso
+Physical Size = 150104064
+Created = 2023-10-12 00:45:14.00
+Modified = 2023-10-12 00:45:14.00
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+2023-10-12 00:45:11 .....           78           78  .discinfo
+2023-10-12 00:45:11 .....          834          834  .treeinfo
+2023-10-12 00:45:02 .....         8154         8154  EULA
+2023-10-12 00:45:02 .....        18092        18092  GPL
+2023-10-12 00:45:14 D....                            Packages
+2023-10-12 00:45:14 .....         2334         2334  Packages/TRANS.TBL
+2019-03-01 07:48:23 .....       293868       293868  Packages/dptfxtract-1-2.el8.x86_64.rpm
+2023-08-23 21:37:59 .....       402180       402180  Packages/java-1.8.0-ibm-1.8.0.8.10-1.el8_8.x86_64.rpm
+2023-08-23 21:38:03 .....     12298380     12298380  Packages/java-1.8.0-ibm-demo-1.8.0.8.10-1.el8_8.x86_64.rpm
+2023-08-23 21:38:08 .....      9251152      9251152  Packages/java-1.8.0-ibm-devel-1.8.0.8.10-1.el8_8.x86_64.rpm
+2023-08-23 21:38:16 .....    114128916    114128916  Packages/java-1.8.0-ibm-headless-1.8.0.8.10-1.el8_8.x86_64.rpm
+2023-08-23 21:38:20 .....        15208        15208  Packages/java-1.8.0-ibm-jdbc-1.8.0.8.10-1.el8_8.x86_64.rpm
+2023-08-23 21:38:22 .....       884504       884504  Packages/java-1.8.0-ibm-plugin-1.8.0.8.10-1.el8_8.x86_64.rpm
+2023-08-23 21:38:26 .....     11763236     11763236  Packages/java-1.8.0-ibm-src-1.8.0.8.10-1.el8_8.x86_64.rpm
+2023-08-23 21:38:29 .....       555972       555972  Packages/java-1.8.0-ibm-webstart-1.8.0.8.10-1.el8_8.x86_64.rpm
+2023-10-12 00:45:01 .....         1669         1669  RPM-GPG-KEY-redhat-beta
+2023-10-12 00:45:02 .....         5135         5135  RPM-GPG-KEY-redhat-release
+2023-10-12 00:45:14 .....         1796         1796  TRANS.TBL
+2023-10-12 00:45:02 .....         1455         1455  extra_files.json
+2023-10-12 00:45:07 .....          136          136  media.repo
+2023-10-12 00:45:14 D....                            repodata
+2023-10-12 00:45:06 .....        32172        32172  repodata/23a79f1b732363d42c0af658f09fae44cc38d0ab4cff4f92c81ec6e393cc00e3-comps-Supplementary.x86_64.xml
+2023-10-12 00:45:06 .....         4130         4130  repodata/3139901778c737ab0c04423ae9ba6259b2f526c10a4c99a7e9d6c921e973f7f8-primary.xml.gz
+2023-10-12 00:45:06 .....         1590         1590  repodata/38c2e374143890979f2d0aa621f864cf736783f815534111fc9eb9a4c553632e-other.xml.gz
+2023-10-12 00:45:06 .....         8146         8146  repodata/4864b8433fb73fe31f746b173424f6e3c8f87127a2ddfdc54797eda9b17d929d-comps-Supplementary.x86_64.xml.gz
+2023-10-12 00:45:14 .....         1712         1712  repodata/TRANS.TBL
+2023-10-12 00:45:06 .....        12628        12628  repodata/c7ee001b6ddf8f03c49f81bbaa76d889114ec8739c9782cc2bb6009d2f5034a6-filelists.xml.gz
+2023-10-12 00:45:06 .....         2358         2358  repodata/repomd.xml
+------------------- ----- ------------ ------------  ------------------------
+2023-10-12 00:45:14          149695835    149695835  26 files, 2 folders

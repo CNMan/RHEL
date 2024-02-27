@@ -8,8 +8,8 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/7.6
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/7.7_release_notes/Red_Hat_Enterprise_Linux-7-7.7_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/7.8_release_notes/Red_Hat_Enterprise_Linux-7-7.8_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/7.9_release_notes/Red_Hat_Enterprise_Linux-7-7.9_Release_Notes-en-US.pdf
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/administration_and_configuration_tasks_using_system_roles_in_rhel_7.9/Red_Hat_Enterprise_Linux-7-Administration_and_configuration_tasks_using_System_Roles_in_RHEL_7.9-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/anaconda_customization_guide/Red_Hat_Enterprise_Linux-7-Anaconda_Customization_Guide-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/automating_system_administration_by_using_rhel_system_roles_in_rhel_7.9/Red_Hat_Enterprise_Linux-7-Automating_system_administration_by_using_RHEL_System_Roles_in_RHEL_7.9-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/deploying_red_hat_enterprise_linux_7_on_public_cloud_platforms/Red_Hat_Enterprise_Linux-7-Deploying_Red_Hat_Enterprise_Linux_7_on_public_cloud_platforms-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/desktop_migration_and_administration_guide/Red_Hat_Enterprise_Linux-7-Desktop_Migration_and_Administration_Guide-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/developer_guide/Red_Hat_Enterprise_Linux-7-Developer_Guide-en-US.pdf

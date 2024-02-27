@@ -32,7 +32,7 @@ subscription-manager attach --pool=PoolIDs
 subscription-manager list #效果等同于Red Hat Subscription Manager中的My Installed Products页面
 subscription-manager list --consumed #效果等同于Red Hat Subscription Manager中的My Subscriptions页面
 subscription-manager release --list #列出可用版本
-subscription-manager release --set=8.8 #锁定特定版本
+subscription-manager release --set=8.9 #锁定特定版本
 subscription-manager release --show #显示锁定的特定版本
 subscription-manager release --unset #取消锁定特定版本
 subscription-manager repos --disable="*"
@@ -65,7 +65,7 @@ timedatectl set-ntp yes
 ## 安装EPEL源及NTFS驱动
 ```
 yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-yum install ntfs-3g
+yum install ntfs-3g ntfs-3g-libs
 ```
 
 ## 安装RPM Fusion源及VLC Media Player、exFAT驱动
@@ -107,10 +107,16 @@ cp SecureFX.lic /home/username/.vandyke/SecureCRT/Config/
 yum group install "Development Tools"
 yum install elfutils-libelf-devel pcsc-lite-libs
 ln -s /usr/lib64/libnsl.so.2 /usr/lib64/libnsl.so.1
-访问 https://www.vmware.com/go/getworkstation-linux 获取最新的VMware Workstation for Linux下载链接
 wget https://download3.vmware.com/software/WKST-1702-LX/VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle
 sha1sum VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle #确认是3c75575db021720b9746e7a0fc58513151001826
 sh VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle --console --ignore-errors --set-setting vmware-workstation serialNumber MC60H-DWHD5-H80U9-6V85M-8280D
+```
+
+```
+访问 https://www.vmware.com/go/getworkstation-linux 获取最新的VMware Workstation for Linux下载链接
+wget https://download3.vmware.com/software/WKST-1751-LX/VMware-Workstation-Full-17.5.1-23298084.x86_64.bundle
+sha1sum VMware-Workstation-Full-17.5.1-23298084.x86_64.bundle #确认是6fcc79b46354e3cc3fd11a325afd441723cc807a
+sh VMware-Workstation-Full-17.5.1-23298084.x86_64.bundle --console --ignore-errors --set-setting vmware-workstation serialNumber MC60H-DWHD5-H80U9-6V85M-8280D
 ```
 
 ## 配置无线连接
@@ -142,10 +148,9 @@ rm -rf /var/cache/dnf/
 
 ## 安装[Cisco Secure Client(including AnyConnect)](https://software.cisco.com/download/home/286330811/type/282364313)
 ```
-md5sum cisco-secure-client-linux64-5.0.03072-predeploy-k9.tar.gz #确认是fb623203195acb5c7349a1c6cd3aa2d5
-tar zxvf cisco-secure-client-linux64-5.0.03072-predeploy-k9.tar.gz
-cd cisco-secure-client-linux64-5.0.03072/vpn/
-./vpn_install.sh
+md5sum cisco-secure-client-linux64-5.1.2.42-predeploy-rpm-k9.tar.gz #确认是39b85b58170d3bf4ab0b794212bd7dc7
+tar zxvf cisco-secure-client-linux64-5.1.2.42-predeploy-rpm-k9.tar.gz
+yum install cisco-secure-client-vpn-5.1.2.42-1.x86_64.rpm
 ```
 
 ## 修改启动菜单分辨率
@@ -287,18 +292,18 @@ echo "
 ## IPIP.NET linux客户端
 ```
 # wget https://cdn.ipip.net/17mon/besttrace4linux.zip
-# 7z x besttrace4linux.zip besttrace
-# chmod +x besttrace
-# chmod +s besttrace
-$ ./besttrace 8.8.8.8
+# 7z x besttrace4linux.zip besttraceipip
+# chmod +x besttraceipip
+# chmod +s besttraceipip
+$ ./besttraceipip 8.8.8.8
 ```
 
 ## [WPS Office for Linux](https://www.wps.com/office/linux/)
 
 ```
-wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11698/wps-office-11.1.0.11698.XA-1.x86_64.rpm
-sha1sum wps-office-11.1.0.11698.XA-1.x86_64.rpm #0a144a0d02a4c94487ccf140fbe194bc304ba1be
-yum install wps-office-11.1.0.11698.XA-1.x86_64.rpm
+wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11719/wps-office-11.1.0.11719.XA-1.x86_64.rpm
+sha1sum wps-office-11.1.0.11719.XA-1.x86_64.rpm #b75660011e58bc85be3b4b18add24380b13f47df
+yum install wps-office-11.1.0.11719.XA-1.x86_64.rpm
 ```
 
 ## LCDF Typetools
@@ -313,8 +318,8 @@ yum install lcdf-typetools-2.105-2.1.x86_64.rpm
 ```
 mkdir /mnt/rhel8iso
 mkdir /mnt/rhel8suppiso
-mount -o loop rhel-8.8-x86_64-dvd.iso /mnt/rhel8iso/
-mount -o loop supp-supplementary-8.8-rhel-8-x86_64-dvd.iso /mnt/rhel8suppiso/
+mount -o loop rhel-8.9-x86_64-dvd.iso /mnt/rhel8iso/
+mount -o loop supp-supplementary-8.9-rhel-8-x86_64-dvd.iso /mnt/rhel8suppiso/
 touch /etc/yum.repos.d/rhel8iso.repo
 chmod 644 /etc/yum.repos.d/rhel8iso.repo
 nano /etc/yum.repos.d/rhel8iso.repo
@@ -350,8 +355,8 @@ yum --noplugins update
 自动挂载
 ```
 nano /etc/fstab
-	rhel-8.8-x86_64-dvd.iso	/mnt/rhel8iso	udf,iso9660	user,auto,loop	0 0
-	supp-supplementary-8.8-rhel-8-x86_64-dvd.iso	/mnt/rhel8suppiso	udf,iso9660	user,auto,loop	0 0
+	rhel-8.9-x86_64-dvd.iso	/mnt/rhel8iso	udf,iso9660	user,auto,loop,nofail	0 0
+	supp-supplementary-8.9-rhel-8-x86_64-dvd.iso	/mnt/rhel8suppiso	udf,iso9660	user,auto,loop,nofail	0 0
 ```
 
 ## 设置SSH key files permission
