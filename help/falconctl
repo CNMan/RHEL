@@ -1,0 +1,57 @@
+Usage: falconctl -g GET_OPTIONS
+       falconctl -s [ -f ] SET_OPTIONS
+       falconctl -d [ -f ] DEL_OPTIONS
+       falconctl -h OR falconctl --help for usage help
+where GET_OPTIONS := { --cid for CustomerId |
+                       --aid for AgentId |
+                       --apd for App Proxy Disable |
+                       --aph for App Proxy Host |
+                       --app for App Proxy Port |
+                       --trace for determining the configured trace level |
+                       --pcpt preferred connection protocol type |
+                       --feature to determine the configured sensor feature flags |
+                       --metadata-query to determine the configured sensor cloud provider metadata query flags |
+                       --version for version of sensor currently running |
+                       --billing to configure the sensor billing type |
+                       --tags for sensor grouping tags |
+                       --provisioning-token for Provisioning Token |
+                       --systags for system tags currently applied to a running sensor |
+                       --backend for sensor backend |
+                       --rfm-state for indicating whether the sensor is in Reduced Functionality Mode |
+                       --rfm-reason to determine reason for sensor running in Reduced Functionality Mode |
+                       --rfm-history to show history of sensor Reduced Functionality Mode reasons |
+                       --logcounters for determining if Telemetry logging is enabled |
+                       --loginterval for setting the interval of file logging |
+                       --logduration for setting the duration of file logging }
+where SET_OPTIONS := { --cid="{<uuid string>}" |
+                       --apd=true | --apd=false |
+                       --aph=<app proxy host name> |
+                       --app=<app proxy port> |
+                       --trace=[none|err|warn|info|debug] |
+                       --pcpt=[auto|ipv4|ipv6] |
+                       --feature=[none,[enableLog[,disableLogBuffer[,disableOsfm[,emulateUpdate]]]]] |
+                       --metadata-query=[[dis|en]able|[dis|en]ableAWS[,[dis|en]ableAzure[,[dis|en]ableGCP]]] |
+                       --update SIGHUP the sensor for immediate trace/feature update |
+                       --billing=[default|metered] |
+                       --tags=<comma separated list of tags for sensor grouping> (allowed characters: all alphanumerics, '/', '-', '_', '@', and '.') |
+                       --provisioning-token=<provisioning token value> |
+                       --backend=auto | --backend=bpf | --backend=kernel |
+                       --maintenance-token=<token-string> |
+                       --logcounters=true | --logcounters=false |
+                       --loginterval=<seconds> |
+                       --logduration=<seconds> }
+where DEL_OPTIONS := { --cid for CustomerId |
+                       --aid for AgentId |
+                       --apd for App Proxy Disable |
+                       --aph for App Proxy Host |
+                       --app for App Proxy Port |
+                       --trace for determining the configured trace level |
+                       --billing to configure the sensor billing type |
+                       --tags for sensor grouping tags |
+                       --provisioning-token for Provisioning Token |
+                       --backend for sensor backend |
+                       --logcounters for determining if Telemetry logging is enabled |
+                       --loginterval for setting the interval of file logging |
+                       --logduration for setting the duration of file logging }
+where HELP_OPTIONS := { --help for usage help }
+

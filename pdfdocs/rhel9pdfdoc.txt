@@ -2,9 +2,10 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/9.0
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/9.1_release_notes/Red_Hat_Enterprise_Linux-9-9.1_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/9.2_release_notes/Red_Hat_Enterprise_Linux-9-9.2_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/9.3_release_notes/Red_Hat_Enterprise_Linux-9-9.3_Release_Notes-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/9.4_release_notes/Red_Hat_Enterprise_Linux-9-9.4_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/accessing_identity_management_services/Red_Hat_Enterprise_Linux-9-Accessing_Identity_Management_services-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/administering_the_system_using_the_gnome_desktop_environment/Red_Hat_Enterprise_Linux-9-Administering_the_system_using_the_GNOME_desktop_environment-en-US.pdf
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/automating_system_administration_by_using_rhel_system_roles/Red_Hat_Enterprise_Linux-9-Automating_system_administration_by_using_RHEL_System_Roles-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/automating_system_administration_by_using_rhel_system_roles/Red_Hat_Enterprise_Linux-9-Automating_system_administration_by_using_RHEL_system_roles-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/boot_options_for_rhel_installer/Red_Hat_Enterprise_Linux-9-Boot_options_for_RHEL_Installer-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/building_running_and_managing_containers/Red_Hat_Enterprise_Linux-9-Building_running_and_managing_containers-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/composing_a_customized_rhel_system_image/Red_Hat_Enterprise_Linux-9-Composing_a_customized_RHEL_system_image-en-US.pdf
@@ -68,6 +69,7 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/usi
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/using_external_red_hat_utilities_with_identity_management/Red_Hat_Enterprise_Linux-9-Using_external_Red_Hat_utilities_with_Identity_Management-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/using_idm_api/Red_Hat_Enterprise_Linux-9-Using_IdM_API-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/using_idm_healthcheck_to_monitor_your_idm_environment/Red_Hat_Enterprise_Linux-9-Using_IdM_Healthcheck_to_monitor_your_IdM_environment-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/Red_Hat_Enterprise_Linux-9-Using_image_mode_for_RHEL_to_build_deploy_and_manage_operating_systems-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/using_selinux/Red_Hat_Enterprise_Linux-9-Using_SELinux-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/using_systemd_unit_files_to_customize_and_optimize_your_system/Red_Hat_Enterprise_Linux-9-Using_systemd_unit_files_to_customize_and_optimize_your_system-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/working_with_dns_in_identity_management/Red_Hat_Enterprise_Linux-9-Working_with_DNS_in_Identity_Management-en-US.pdf

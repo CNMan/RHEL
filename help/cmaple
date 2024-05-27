@@ -1,0 +1,517 @@
+>cmaple --help
+Usage: cmaple [-aBFMmNnPqrstuz] [-A...] [-b...] [-c...] [-D...] [-e...] [-f...] [-g...] [-h...] [-I...] [-i...] [-L...] [-l...] [-O...] [-p...] [-T...] [-U...] [-V...] [-w...] [file]
+
+-a                         turn on Assertions (equivalent to -A 1)
+-A n                       Assertion level (0, 1, or 2)
+-b dir[,dir...]            liBrary directories
+-B                         default liBrary directories
+-c command                 execute command on startup
+-D name[=value]            Define preprocessor macro
+-e n                       Errorbreak level (0, 1, 2, or 3)
+-F                         non-Filter mode (don't exit on EOF)
+-f file                    specify the license file to use for this session
+-h                         displays usage help text
+-i file                    read Initialization file during startup
+-I dir[,dir...]            specify preprocessor Include directories
+-L file                    Log library reads to file
+-l option                  LaTeX filter option (see -l h for help)
+-n                         Number echoed input lines
+-P                         Parse only; do not execute commands
+-q                         Quiet mode; do not display prompts or echo input
+-s                         Skip initialization files
+-t                         Test mode (special prompts, no bytes-used messages)
+-T cpu,data,stack,core     resource limiTs (in seconds and kBytes)
+-U name                    Undefine preprocessor macro
+-u                         output with Unix line-endings
+-w n                       Warning level (0 to 4)
+-z                         secure mode; disables some commands
+--setsort=option           set sort order (0 to 8)
+--kernel-binary=executable select an alternate kernel
+--echofile=file            session log file
+--historyfile=file         command history file
+--historysize=size         command history size
+--secure-read=list         readable files
+--secure-noread=list       non-readable files
+--secure-write=list        writeable files
+--secure-nowrite=list      non-writeable files
+--secure-extcall=list      allowed external libraries
+--secure-noextcall=list    denied external libraries
+--secure-readspec=file     file spec for readable files
+--secure-writespec=file    file spec for writeable files
+--secure-extcallspec=file  file spec for external libraries
+--secure-syscall=flag      allow calls to system (enable or disable)
+--secure-mode=flag         activate security (enable or disable)
+--strip-debug-info         strip debugging information from procedures
+
+Some options may be disabled, modified, or otherwise preprocessed
+by the script your system administrator has set up to run Maple.
+Please see the help page ?maple for more details on options.
+
+
+f:\bin.X86_64_WINDOWS>cmaple.exe
+    |\^/|     Maple 2023 (X86 64 WINDOWS)
+._|\|   |/|_. Copyright (c) Maplesoft, a division of Waterloo Maple Inc. 2023
+ \  MAPLE  /  All rights reserved. Maple is a trademark of
+ <____ ____>  Waterloo Maple Inc.
+      |       Type ? for help.
+> ?maple
+memory used=6.5MB, alloc=41.3MB, time=0.44
+memory used=13.8MB, alloc=42.3MB, time=0.83
+
+The Maple Command and Command-line Options
+
+Calling Sequence
+
+maple -a -A assertLevel -B -b libname -binary operatingSystemName -c mapleCommand -D macroDef -e errorBreak -F -f file -h -I
+includePath -i initFile -km kernelMode -L logFile -l latexOption -nocloud -P -q -s -T resourceLimit -t -U macroName -u -w
+warnLevel -x -z --echofile=echoFile --historyfile=histFile --historysize=histSize --init-reserve-mem=memorysize --init-commit-
+mem=memorysize --strip-debug-info --secure-read=file --secure-noread=file --secure-write=file --secure-nowrite=file --secure-
+extcall=file --secure-noextcall=file --secure-readspec=file --secure-writespec=file --secure-extcallspec=file --secure-
+syscall=flag --secure-mode=flag file --setsort=orderNumber
+
+Description
+
+* Maple has the ability to algebraically manipulate unbounded integers, exact rational numbers, real numbers (with arbitrary
+  precision), symbolic formulas, polynomials, sets, lists, equations, arrays, vectors, and matrices. It can solve systems of
+  equations and differentiate and integrate expressions.
+
+Examples
+
+* In the following examples, the Maple output is displayed below the corresponding input expressions.
+
+> p := x^2 - x - 2;
+
+                                                              2
+                                                        p := x  - x - 2
+
+> q := (x+1) ^ 2;
+
+                                                                     2
+                                                         q := (x + 1)
+
+> s := p/q;
+
+                                                              2
+                                                             x  - x - 2
+                                                        s := ----------
+                                                                     2
+                                                              (x + 1)
+
+  Differentiate with respect to x.
+
+> diff(s,x);
+
+                                                                  2
+                                                    2 x - 1      x  - x - 2
+                                                    -------- - 2 ----------
+                                                           2             3
+                                                    (x + 1)       (x + 1)
+
+> normal(s);
+
+                                                             x - 2
+                                                             -----
+                                                             x + 1
+
+> x := 3^50;
+
+                                                 x := 717897987691852588770249
+
+  Re-evaluate s with a value substituted for x.
+
+> s;
+
+                                                   717897987691852588770247
+                                                   ------------------------
+                                                   717897987691852588770250
+
+  Re-evaluate to a 40-digit floating point approximation.
+
+> evalf[40](s);
+
+                                          0.9999999999999999999999958211332927043850
+
+  Compute an indefinite integral.
+
+> int(1/(y^4+1),y);
+
+                                  /    2      1/2                                                   \
+                              1/2 |   y  + y 2    + 1                1/2                    1/2     |
+                         1/8 2    |ln(---------------) + 2 arctan(y 2    + 1) + 2 arctan(y 2    - 1)|
+                                  |    2      1/2                                                   |
+                                  \   y  - y 2    + 1                                               /
+
+Maple Interfaces
+
+* The name of the command that invokes Maple depends on your operating system and chosen interface, worksheet (graphical user
+  interface) or command line (character-based interface).
+
+* Maple's worksheet interface is known as the Standard Worksheet interface.
+
+  In Linux, use the maple command to start the Command-line version (that is, UNIX shell interface) or the xmaple command to
+  start the Standard Worksheet version (X Windows).
+
+  In Windows, use the cmaple command to start the Command-line version (that is, DOS console mode), the maplew command to start
+  the Standard Worksheet version. The Standard Worksheet version is set up as an icon on your desktop during Maple
+  installation.  You can also access it from the Start menu.
+
+  On macOS, use the maple command to start the Command-line version or the xmaple command to start the Standard Worksheet
+  version.
+
+* In Maple, expressions are entered and read from an input region. To display results in an output region, press the Enter
+  key while the cursor is in the input region.
+
+Options
+
+-a assertLevel
+
+* The -a (assertion) option tells Maple to check all assertions.  This is equivalent to specifying kernelopts(assertlevel=1)
+  at the beginning of the session.
+
+-A assertLevel
+
+* The -A (Assertion level) option sets the degree of assertion checking. The -A option must be followed by the integer 0, 1,
+  or 2. This is equivalent to specifying kernelopts(assertlevel=N), where N is 0, 1, or 2, at the beginning of the session.
+
+-B libname
+
+* The -B option tells Maple that the default system and toolbox libraries should be added to the 'libname' variable used to
+  specify where Maple looks for code repositories.  By default -B is implicitly specified.  It is most commonly used in
+  addition to -b to append to or rearrange the library search order.
+
+-b libname
+
+* The -b (library) option tells Maple that the following argument specifies the pathname of the directory that contains Maple
+  libraries or the full path of the .lib or .mla file of a single Maple library. This initializes the Maple variable 'libname'.
+  By default, 'libname' is initialized with the pathname of the main Maple library (for example, /usr/local/maple/lib). Some
+  sites customize the maple shell script to redefine the library pathname. For example,
+
+  maple -b /usr/public/waterloo/maple/lib $*
+
+  More than one -b option can be specified. When several -b options are used, the first -b option overrides the default
+  'libname' setting, and subsequent -b options are appended to 'libname', forming a Maple expression sequence of directory
+  names.  The -B option can be used to avoid overriding Maple system and toolbox libraries.
+
+-binary operatingSystemName
+
+* On a machine whose operating system supports more than one runtime of Maple, the -binary option allows one to override the
+  automatic platform detection and to specify the platform.
+
+-c mapleCommand
+
+* The -c (execute command) option specifies a command that Maple is to execute on startup. It is only valid for Command-line
+  versions of Maple. The command can be any valid Maple command, but it cannot contain blank characters. Multiple -c options
+  can be specified.  Commands specified by -c options, and files specified by -i options, are executed in the order in which
+  they are specified, after the initialization files have been read. Note: These commands are also re-executed after a restart
+  command. See restart.
+
+-D macroDef
+
+* The -D (Define) option is used to predefine a macro for the Maple preprocessor (see $define). The -D option can be followed
+  by a symbol, or a symbol, equal sign, and the definition of the symbol. Multiple -D options can be used to define multiple
+  symbols.
+
+-e errorBreak
+
+* The -e (break on error) option tells Maple what to do when an error is encountered while reading a file. -e0 tells Maple to
+  report the error and keep reading the file. -e1 (the default) tells Maple to stop reading the file (and to skip to the end)
+  when a syntax error is encountered. Both -e2 and -e3 tell Maple to stop reading and to skip to the end when any type of error
+  is encountered. In addition, -e3 will also print a Maple function stack trace after the error. This behavior can also be
+  changed in Maple by using the command interface(errorbreak = n) where n is 0, 1, 2, or 3.
+
+--echofile=echoFile
+
+* The --echofile option instructs Maple to echo the current session (both input and output) to the specified file, in HTML
+  format if the filename ends with ".htm" or ".html", or as plain text otherwise.
+
+-F (no filter)
+
+* The -F (no Filter) option prevents Maple from exiting when the standard input has been redirected from a file, and the end
+  of the file is encountered. By default, Maple exits. If -F is specified, Maple instead continues interactively at that point.
+
+-f licenseFile
+
+* The -f (license file) option tells Maple to use the specified license file instead of the default one.
+
+-h (help)
+
+* The -h (help) option tells Maple to open the GUI help browser.
+
+--historyfile=histFile
+
+* The --historyfile option instructs Maple to use the specified file for persistent command-line history.  If the value
+  "none" is given, then persistent history is disabled. The default history file is .maple_history in the user home directory.
+
+--historysize=histSize
+
+* The --historysize option instructs Maple to retain the specified number of lines of command-line history.
+
+-I includePath
+
+* The -I (Include) option specifies directories to be searched for files specified in $include directives. Multiple
+  directories can be specified, separated by commas. Alternatively, multiple -I options can be used to specify multiple
+  directories.
+
+-i initFile
+
+* The -i (initialization file) option specifies additional files to be read after the standard Maple initialization files. It
+  is valid only for the Command-line interface. Multiple -i options can be specified. Files specified by -i options, and
+  commands specified by -c options, are executed in the order in which they are specified, after the normal initialization
+  files have been read. If security is enabled, files specified by -i are automatically added to the list of readable files.
+
+--init-reserve-mem=memorysize
+
+* The --init-reserve-mem option allows the size of the virtual memory map that Maple creates on start up to be specified.
+  This is also the maximum amount of memory that the Maple session will be able to use.  By default Maple creates a map
+  slightly smaller than the amount of physical memory available on the machine.  By using this option, that size can be
+  changed.  By specifying an amount larger than that physical memory, Maple will use swap space if necessary.  If options --
+  init-reserve-mem and -T are both given, then -T takes precedence.
+
+--init-commit-mem=memorysize
+
+* The --init-commit-mem option allows the size of the memory Maple allocates on start up to be specified.  This option can be
+  used if Maple is executing a problem that is known to require a large amount of physical memory.  Instead of Maple growing
+  its committed memory to that size, this option will force Maple to allocate the specified amount on start up.
+
+-km p (parallel kernel mode)
+
+* The -km p (or parallel kernel mode) option, which applies only to worksheet versions of Maple, is used to start Maple in
+  the parallel server kernel mode. The parallel server mode enables each worksheet in a given Maple session to be independent
+  of other worksheets. By default, the Standard GUI runs in parallel kernel mode.
+
+-km q (query kernel mode)
+
+* The -km q (or query (or mixed) kernel mode) option, which applies only to worksheet versions of Maple, is used to start
+  Maple in the mixed server kernel mode. In the mixed server mode, for each worksheet in a Maple session, you can select
+  whether it uses a (new) parallel kernel (that is, it is independent of other worksheets) or shares a kernel with one or more
+  other worksheets.
+
+-km s (single kernel mode)
+
+* The -km s (or single kernel mode) option, which applies only to worksheet versions of Maple, is used to start Maple in the
+  single server kernel mode. For example, if you assign a value to a variable in one worksheet, all other worksheets in the
+  current session are affected by this new definition.
+
+-L logFile
+
+* The -L (Log file) option is used to create a log of all the library objects that are loaded in a Maple session. This is
+  useful if you have developed a library of Maple routines, and want to determine which ones are actually used. As each object
+  is loaded, its name is recorded in the specified log file. This file is not closed until the Maple session exits.
+
+-l latexOption
+
+* The -l (latex) option causes Maple to run in LaTeX filter mode. This is useful in the production of books using (or about)
+  Maple. The -l option is specified by a suboption specific to LaTeX filter mode. Multiple -l options can be used to introduce
+  multiple suboptions. For more details, see latex_filter.
+
+-nocloud
+
+* The -nocloud option starts Maple without the MapleCloud palette. When this option is set, it is not possible to receive
+  documents shared using the MapleCloud Content Exchange. This option can only be used in the standard GUI interface.
+
+-P (parse only)
+
+* The -P (Parse only) option causes Maple to read input, but not evaluate any expressions. This can be used to quickly check
+  a file of Maple commands for syntax errors, and should be used in conjunction with -e0 so that Maple does not stop when an
+  error is encountered. It is also useful in conjunction with the Maple preprocessor (see $include) to preview the
+  preprocessing operations without actual execution.
+
+-q (quiet)
+
+* The -q (quiet) option suppresses the printing of the Maple startup message, various informational messages (bytes used
+  messages and garbage collection messages), and the signoff message. Maple is better suited for use as a filter when these
+  messages are suppressed.
+
+-s (suppress initialization)
+
+* The -s (suppress initialization) option causes Maple to forgo reading initialization files when initiating a session.
+
+--secure-read=file
+
+* The --secure-read option adds the given file specification to the inclusion list for readable files.  For more details, see
+  the EngineSecurity,CLIConfig help page.
+
+--secure-noread=file
+
+* The --secure-noread option adds the given file specification to the exclusion list for readable files.  For more details,
+  see the EngineSecurity,CLIConfig help page.
+
+--secure-write=file
+
+* The --secure-write option adds the given file specification to the inclusion list for writable files.  For more details,
+  see the EngineSecurity,CLIConfig help page.
+
+--secure-nowrite=file
+
+* The --secure-nowrite option adds the given file specification to the exclusion list for writable files.  For more details,
+  see the EngineSecurity,CLIConfig help page.
+
+--secure-extcall=file
+
+* The --secure-extcall option adds the given file specification to the inclusion list for loadable external libraries.  For
+  more details, see the EngineSecurity,CLIConfig help page.
+
+--secure-noextcall=file
+
+* The --secure-noextcall option adds the given file specification to the exclusion list for loadable external libraries.  For
+  more details, see the EngineSecurity,CLIConfig help page.
+
+--secure-readspec=file
+
+* The --secure-readspec option instructs Maple to read specification for readable files from the given list.  For more
+  details, see the EngineSecurity,CLIConfig help page.
+
+--secure-writespec=file
+
+* The --secure-writespec option instructs Maple to read specification for writable files from the given list.  For more
+  details, see the EngineSecurity,CLIConfig help page.
+
+--secure-extcallspec=file
+
+* The --secure-extcallspec option instructs Maple to read specification for loadable external libraries from the given list.
+  For more details, see the EngineSecurity,CLIConfig help page.
+
+--secure-syscall=flag
+
+* The --secure-syscall option enables (or disables -- according to the flag) calls to the system, if security is enabled.
+  For more details, see the EngineSecurity,CLIConfig help page.
+
+--secure-mode=flag
+
+* The --secure-mode option enables (or disables -- according to the flag) security in Maple. For more details, see the
+  EngineSecurity,CLIConfig help page.
+
+--setsort=orderNumber
+
+* The --setsort=orderNumber option changes the sort order for Maple sets.  Specifying --setsort=0 causes sets to be ordered
+  by the addresses of the underlying data structures contained in the set as was the only ordering prior to Maple 12.  The
+  current default --setsort=1 is based on a "nice" mix of the size, id, and value of the data structures contained in the set.
+  Other values from --setsort=2 through --setsort=8 are variations of the default and can be used to purposefully introduce
+  ordering differences into your code to test its robustness. This option can only be set at startup as different orderings
+  cannot be mixed in the same session.  For more detail on the default ordering, see set.
+
+--strip-debug-info
+
+* The --strip-debug-info option removes any debugging (source file and line number) information stored in a procedure when
+  reading from a source file or library archive, preventing source level debugging.  See debugger.
+
+-T resourceLimit
+
+* The -T (resource limiT) option is used to limit the amount of system resources that Maple can consume before execution is
+  terminated. This option takes four parameters, separated by commas. The CPU time limit parameter specifies the maximum number
+  of seconds of CPU time that the Maple process is to use. The data limit restricts the amount of memory, in kiloBytes, that
+  Maple can use. The stack limit sets the maximum stack size, in kiloBytes. The core dump limit specifies the maximum size of
+  core file that can be produced in the unlikely event of a core dump. You can specify any prefix of the four parameters, and
+  omit the rest (for example, specify only the CPU and data limits).
+
+-t (test mode)
+
+* The -t (test mode) option causes Maple to change its configuration to one suitable for running the Maple test suite.
+  Specifically, the prompt is changed to "#-->", prettyprinting is disabled, and all but the last "bytes used" messages are
+  suppressed. The final "bytes used" message is printed to stderr. This option is not normally needed by Maple users.
+
+-U undefineMacro
+
+* The -U (Undefine) option is used to undefine a Maple preprocessor macro (see $undef) that was defined earlier on the
+  command line by a -D option. The -U option must be followed by the symbol to undefine. Multiple -U options can be used to
+  undefine multiple symbols.
+
+-u (UNIX line endings)
+
+* The -u (UNIX line endings) option forces non-UNIX versions of Maple to produce UNIX line endings on the standard output
+  stream. This is generally only of use if you are using the Command-line version of Maple in conjunction with UNIX-like tools
+  under Microsoft Windows.
+
+-w warningLevel
+
+* The -w (warning level) option specifies whether Maple should print certain warnings.  -w 0 turns off warnings. -w 1 enables
+  library-generated warnings.  -w 2 enables library- and kernel-generated warnings.  -w 3 (the default) enables library-,
+  kernel-, and parser-generated warnings.  -w 4 enables all warnings, that is library-, kernel-, parser-generated, and
+  compatibility warnings.
+
+-x (X Window)
+
+* The -x option runs the Standard Worksheet X Window version on UNIX platforms and the Standard Worksheet version on
+  Macintosh platforms, instead of the default Command-line version. The xmaple command is equivalent to the maple -x command.
+
+-z (default security settings)
+
+* The -z option starts Maple with the default security settings enabled.  For more details, see the EngineSecurity,CLIConfig
+  help page.
+
+* If a file is specified on the command line after the last option, that file is read by Maple. For the Command-line
+  interface, the file must be a text file of valid Maple commands. For worksheet versions, the file must be a Maple worksheet
+  file.
+
+Return Values
+
+* On exit, the Command-line version of Maple returns a return code to the operating system. When invoked from a UNIX or
+  Windows shell script, this return code can be tested to determine why Maple exited. The possible return codes are:
+
+* 0 - Maple exited normally, as a result of reaching the end of a Maple script if one was specified on the command line, or
+  by executing a quit, done, or stop command.
+
+* 1 - An error occurred during initialization, and Maple was unable to properly start up.
+
+* 2 - A script specified on the command line (possibly by redirecting the standard input stream) ended prematurely. Usually
+  this indicates a missing closing delimiter in the script, such as a parenthesis or an end keyword.
+
+* 3 - After successfully reading a script specified on the command line, Maple failed to re-open the standard input stream
+  for interactive input. This can happen only if the -F option was specified.
+
+* 4 - While processing a script specified on the command line, an error was encountered. The severity of the error required
+  to cause Maple to exit (instead of attempting to carry on) depends on the setting of interface(errorbreak). A setting of 1
+  will stop only on syntax errors. A setting of 2 will stop on any error.
+
+* 5 - The Maple kernel has unexpectedly terminated while executing a script or being used interactively.
+
+* n - Any other return value can only occur if Maple executes a `quit`(n), `done`(n), or `stop`(n) function call, passing n
+  as the desired return code. Typically (but depending on the underlying operating system and shell), any value in the range 0
+  to 127 is permitted. It is a good idea to avoid values 1 through 5 since they already have predefined meanings as described
+  above.
+
+Initialization Files
+
+* Any number of statements can be placed in the initialization files. The effect is identical to that of entering statements
+  in a Maple session.  After all the statements in the initialization files are executed, the prompt appears and the Maple
+  session begins.  It is recommended that all statements in the initialization files terminate with a colon (:) rather than a
+  semicolon (;) to prevent any display.
+
+* For information about initialization files on various operating systems, see the Create Maple Initialization File help
+  page.
+
+* Additional initialization files can be specified explicitly using the -i option as described earlier.
+
+* The -s option suppresses the reading of all initialization files, including those specified by -i options.
+
+System Environment Variables
+
+* Under UNIX, Maple uses several system environment variables.  These are generally set by the maple script, so the user need
+  not worry about them.
+
+* The MAPLE variable specifies where to find the Maple library and help files, the help browser index, and various
+  configuration files. If the MAPLE variable is undefined, Maple uses "/usr/local/maple" as the default.
+
+* The HOME variable is used to identify where the user's .mapleinit file is located.
+
+* The PATH variable is used to locate auxiliary programs, such as the plot driver.
+
+For Help
+
+* For help with Maple commands and features, the Maple help system is the most comprehensive reference. Enter ?help at the
+  Maple prompt for more information.
+
+* Graphical versions of Maple also have a thoroughly indexed and searchable help system, letting you quickly find help pages
+  of interest. By setting interface(helpbrowser=standard):, it is possible to view documentation through the standard GUI help
+  browser from any interface including command line.
+
+* If you have a question that you think is of a very specific nature and not of interest to others, send a message to your
+  site license technical administrator (if your site has a site license).
+
+* If your site does not have a site license, visit http://www.maplesoft.com/support.
+
+See Also
+
+colon, file, interface, libname
+
+>

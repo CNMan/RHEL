@@ -8,8 +8,9 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.6
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.7_release_notes/Red_Hat_Enterprise_Linux-8-8.7_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.8_release_notes/Red_Hat_Enterprise_Linux-8-8.8_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.9_release_notes/Red_Hat_Enterprise_Linux-8-8.9_Release_Notes-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/8.10_release_notes/Red_Hat_Enterprise_Linux-8-8.10_Release_Notes-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/accessing_identity_management_services/Red_Hat_Enterprise_Linux-8-Accessing_Identity_Management_services-en-US.pdf
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/automating_system_administration_by_using_rhel_system_roles/Red_Hat_Enterprise_Linux-8-Automating_system_administration_by_using_RHEL_System_Roles-en-US.pdf
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/automating_system_administration_by_using_rhel_system_roles/Red_Hat_Enterprise_Linux-8-Automating_system_administration_by_using_RHEL_system_roles-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/building_running_and_managing_containers/Red_Hat_Enterprise_Linux-8-Building_running_and_managing_containers-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/composing_a_customized_rhel_system_image/Red_Hat_Enterprise_Linux-8-Composing_a_customized_RHEL_system_image-en-US.pdf
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/pdf/composing_installing_and_managing_rhel_for_edge_images/Red_Hat_Enterprise_Linux-8-Composing_installing_and_managing_RHEL_for_Edge_images-en-US.pdf

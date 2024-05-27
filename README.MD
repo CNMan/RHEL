@@ -32,7 +32,7 @@ subscription-manager attach --pool=PoolIDs
 subscription-manager list #效果等同于Red Hat Subscription Manager中的My Installed Products页面
 subscription-manager list --consumed #效果等同于Red Hat Subscription Manager中的My Subscriptions页面
 subscription-manager release --list #列出可用版本
-subscription-manager release --set=8.9 #锁定特定版本
+subscription-manager release --set=8.10 #锁定特定版本
 subscription-manager release --show #显示锁定的特定版本
 subscription-manager release --unset #取消锁定特定版本
 subscription-manager repos --disable="*"
@@ -107,16 +107,13 @@ cp SecureFX.lic /home/username/.vandyke/SecureCRT/Config/
 yum group install "Development Tools"
 yum install elfutils-libelf-devel pcsc-lite-libs
 ln -s /usr/lib64/libnsl.so.2 /usr/lib64/libnsl.so.1
-wget https://download3.vmware.com/software/WKST-1702-LX/VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle
 sha1sum VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle #确认是3c75575db021720b9746e7a0fc58513151001826
 sh VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle --console --ignore-errors --set-setting vmware-workstation serialNumber MC60H-DWHD5-H80U9-6V85M-8280D
 ```
 
 ```
-访问 https://www.vmware.com/go/getworkstation-linux 获取最新的VMware Workstation for Linux下载链接
-wget https://download3.vmware.com/software/WKST-1751-LX/VMware-Workstation-Full-17.5.1-23298084.x86_64.bundle
-sha1sum VMware-Workstation-Full-17.5.1-23298084.x86_64.bundle #确认是6fcc79b46354e3cc3fd11a325afd441723cc807a
-sh VMware-Workstation-Full-17.5.1-23298084.x86_64.bundle --console --ignore-errors --set-setting vmware-workstation serialNumber MC60H-DWHD5-H80U9-6V85M-8280D
+sha1sum VMware-Workstation-Full-17.5.2-23775571.x86_64.bundle #确认是23593d98a396c55f42c6e1967be47108d6767a03
+sh VMware-Workstation-Full-17.5.2-23775571.x86_64.bundle --console --ignore-errors --set-setting vmware-workstation serialNumber MC60H-DWHD5-H80U9-6V85M-8280D
 ```
 
 ## 配置无线连接
@@ -148,9 +145,9 @@ rm -rf /var/cache/dnf/
 
 ## 安装[Cisco Secure Client(including AnyConnect)](https://software.cisco.com/download/home/286330811/type/282364313)
 ```
-md5sum cisco-secure-client-linux64-5.1.2.42-predeploy-rpm-k9.tar.gz #确认是39b85b58170d3bf4ab0b794212bd7dc7
-tar zxvf cisco-secure-client-linux64-5.1.2.42-predeploy-rpm-k9.tar.gz
-yum install cisco-secure-client-vpn-5.1.2.42-1.x86_64.rpm
+md5sum cisco-secure-client-linux64-5.1.3.62-predeploy-rpm-k9.tar.gz #确认是778539e3eff05876869632a091a04bd2
+tar zxvf cisco-secure-client-linux64-5.1.3.62-predeploy-rpm-k9.tar.gz
+yum install cisco-secure-client-vpn-5.1.3.62-1.x86_64.rpm
 ```
 
 ## 修改启动菜单分辨率
@@ -318,8 +315,8 @@ yum install lcdf-typetools-2.105-2.1.x86_64.rpm
 ```
 mkdir /mnt/rhel8iso
 mkdir /mnt/rhel8suppiso
-mount -o loop rhel-8.9-x86_64-dvd.iso /mnt/rhel8iso/
-mount -o loop supp-supplementary-8.9-rhel-8-x86_64-dvd.iso /mnt/rhel8suppiso/
+mount -o loop rhel-8.10-x86_64-dvd.iso /mnt/rhel8iso/
+mount -o loop supp-supplementary-8.10-rhel-8-x86_64-dvd.iso /mnt/rhel8suppiso/
 touch /etc/yum.repos.d/rhel8iso.repo
 chmod 644 /etc/yum.repos.d/rhel8iso.repo
 nano /etc/yum.repos.d/rhel8iso.repo
@@ -355,8 +352,8 @@ yum --noplugins update
 自动挂载
 ```
 nano /etc/fstab
-	rhel-8.9-x86_64-dvd.iso	/mnt/rhel8iso	udf,iso9660	user,auto,loop,nofail	0 0
-	supp-supplementary-8.9-rhel-8-x86_64-dvd.iso	/mnt/rhel8suppiso	udf,iso9660	user,auto,loop,nofail	0 0
+	rhel-8.10-x86_64-dvd.iso	/mnt/rhel8iso	udf,iso9660	user,auto,loop,nofail	0 0
+	supp-supplementary-8.10-rhel-8-x86_64-dvd.iso	/mnt/rhel8suppiso	udf,iso9660	user,auto,loop,nofail	0 0
 ```
 
 ## 设置SSH key files permission
@@ -392,4 +389,17 @@ cd Mojave-gtk-theme/
 ./install.sh
 cd ../McMojave-circle/
 ./install.sh
+```
+
+## 写入USB镜像
+```
+umount /dev/sdc1
+umount /dev/sdc2
+dd if=rhel-8.10-x86_64-dvd.iso of=/dev/sdc bs=1M conv=fsync
+```
+
+```
+13575+0 records in
+13575+0 records out
+14234419200 bytes (14 GB, 13 GiB) copied, 2993.75 s, 4.8 MB/s
 ```
