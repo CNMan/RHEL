@@ -3,9 +3,10 @@
 ## [生命周期](https://access.redhat.com/support/policy/updates/errata)
 |Version|General availability|Full support ends|Maintenance Support 1 ends|Maintenance Support or Maintenance Support 2 ends|Extended life cycle support (ELS) add-on ends|Extended life phase ends|Last minor release|
 |------|------|------|------|------|------|------|------|
-|9|20220518|20270531|Not Applicable|20320531|20340531|Ongoing|9.10|
-|8|20190507|20240531|Not Applicable|20290531|20310531|Ongoing|8.10|
-|7|20140610|20190806|20200806|20240630|20260630|Ongoing|7.9|
+|10|20250520|20300531|Not Applicable|20350531|20380531|Ongoing|10.10|
+|9|20220518|20270531|Not Applicable|20320531|20350531|Ongoing|9.10|
+|8|20190507|20240531|Not Applicable|20290531|20320531|Ongoing|8.10|
+|7|20140610|20190806|20200806|20240630|20280630|Ongoing|7.9|
 |6|20101110|20160510|20170510|20201130|20240630|Ongoing|6.10|
 |5|20070315|20130108|20140131|20170331|20201130|Ongoing|5.11|
 |4|20050214|20090331|20110216|20120229|20170331|Ongoing|4.9|
@@ -17,6 +18,8 @@ RHEL7:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7
 RHEL8:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8
 
 RHEL9:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9
+
+RHEL10:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/10
 
 ## 官方论坛
 https://access.redhat.com/discussions
