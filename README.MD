@@ -1,3 +1,5 @@
+![OS](OS.png)
+
 # RHEL
 
 ## [生命周期](https://access.redhat.com/support/policy/updates/errata)
@@ -30,26 +32,33 @@ https://bugzilla.redhat.com/
 ## 注册订阅
 ```
 subscription-manager register --username RHN_Username --password RHN_Password
-subscription-manager list --available --all #效果等同于Red Hat Subscription Manager中的All Available Subscriptions页面（包括下面要用到的Pool IDs）
-subscription-manager attach --pool=PoolIDs
-subscription-manager list #效果等同于Red Hat Subscription Manager中的My Installed Products页面
-subscription-manager list --consumed #效果等同于Red Hat Subscription Manager中的My Subscriptions页面
-subscription-manager release --list #列出可用版本
-subscription-manager release --set=8.10 #锁定特定版本
+subscription-manager refresh
+subscription-manager list
 subscription-manager release --show #显示锁定的特定版本
+subscription-manager release --list #列出可用版本
+subscription-manager release --set=10.2 #锁定特定版本
 subscription-manager release --unset #取消锁定特定版本
 subscription-manager repos --disable="*"
-subscription-manager repos --enable="rhel-8-for-x86_64-baseos-rpms" #Red Hat Enterprise Linux 8 for x86_64 - BaseOS (RPMs)
-subscription-manager repos --enable="rhel-8-for-x86_64-appstream-rpms" #Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs)
-subscription-manager repos --enable="rhel-8-for-x86_64-supplementary-rpms" #Red Hat Enterprise Linux 8 for x86_64 - Supplementary (RPMs)
-subscription-manager repos --enable="codeready-builder-for-rhel-8-x86_64-rpms" #Red Hat CodeReady Linux Builder for RHEL 8 x86_64 (RPMs)
+subscription-manager repos --enable="rhel-10-for-x86_64-baseos-rpms" #Red Hat Enterprise Linux 10 for x86_64 - BaseOS (RPMs)
+subscription-manager repos --enable="rhel-10-for-x86_64-appstream-rpms" #Red Hat Enterprise Linux 10 for x86_64 - AppStream (RPMs)
+subscription-manager repos --enable="rhel-10-for-x86_64-extensions-rpms" #Red Hat Enterprise Linux 10 for x86_64 - Extensions (RPMs)
+subscription-manager repos --enable="rhel-10-for-x86_64-highavailability-rpms" #Red Hat Enterprise Linux 10 for x86_64 - High Availability (RPMs)
+subscription-manager repos --enable="rhel-10-for-x86_64-rt-rpms" #Red Hat Enterprise Linux 10 for x86_64 - Real Time (RPMs)
+subscription-manager repos --enable="rhel-10-for-x86_64-nfv-rpms" #Red Hat Enterprise Linux 10 for x86_64 - Real Time for NFV (RPMs)
+subscription-manager repos --enable="rhel-10-for-x86_64-supplementary-rpms" #Red Hat Enterprise Linux 10 for x86_64 - Supplementary (RPMs)
+subscription-manager repos --enable="codeready-builder-for-rhel-10-x86_64-rpms" #Red Hat CodeReady Linux Builder for RHEL 10 x86_64 (RPMs)
 ```
 
 ## 清除订阅
 ```
-subscription-manager remove --all
 subscription-manager unregister
 subscription-manager clean
+```
+
+## 安装声音驱动并重启生效
+```
+yum install alsa-sof-firmware
+reboot
 ```
 
 ## 关闭SELinux及防火墙
@@ -67,15 +76,15 @@ timedatectl set-ntp yes
 
 ## 安装EPEL源及NTFS驱动
 ```
-yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm
 yum install ntfs-3g ntfs-3g-libs
 ```
 
-## 安装RPM Fusion源及VLC Media Player、exFAT驱动
+## 安装RPM Fusion源及VLC Media Player
 ```
-yum install https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm
-yum install https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
-yum install vlc exfat-utils fuse-exfat
+yum install https://download1.rpmfusion.org/free/el/rpmfusion-free-release-10.noarch.rpm
+yum install https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-10.noarch.rpm
+yum install vlc
 ```
 解决中文字幕乱码：http://forum.ubuntu.org.cn/viewtopic.php?t=201887
 
@@ -84,59 +93,51 @@ https://www.google.com/linuxrepositories/index.html
 ```
 yum install https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 yum install https://dl.google.com/dl/earth/client/current/google-earth-pro-stable-current.x86_64.rpm
-```
-
-## 安装Adobe源及Adobe Flash Player
-```
-yum install http://linuxdownload.adobe.com/adobe-release/adobe-release-x86_64-1.0-1.noarch.rpm
-yum install flash-plugin #Adobe Flash Player NPAPI
-yum install flash-player-ppapi #Adobe Flash Player PPAPI
-```
-
-## 安装SecureCRT和SecureFX
-注册试用并下载SecureCRT + SecureFX 9.3 Bundle：https://www.vandyke.com/download/index.html
-```
-yum install pcre2-utf16 xcb-util-image xcb-util-keysyms xcb-util-renderutil xcb-util-wm
-sha1sum scrt-sfx-9.3.2-2978.rhel8-64.x86_64.rpm #确认是147E230325DB436FC8576ED866A48D8C02204125
-yum install scrt-sfx-9.3.2-2978.rhel8-64.x86_64.rpm
-mkdir -p /home/username/.vandyke/SecureCRT/Config/
-cp SecureCRT.lic /home/username/.vandyke/SecureCRT/Config/
-cp SecureFX.lic /home/username/.vandyke/SecureCRT/Config/
+yum install intel-media-driver libva-intel-driver
 ```
 
 ## 安装VMware Workstation
-参考[Install Workstation Pro on a Linux Host](https://docs.vmware.com/en/VMware-Workstation-Pro/17/com.vmware.ws.using.doc/GUID-1F5B1F14-A586-4A56-83FA-2E7D8333D5CA.html)
+参考[Install Workstation Pro on a Linux Host](https://techdocs.broadcom.com/us/en/vmware-cis/desktop-hypervisors/workstation-pro/26H1/using-vmware-workstation-pro/installing-and-using-workstation-pro/installing-workstation-pro/install-workstation-pro-on-a-linux-host.html)
 ```
 yum group install "Development Tools"
 yum install elfutils-libelf-devel pcsc-lite-libs
-ln -s /usr/lib64/libnsl.so.2 /usr/lib64/libnsl.so.1
-sha1sum VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle #确认是3c75575db021720b9746e7a0fc58513151001826
-sh VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle --console --ignore-errors --set-setting vmware-workstation serialNumber MC60H-DWHD5-H80U9-6V85M-8280D
-```
-
-```
-sha1sum VMware-Workstation-Full-17.5.2-23775571.x86_64.bundle #确认是23593d98a396c55f42c6e1967be47108d6767a03
-sh VMware-Workstation-Full-17.5.2-23775571.x86_64.bundle --console --ignore-errors --set-setting vmware-workstation serialNumber MC60H-DWHD5-H80U9-6V85M-8280D
+sha1sum VMware-Workstation-Full-26H1-25388281.x86_64.bundle #确认是2945b324113c71fff0e3d229894b8579c471cd1a
+sh VMware-Workstation-Full-26H1-25388281.x86_64.bundle --console --ignore-errors
 ```
 
 ## 配置无线连接
 ```
-nano /etc/sysconfig/network-scripts/ifcfg-WIFI_SSID
-	NAME=WIFI_SSID
-	ONBOOT=yes
-	IPADDR=192.168.0.102
-	PREFIX=24
-	GATEWAY=192.168.0.1
-	DNS1=192.168.0.100
+nano /etc/NetworkManager/system-connections/WIFI_SSID.nmconnection
 ```
 
 ```
-nano /etc/sysconfig/network-scripts/keys-WIFI_SSID
-	WPA_PSK=WIFI_Password
+[connection]
+id=WIFI_SSID
+uuid=f71553cb-b402-43f9-9d52-4b8a67d7a03c
+type=wifi
+interface-name=wlp0s20f3
+timestamp=1783653403
+
+[wifi]
+mode=infrastructure
+ssid=WIFI_SSID
+
+[wifi-security]
+key-mgmt=wpa-psk
+psk=WIFI_Password
+
+[ipv4]
+method=auto
+
+[ipv6]
+addr-gen-mode=default
+method=disabled
+
+[proxy]
 ```
 
 ```
-systemctl restart NetworkManager.service
+nmcli connection load /etc/NetworkManager/system-connections/WIFI_SSID.nmconnection
 ```
 
 ## 清除更新缓存
@@ -148,9 +149,11 @@ rm -rf /var/cache/dnf/
 
 ## 安装[Cisco Secure Client(including AnyConnect)](https://software.cisco.com/download/home/286330811/type/282364313)
 ```
-md5sum cisco-secure-client-linux64-5.1.3.62-predeploy-rpm-k9.tar.gz #确认是778539e3eff05876869632a091a04bd2
-tar zxvf cisco-secure-client-linux64-5.1.3.62-predeploy-rpm-k9.tar.gz
-yum install cisco-secure-client-vpn-5.1.3.62-1.x86_64.rpm
+yum install xdg-utils
+md5sum cisco-secure-client-linux64-5.1.18.314-predeploy-rpm-k9.tgz #确认是d360c5158bfa56a63ca7bb1a5d81bcc6
+tar zxvf cisco-secure-client-linux64-5.1.18.314-predeploy-rpm-k9.tgz
+yum install cisco-secure-client-vpn-5.1.18.314-1.x86_64.rpm
+cp /usr/share/applications/com.cisco.secureclient.gui.desktop ~/.config/autostart/
 ```
 
 ## 修改启动菜单分辨率
@@ -301,9 +304,9 @@ $ ./besttraceipip 8.8.8.8
 ## [WPS Office for Linux](https://www.wps.com/office/linux/)
 
 ```
-wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11719/wps-office-11.1.0.11719.XA-1.x86_64.rpm
-sha1sum wps-office-11.1.0.11719.XA-1.x86_64.rpm #b75660011e58bc85be3b4b18add24380b13f47df
-yum install wps-office-11.1.0.11719.XA-1.x86_64.rpm
+wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11733/wps-office-11.1.0.11733.XA-1.x86_64.rpm
+sha1sum wps-office-11.1.0.11733.XA-1.x86_64.rpm #0c44e274aeb2b8c8c87744a235d18853129a4d18
+yum install wps-office-11.1.0.11733.XA-1.x86_64.rpm
 ```
 
 ## LCDF Typetools
@@ -314,38 +317,32 @@ yum install lcdf-typetools-2.105-2.1.x86_64.rpm
 ```
 
 ## DVD 离线源
-参考：[Need to set up yum repository for locally-mounted DVD on Red Hat Enterprise Linux 8](https://access.redhat.com/solutions/3776721)
+参考：[Configure Local DVD Repository for RHEL 8 and later](https://access.redhat.com/solutions/3776721)
 ```
-mkdir /mnt/rhel8iso
-mkdir /mnt/rhel8suppiso
-mount -o loop rhel-8.10-x86_64-dvd.iso /mnt/rhel8iso/
-mount -o loop supp-supplementary-8.10-rhel-8-x86_64-dvd.iso /mnt/rhel8suppiso/
-touch /etc/yum.repos.d/rhel8iso.repo
-chmod 644 /etc/yum.repos.d/rhel8iso.repo
-nano /etc/yum.repos.d/rhel8iso.repo
-	[InstallMedia-BaseOS]
-	name=Red Hat Enterprise Linux 8 - BaseOS
-	baseurl=file:///mnt/rhel8iso/BaseOS
-	enabled=1
-	gpgcheck=1
-	gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-	priority=1
+mkdir /mnt/rhel10iso
+mount -o loop rhel-10.2-x86_64-dvd.iso /mnt/rhel10iso/
+touch /etc/yum.repos.d/rhel10iso.repo
+chmod 644 /etc/yum.repos.d/rhel10iso.repo
+nano /etc/yum.repos.d/rhel10iso.repo
+```
+```
+[InstallMedia-BaseOS]
+name=Red Hat Enterprise Linux 10 - BaseOS
+baseurl=file:///mnt/rhel10iso/BaseOS/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+priority=1
 
-	[InstallMedia-AppStream]
-	name=Red Hat Enterprise Linux 8 - AppStream
-	baseurl=file:///mnt/rhel8iso/AppStream
-	enabled=1
-	gpgcheck=1
-	gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-	priority=1
-
-	[InstallMedia-Supplementary]
-	name=Red Hat Enterprise Linux 8 - Supplementary
-	baseurl=file:///mnt/rhel8suppiso
-	enabled=1
-	gpgcheck=1
-	gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-	priority=1
+[InstallMedia-AppStream]
+name=Red Hat Enterprise Linux 10 - AppStream
+baseurl=file:///mnt/rhel10iso/AppStream/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+priority=1
+```
+```
 yum clean all
 subscription-manager clean
 yum --noplugins list
@@ -355,8 +352,9 @@ yum --noplugins update
 自动挂载
 ```
 nano /etc/fstab
-	rhel-8.10-x86_64-dvd.iso	/mnt/rhel8iso	udf,iso9660	user,auto,loop,nofail	0 0
-	supp-supplementary-8.10-rhel-8-x86_64-dvd.iso	/mnt/rhel8suppiso	udf,iso9660	user,auto,loop,nofail	0 0
+```
+```
+rhel-10.2-x86_64-dvd.iso	/mnt/rhel10iso	iso9660	defaults,loop,nofail,x-systemd.device-timeout=5	0 0
 ```
 
 ## 设置SSH key files permission
@@ -398,7 +396,7 @@ cd ../McMojave-circle/
 ```
 umount /dev/sdc1
 umount /dev/sdc2
-dd if=rhel-8.10-x86_64-dvd.iso of=/dev/sdc bs=1M conv=fsync
+dd if=rhel-10.2-x86_64-dvd.iso of=/dev/sdc bs=1M conv=fsync
 ```
 
 ```
