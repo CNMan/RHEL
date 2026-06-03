@@ -3,93 +3,98 @@ Available Environment Groups:
    Minimal Install
    Workstation
    KDE Plasma Workspaces
-   Custom Operating System
+   KDE Plasma Mobile
    Virtualization Host
+   Custom Operating System
 Installed Environment Groups:
    Server with GUI
 Installed Groups:
-   Hardware Monitoring Utilities
-   Server product core
-   Guest Desktop Agents
-   base-x
-   Standard
-   Common NetworkManager submodules
-   Development Tools
-   Headless Management
    Container Management
-   Printing Client
+   GNOME Server Defaults
    Internet Browser
+   Guest Desktop Agents
+   Printing Client
+   Development Tools
+   Common NetworkManager submodules
+   Hardware Monitoring Utilities
+   Headless Management
+   Standard
+   Server product core
    GNOME Desktop Environment
    Multimedia
    Core
    Fonts
    Hardware Support
 Available Groups:
-   Java Base
-   Misc
-   Java Browser
-   Java Database
-   Additional Virtualization Tools
-   Windows File Server
-   Large Systems Performance
+   CRB
+   Java Platform
+   Image based rpm-ostree support
+   Virtualization Hypervisor
+   Remote Desktop Clients
+   Virtualization Platform
+   RPM Development Tools
+   Debugging Tools
+   Internet Applications
+   Input Methods
+   Backup Client
+   Virtualization Tools
+   .NET Development
+   DNS Name Server
+   Emacs
+   Console Internet Tools
+   KVM platform specific packages
+   TeX formatting system
+   Java Development
+   Basic Web Server
+   Hyper-v platform specific packages
+   FTP Server
+   Guest Agents
+   VMware platform specific packages
+   Platform Development
+   Desktop Debugging and Performance Tools
+   Graphics Creation Tools
+   Virtualization Client
+   Conflicts AppStream
+   Base
    Python Web
+   Windows File Server
+   Remote Management for Linux
+   Legacy UNIX Compatibility
+   Additional Development
+   Mail Server
+   Infiniband Support
+   Smart Card Support
+   Graphical Administration Tools
+   Scientific Support
+   Workstation product core
+   Performance Tools
+   Large Systems Performance
+   Security Tools
+   Anaconda tools
+   Mainframe Access
    Dial-up Networking Support
    Conflicts BaseOS
-   Legacy UNIX Compatibility
-   Graphics Creation Tools
-   Mainframe Access
-   Remote Management for Linux
-   Mail Server
-   KVM platform specific packages
-   Backup Client
-   Atomic Host ostree support
-   Legacy X Window System Compatibility
-   Security Tools
-   Basic Web Server
-   Guest Agents
-   Network Servers
-   Office Suite and Productivity
-   Input Methods
-   Virtualization Platform
-   Base
-   VMware platform specific packages
-   File and Storage Server
-   Virtualization Hypervisor
-   Conflicts AppStream
-   .NET Core Development
-   Desktop Debugging and Performance Tools
-   GNOME Applications
-   Network File System Client
-   Performance Tools
-   Remote Desktop Clients
-   RPM Development Tools
-   Virtualization Client
-   FTP Server
-   Hyper-v platform specific packages
-   Debugging Tools
-   Java Platform
-   TeX formatting system
-   Internet Applications
-   Infiniband Support
    Networking Tools
-   Smart Card Support
-   Anaconda tools
-   Additional Development
-   Scientific Support
-   Graphical Administration Tools
-   Workstation product core
-   Platform Development
-   Virtualization Tools
-   CodeReady Builder
+   Network File System Client
+   Network Servers
+   File and Storage Server
+   High Availability
+   High Availability Devel
+   NFV
+   NFV-debug
+   RT
+   RT-debug
    System Tools
+   base-graphical
    Critical Path (KDE)
-   Fedora Packager
+   Desktop accessibility
    KDE Applications
-   KDE Educational applications
    KDE Multimedia support
-   KDE Office
+   KDE Mobile
+   KDE PIM
    KDE Software Development
-   KDE Frameworks 5 Software Development
+   KDE Spin Initial Setup
+   KDE Frameworks 6 Software Development
    Graphical Internet
    KDE (K Desktop Environment)
    Games and Entertainment
