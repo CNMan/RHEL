@@ -1,55 +1,1046 @@
-[rhel-8-for-x86_64-baseos-rpms]
-name = Red Hat Enterprise Linux 8 for x86_64 - BaseOS (RPMs)
-baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/baseos/os
-enabled = 1
-gpgcheck = 1
-gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslverify = 1
-sslcacert = /etc/rhsm/ca/redhat-uep.pem
-sslclientkey = /etc/pki/entitlement/4076680307831099210-key.pem
-sslclientcert = /etc/pki/entitlement/4076680307831099210.pem
-metadata_expire = 86400
-enabled_metadata = 1
-sslverifystatus = 1
+#
+# Certificate-Based Repositories
+# Managed by (rhsm) subscription-manager
+#
+# *** This file is auto-generated.  Changes made here will be overwritten. ***
+# *** Use "subscription-manager repo-override --help" if you wish to make changes. ***
+#
+# If this file is empty and this system is subscribed, consider
+# running "dnf repolist" to refresh the available repositories.
+#
 
-[rhel-8-for-x86_64-appstream-rpms]
-name = Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs)
-baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/appstream/os
-enabled = 1
+[satellite-client-6-for-rhel-10-x86_64-eus-source-rpms]
+name = Red Hat Satellite Client 6 for RHEL 10 x86_64 - Extended Update Support (Source RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/sat-client/6/source/SRPMS
+enabled = 0
 gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
 sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
-sslclientkey = /etc/pki/entitlement/4076680307831099210-key.pem
-sslclientcert = /etc/pki/entitlement/4076680307831099210.pem
-metadata_expire = 86400
-enabled_metadata = 1
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
 sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
 
-[rhel-8-for-x86_64-supplementary-rpms]
-name = Red Hat Enterprise Linux 8 for x86_64 - Supplementary (RPMs)
-baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/supplementary/os
-enabled = 1
+[rh-sso-textonly-1-for-middleware-rpms]
+name = Single Sign-On Text-Only Advisories
+baseurl = https://cdn.redhat.com/content/dist/middleware/rh-sso/1.0/$basearch/os
+enabled = 0
 gpgcheck = 1
-gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+gpgkey = file://
 sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
-sslclientkey = /etc/pki/entitlement/4076680307831099210-key.pem
-sslclientcert = /etc/pki/entitlement/4076680307831099210.pem
-metadata_expire = 86400
-enabled_metadata = 1
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
 sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
 
-[codeready-builder-for-rhel-8-x86_64-rpms]
-name = Red Hat CodeReady Linux Builder for RHEL 8 x86_64 (RPMs)
-baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/codeready-builder/os
+[codeready-builder-for-rhel-10-x86_64-eus-rpms]
+name = Red Hat CodeReady Linux Builder for RHEL 10 x86_64 - Extended Update Support (RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/codeready-builder/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-extensions-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Extensions (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/extensions/os
 enabled = 1
 gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
 sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
-sslclientkey = /etc/pki/entitlement/4076680307831099210-key.pem
-sslclientcert = /etc/pki/entitlement/4076680307831099210.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 1
+
+[rhel-10-for-x86_64-supplementary-source-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Supplementary (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/supplementary/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
 sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[codeready-builder-for-rhel-10-x86_64-debug-rpms]
+name = Red Hat CodeReady Linux Builder for RHEL 10 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/codeready-builder/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[discovery-2-for-rhel-10-x86_64-debug-rpms]
+name = Red Hat Discovery 2 for RHEL 10 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/discovery/2/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[discovery-2-for-rhel-10-x86_64-rpms]
+name = Red Hat Discovery 2 for RHEL 10 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/discovery/2/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[codeready-builder-for-rhel-10-x86_64-eus-source-rpms]
+name = Red Hat CodeReady Linux Builder for RHEL 10 x86_64 - Extended Update Support (Source RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/codeready-builder/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhceph-9-tools-for-rhel-10-x86_64-rpms]
+name = Red Hat Ceph Storage Tools 9 for RHEL 10 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/rhceph-tools/9/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-nfv-source-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Real Time for NFV (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/nfv/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-highavailability-source-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - High Availability (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/highavailability/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-appstream-eus-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - AppStream - Extended Update Support (RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/appstream/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[codeready-builder-for-rhel-10-x86_64-source-rpms]
+name = Red Hat CodeReady Linux Builder for RHEL 10 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/codeready-builder/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[satellite-client-6-for-rhel-10-x86_64-rpms]
+name = Red Hat Satellite Client 6 for RHEL 10 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/sat-client/6/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-nfv-eus-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Real Time for NFV - Extended Update Support (RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/nfv/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-extensions-source-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Extensions (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/extensions/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[satellite-client-6-for-rhel-10-x86_64-debug-rpms]
+name = Red Hat Satellite Client 6 for RHEL 10 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/sat-client/6/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[satellite-client-6-for-rhel-10-x86_64-eus-debug-rpms]
+name = Red Hat Satellite Client 6 for RHEL 10 x86_64 - Extended Update Support (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/sat-client/6/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[jb-eap-textonly-1-for-middleware-rpms]
+name = Red Hat JBoss Enterprise Application Platform Text-Only Advisories
+baseurl = https://cdn.redhat.com/content/dist/middleware/jbeap/1.0/$basearch/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[codeready-builder-for-rhel-10-x86_64-rpms]
+name = Red Hat CodeReady Linux Builder for RHEL 10 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/codeready-builder/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 1
+
+[rhel-10-for-x86_64-rt-source-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Real Time (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/rt/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-baseos-source-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - BaseOS (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/baseos/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[codeready-builder-for-rhel-10-x86_64-eus-debug-rpms]
+name = Red Hat CodeReady Linux Builder for RHEL 10 x86_64 - Extended Update Support (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/codeready-builder/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-appstream-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - AppStream (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/appstream/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 1
+
+[satellite-client-openvox-for-rhel-10-x86_64-debug-rpms]
+name = Red Hat Satellite Client OpenVox for RHEL 10 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/sat-client-openvox/6/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-baseos-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - BaseOS (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/baseos/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 1
+
+[ansible-automation-platform-2.6-for-rhel-10-x86_64-debug-rpms]
+name = Red Hat Ansible Automation Platform 2.6 for RHEL 10 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/ansible-automation-platform/2.6/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-nfv-eus-source-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Real Time for NFV - Extended Update Support (Source RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/nfv/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[satellite-client-6-for-rhel-10-x86_64-eus-rpms]
+name = Red Hat Satellite Client 6 for RHEL 10 x86_64 - Extended Update Support (RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/sat-client/6/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-highavailability-debug-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - High Availability (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/highavailability/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-highavailability-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - High Availability (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/highavailability/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 1
+
+[satellite-client-6-for-rhel-10-x86_64-source-rpms]
+name = Red Hat Satellite Client 6 for RHEL 10 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/sat-client/6/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-appstream-eus-debug-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - AppStream - Extended Update Support (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/appstream/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-baseos-debug-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - BaseOS (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/baseos/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[satellite-client-openvox-for-rhel-10-x86_64-eus-debug-rpms]
+name = Red Hat Satellite Client OpenVox for RHEL 10 x86_64 - Extended Update Support (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/sat-client-openvox/6/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-extensions-debug-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Extensions (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/extensions/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[ansible-automation-platform-2.6-for-rhel-10-x86_64-source-rpms]
+name = Red Hat Ansible Automation Platform 2.6 for RHEL 10 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/ansible-automation-platform/2.6/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-baseos-eus-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - BaseOS - Extended Update Support (RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/baseos/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-rt-debug-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Real Time (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/rt/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-baseos-eus-debug-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - BaseOS - Extended Update Support (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/baseos/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-supplementary-eus-debug-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Supplementary - Extended Update Support (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/supplementary/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-supplementary-eus-source-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Supplementary - Extended Update Support (Source RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/supplementary/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-rt-eus-debug-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Real Time - Extended Update Support (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/rt/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-highavailability-eus-debug-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - High Availability - Extended Update Support (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/highavailability/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-nfv-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Real Time for NFV (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/nfv/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 1
+
+[rhel-10-for-x86_64-rt-eus-source-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Real Time - Extended Update Support (Source RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/rt/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[ansible-automation-platform-2.7-for-rhel-10-x86_64-source-rpms]
+name = Red Hat Ansible Automation Platform 2.7 for RHEL 10 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/ansible-automation-platform/2.7/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-highavailability-eus-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - High Availability - Extended Update Support (RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/highavailability/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-rt-eus-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Real Time - Extended Update Support (RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/rt/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[ansible-automation-platform-2.7-for-rhel-10-x86_64-debug-rpms]
+name = Red Hat Ansible Automation Platform 2.7 for RHEL 10 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/ansible-automation-platform/2.7/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-highavailability-eus-source-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - High Availability - Extended Update Support (Source RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/highavailability/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[satellite-client-openvox-for-rhel-10-x86_64-source-rpms]
+name = Red Hat Satellite Client OpenVox for RHEL 10 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/sat-client-openvox/6/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-appstream-debug-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - AppStream (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/appstream/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[ansible-automation-platform-2.6-for-rhel-10-x86_64-rpms]
+name = Red Hat Ansible Automation Platform 2.6 for RHEL 10 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/ansible-automation-platform/2.6/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-supplementary-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Supplementary (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/supplementary/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 1
+
+[rhel-10-for-x86_64-nfv-debug-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Real Time for NFV (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/nfv/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhceph-9-tools-for-rhel-10-x86_64-source-rpms]
+name = Red Hat Ceph Storage Tools 9 for RHEL 10 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/rhceph-tools/9/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[satellite-client-openvox-for-rhel-10-x86_64-rpms]
+name = Red Hat Satellite Client OpenVox for RHEL 10 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/sat-client-openvox/6/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-supplementary-debug-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Supplementary (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/supplementary/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-appstream-source-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - AppStream (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/appstream/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-rt-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Real Time (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel10/$releasever/x86_64/rt/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 1
+
+[ansible-automation-platform-2.7-for-rhel-10-x86_64-rpms]
+name = Red Hat Ansible Automation Platform 2.7 for RHEL 10 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/ansible-automation-platform/2.7/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[satellite-client-openvox-for-rhel-10-x86_64-eus-rpms]
+name = Red Hat Satellite Client OpenVox for RHEL 10 x86_64 - Extended Update Support (RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/sat-client-openvox/6/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhceph-9-tools-for-rhel-10-x86_64-debug-rpms]
+name = Red Hat Ceph Storage Tools 9 for RHEL 10 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/rhceph-tools/9/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[satellite-client-openvox-for-rhel-10-x86_64-eus-source-rpms]
+name = Red Hat Satellite Client OpenVox for RHEL 10 x86_64 - Extended Update Support (Source RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/sat-client-openvox/6/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-supplementary-eus-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Supplementary - Extended Update Support (RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/supplementary/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-appstream-eus-source-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - AppStream - Extended Update Support (Source RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/appstream/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[discovery-2-for-rhel-10-x86_64-source-rpms]
+name = Red Hat Discovery 2 for RHEL 10 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/discovery/2/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-nfv-eus-debug-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - Real Time for NFV - Extended Update Support (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/nfv/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[rhel-10-for-x86_64-baseos-eus-source-rpms]
+name = Red Hat Enterprise Linux 10 for x86_64 - BaseOS - Extended Update Support (Source RPMs)
+baseurl = https://cdn.redhat.com/content/eus/rhel10/$releasever/x86_64/baseos/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[jb-eap-8.1-for-rhel-10-x86_64-rpms]
+name = JBoss Enterprise Application Platform 8.1 (RHEL 10 x86_64) (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/jbeap/8.1/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[jb-eap-8.1-for-rhel-10-x86_64-source-rpms]
+name = JBoss Enterprise Application Platform 8.1 (RHEL 10 x86_64) (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/jbeap/8.1/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0
+
+[jb-eap-8.1-for-rhel-10-x86_64-debug-rpms]
+name = JBoss Enterprise Application Platform 8.1 (RHEL 10 x86_64) (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel10/x86_64/jbeap/8.1/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/6331814330601514769-key.pem
+sslclientcert = /etc/pki/entitlement/6331814330601514769.pem
+sslverifystatus = 1
+metadata_expire = 86400
+enabled_metadata = 0

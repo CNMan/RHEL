@@ -1,0 +1,15 @@
+[InstallMedia-BaseOS]
+name=Red Hat Enterprise Linux 10 - BaseOS
+baseurl=file:///mnt/rhel10iso/BaseOS/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+priority=1
+
+[InstallMedia-AppStream]
+name=Red Hat Enterprise Linux 10 - AppStream
+baseurl=file:///mnt/rhel10iso/AppStream/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+priority=1
