@@ -50,7 +50,7 @@ subscription-manager refresh
 subscription-manager list
 subscription-manager release --show #显示锁定的特定版本
 subscription-manager release --list #列出可用版本
-subscription-manager release --set=10.2 #锁定特定版本
+subscription-manager release --set=10.3 #锁定特定版本
 subscription-manager release --unset #取消锁定特定版本
 subscription-manager repos --disable="*"
 subscription-manager repos --enable="rhel-10-for-x86_64-baseos-rpms" #Red Hat Enterprise Linux 10 for x86_64 - BaseOS (RPMs)
@@ -165,9 +165,9 @@ rm -rf /var/cache/dnf/
 ## 安装[Cisco Secure Client(including AnyConnect)](https://software.cisco.com/download/home/286330811/type/282364313)
 ```
 yum install xdg-utils
-md5sum cisco-secure-client-linux64-5.1.20.333-predeploy-rpm-k9.tgz #确认是2ff022a974cd74383a38370fb113d57f
-tar zxvf cisco-secure-client-linux64-5.1.20.333-predeploy-rpm-k9.tgz
-yum install cisco-secure-client-vpn-5.1.20.333-1.x86_64.rpm
+md5sum cisco-secure-client-linux64-5.1.21.2728-predeploy-rpm-k9.tgz #确认是df37469451a76d3af5ffe1be47a0dad7
+tar zxvf cisco-secure-client-linux64-5.1.21.2728-predeploy-rpm-k9.tgz
+yum install cisco-secure-client-socketfilter-5.1.21.2666-1.x86_64.rpm cisco-secure-client-vpn-5.1.21.2728-1.x86_64.rpm
 cp /usr/share/applications/com.cisco.secureclient.gui.desktop ~/.config/autostart/
 ```
 
@@ -335,7 +335,7 @@ yum install lcdf-typetools-2.105-2.1.x86_64.rpm
 参考：[Configure Local DVD Repository for RHEL 8 and later](https://access.redhat.com/solutions/3776721)
 ```
 mkdir /mnt/rhel10iso
-mount -o loop rhel-10.2-x86_64-dvd.iso /mnt/rhel10iso/
+mount -o loop rhel-10.3-x86_64-dvd.iso /mnt/rhel10iso/
 touch /etc/yum.repos.d/rhel10iso.repo
 chmod 644 /etc/yum.repos.d/rhel10iso.repo
 nano /etc/yum.repos.d/rhel10iso.repo
@@ -369,7 +369,7 @@ yum --noplugins update
 nano /etc/fstab
 ```
 ```
-rhel-10.2-x86_64-dvd.iso	/mnt/rhel10iso	iso9660	defaults,loop,nofail,x-systemd.device-timeout=5	0 0
+rhel-10.3-x86_64-dvd.iso	/mnt/rhel10iso	iso9660	defaults,loop,nofail,x-systemd.device-timeout=5	0 0
 ```
 
 ## 设置SSH key files permission
@@ -411,7 +411,7 @@ cd ../McMojave-circle/
 ```
 umount /dev/sdc1
 umount /dev/sdc2
-dd if=rhel-10.2-x86_64-dvd.iso of=/dev/sdc bs=1M conv=fsync
+dd if=rhel-10.3-x86_64-dvd.iso of=/dev/sdc bs=1M conv=fsync
 ```
 
 ```
